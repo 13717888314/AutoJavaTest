@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="C-api-Master-AutoTest">
+    <test name="GateWayService" >
+        <classes>
+            <class name="com.test.TestGateWayService" />
+        </classes>
+    </test>
+    <test name="StaffingService" >
+        <classes>
+            <class name="com.test.TestStaffingService" />
+        </classes>
+    </test>
+    <test name="WnsService" >
+        <classes>
+            <class name="com.test.TestWnsService" />
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.test.MyListener"></listener>
+    </listeners>
+</suite>

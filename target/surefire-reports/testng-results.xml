@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="39" passed="39">
+  <reporter-output>
+  </reporter-output>
+  <suite name="C-api-Master-AutoTest" duration-ms="12209" started-at="2022-09-07T06:40:15Z" finished-at="2022-09-07T06:40:27Z">
+    <groups>
+    </groups>
+    <test name="GateWayService" duration-ms="4240" started-at="2022-09-07T06:40:15Z" finished-at="2022-09-07T06:40:19Z">
+      <class name="com.test.TestGateWayService">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.TestGateWayService@3dd3bcd]" name="setup" is-config="true" duration-ms="6" started-at="2022-09-07T06:40:15Z" finished-at="2022-09-07T06:40:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getactivityurl()[pri:0, instance:com.test.TestGateWayService@3dd3bcd]" name="getactivityurl" duration-ms="1266" started-at="2022-09-07T06:40:15Z" finished-at="2022-09-07T06:40:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getactivityurl -->
+        <test-method status="PASS" signature="getadvertisementimage()[pri:0, instance:com.test.TestGateWayService@3dd3bcd]" name="getadvertisementimage" duration-ms="174" started-at="2022-09-07T06:40:16Z" finished-at="2022-09-07T06:40:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getadvertisementimage -->
+        <test-method status="PASS" signature="getallcity()[pri:0, instance:com.test.TestGateWayService@3dd3bcd]" name="getallcity" duration-ms="886" started-at="2022-09-07T06:40:16Z" finished-at="2022-09-07T06:40:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getallcity -->
+        <test-method status="PASS" signature="getallreceiveraddress()[pri:0, instance:com.test.TestGateWayService@3dd3bcd]" name="getallreceiveraddress" duration-ms="313" started-at="2022-09-07T06:40:17Z" finished-at="2022-09-07T06:40:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getallreceiveraddress -->
+        <test-method status="PASS" signature="getcontributiondeaillist()[pri:0, instance:com.test.TestGateWayService@3dd3bcd]" name="getcontributiondeaillist" duration-ms="178" started-at="2022-09-07T06:40:18Z" finished-at="2022-09-07T06:40:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getcontributiondeaillist -->
+        <test-method status="PASS" signature="getexchangelist()[pri:0, instance:com.test.TestGateWayService@3dd3bcd]" name="getexchangelist" duration-ms="227" started-at="2022-09-07T06:40:18Z" finished-at="2022-09-07T06:40:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getexchangelist -->
+        <test-method status="PASS" signature="getinfo兑换详情()[pri:0, instance:com.test.TestGateWayService@3dd3bcd]" name="getinfo兑换详情" duration-ms="210" started-at="2022-09-07T06:40:18Z" finished-at="2022-09-07T06:40:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getinfo兑换详情 -->
+        <test-method status="PASS" signature="getjoblist()[pri:0, instance:com.test.TestGateWayService@3dd3bcd]" name="getjoblist" duration-ms="175" started-at="2022-09-07T06:40:18Z" finished-at="2022-09-07T06:40:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getjoblist -->
+        <test-method status="PASS" signature="getmyapplycourselist()[pri:0, instance:com.test.TestGateWayService@3dd3bcd]" name="getmyapplycourselist" duration-ms="216" started-at="2022-09-07T06:40:18Z" finished-at="2022-09-07T06:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getmyapplycourselist -->
+        <test-method status="PASS" signature="getquestions()[pri:0, instance:com.test.TestGateWayService@3dd3bcd]" name="getquestions" duration-ms="205" started-at="2022-09-07T06:40:19Z" finished-at="2022-09-07T06:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getquestions -->
+        <test-method status="PASS" signature="gettaskinfo()[pri:0, instance:com.test.TestGateWayService@3dd3bcd]" name="gettaskinfo" duration-ms="180" started-at="2022-09-07T06:40:19Z" finished-at="2022-09-07T06:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gettaskinfo -->
+        <test-method status="PASS" signature="savereceiveraddress()[pri:0, instance:com.test.TestGateWayService@3dd3bcd]" name="savereceiveraddress" duration-ms="194" started-at="2022-09-07T06:40:19Z" finished-at="2022-09-07T06:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- savereceiveraddress -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.TestGateWayService@3dd3bcd]" name="teardown" is-config="true" duration-ms="0" started-at="2022-09-07T06:40:19Z" finished-at="2022-09-07T06:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.test.TestGateWayService -->
+    </test> <!-- GateWayService -->
+    <test name="StaffingService" duration-ms="4997" started-at="2022-09-07T06:40:19Z" finished-at="2022-09-07T06:40:24Z">
+      <class name="com.test.TestStaffingService">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.TestStaffingService@5f375618]" name="setup" is-config="true" duration-ms="1" started-at="2022-09-07T06:40:19Z" finished-at="2022-09-07T06:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="addbankcards()[pri:0, instance:com.test.TestStaffingService@5f375618]" name="addbankcards" duration-ms="211" started-at="2022-09-07T06:40:19Z" finished-at="2022-09-07T06:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addbankcards -->
+        <test-method status="PASS" signature="getadvertisementimage()[pri:0, instance:com.test.TestStaffingService@5f375618]" name="getadvertisementimage" duration-ms="263" started-at="2022-09-07T06:40:19Z" finished-at="2022-09-07T06:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getadvertisementimage -->
+        <test-method status="PASS" signature="getbankcards()[pri:0, instance:com.test.TestStaffingService@5f375618]" name="getbankcards" duration-ms="184" started-at="2022-09-07T06:40:20Z" finished-at="2022-09-07T06:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getbankcards -->
+        <test-method status="PASS" signature="getpersonalsummaryInfo()[pri:0, instance:com.test.TestStaffingService@5f375618]" name="getpersonalsummaryInfo" duration-ms="196" started-at="2022-09-07T06:40:20Z" finished-at="2022-09-07T06:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getpersonalsummaryInfo -->
+        <test-method status="PASS" signature="gettaskfavorite()[pri:0, instance:com.test.TestStaffingService@5f375618]" name="gettaskfavorite" duration-ms="254" started-at="2022-09-07T06:40:20Z" finished-at="2022-09-07T06:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gettaskfavorite -->
+        <test-method status="PASS" signature="issubscribewxservice服务号()[pri:0, instance:com.test.TestStaffingService@5f375618]" name="issubscribewxservice服务号" duration-ms="179" started-at="2022-09-07T06:40:20Z" finished-at="2022-09-07T06:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- issubscribewxservice服务号 -->
+        <test-method status="PASS" signature="v531Getinfo()[pri:0, instance:com.test.TestStaffingService@5f375618]" name="v531Getinfo" duration-ms="1259" started-at="2022-09-07T06:40:20Z" finished-at="2022-09-07T06:40:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- v531Getinfo -->
+        <test-method status="PASS" signature="个人信息()[pri:0, instance:com.test.TestStaffingService@5f375618]" name="个人信息" duration-ms="1031" started-at="2022-09-07T06:40:22Z" finished-at="2022-09-07T06:40:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 个人信息 -->
+        <test-method status="PASS" signature="任务列表()[pri:0, instance:com.test.TestStaffingService@5f375618]" name="任务列表" duration-ms="183" started-at="2022-09-07T06:40:23Z" finished-at="2022-09-07T06:40:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 任务列表 -->
+        <test-method status="PASS" signature="任务详情()[pri:0, instance:com.test.TestStaffingService@5f375618]" name="任务详情" duration-ms="175" started-at="2022-09-07T06:40:23Z" finished-at="2022-09-07T06:40:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 任务详情 -->
+        <test-method status="PASS" signature="协议gettaskagreements()[pri:0, instance:com.test.TestStaffingService@5f375618]" name="协议gettaskagreements" duration-ms="172" started-at="2022-09-07T06:40:23Z" finished-at="2022-09-07T06:40:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 协议gettaskagreements -->
+        <test-method status="PASS" signature="合作详情已结束()[pri:0, instance:com.test.TestStaffingService@5f375618]" name="合作详情已结束" duration-ms="194" started-at="2022-09-07T06:40:23Z" finished-at="2022-09-07T06:40:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 合作详情已结束 -->
+        <test-method status="PASS" signature="我的报名信息()[pri:0, instance:com.test.TestStaffingService@5f375618]" name="我的报名信息" duration-ms="196" started-at="2022-09-07T06:40:23Z" finished-at="2022-09-07T06:40:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 我的报名信息 -->
+        <test-method status="PASS" signature="我的签约信息()[pri:0, instance:com.test.TestStaffingService@5f375618]" name="我的签约信息" duration-ms="269" started-at="2022-09-07T06:40:24Z" finished-at="2022-09-07T06:40:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 我的签约信息 -->
+        <test-method status="PASS" signature="报名详情()[pri:0, instance:com.test.TestStaffingService@5f375618]" name="报名详情" duration-ms="227" started-at="2022-09-07T06:40:24Z" finished-at="2022-09-07T06:40:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 报名详情 -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.TestStaffingService@5f375618]" name="teardown" is-config="true" duration-ms="0" started-at="2022-09-07T06:40:24Z" finished-at="2022-09-07T06:40:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.test.TestStaffingService -->
+    </test> <!-- StaffingService -->
+    <test name="WnsService" duration-ms="2956" started-at="2022-09-07T06:40:24Z" finished-at="2022-09-07T06:40:27Z">
+      <class name="com.test.TestWnsService">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.TestWnsService@5d5eef3d]" name="setup" is-config="true" duration-ms="0" started-at="2022-09-07T06:40:24Z" finished-at="2022-09-07T06:40:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Merchant合作商户()[pri:0, instance:com.test.TestWnsService@5d5eef3d]" name="Merchant合作商户" duration-ms="380" started-at="2022-09-07T06:40:24Z" finished-at="2022-09-07T06:40:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Merchant合作商户 -->
+        <test-method status="PASS" signature="getcontent()[pri:0, instance:com.test.TestWnsService@5d5eef3d]" name="getcontent" duration-ms="175" started-at="2022-09-07T06:40:25Z" finished-at="2022-09-07T06:40:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getcontent -->
+        <test-method status="PASS" signature="getidcardinfo()[pri:0, instance:com.test.TestWnsService@5d5eef3d]" name="getidcardinfo" duration-ms="283" started-at="2022-09-07T06:40:25Z" finished-at="2022-09-07T06:40:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getidcardinfo -->
+        <test-method status="PASS" signature="getmobiles()[pri:0, instance:com.test.TestWnsService@5d5eef3d]" name="getmobiles" duration-ms="278" started-at="2022-09-07T06:40:25Z" finished-at="2022-09-07T06:40:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getmobiles -->
+        <test-method status="PASS" signature="getnotsettleinfo()[pri:0, instance:com.test.TestWnsService@5d5eef3d]" name="getnotsettleinfo" duration-ms="183" started-at="2022-09-07T06:40:25Z" finished-at="2022-09-07T06:40:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getnotsettleinfo -->
+        <test-method status="PASS" signature="getsettlementscount()[pri:0, instance:com.test.TestWnsService@5d5eef3d]" name="getsettlementscount" duration-ms="258" started-at="2022-09-07T06:40:25Z" finished-at="2022-09-07T06:40:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getsettlementscount -->
+        <test-method status="PASS" signature="我的签约wns()[pri:0, instance:com.test.TestWnsService@5d5eef3d]" name="我的签约wns" duration-ms="275" started-at="2022-09-07T06:40:26Z" finished-at="2022-09-07T06:40:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 我的签约wns -->
+        <test-method status="PASS" signature="打款失败订单()[pri:0, instance:com.test.TestWnsService@5d5eef3d]" name="打款失败订单" duration-ms="186" started-at="2022-09-07T06:40:26Z" finished-at="2022-09-07T06:40:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 打款失败订单 -->
+        <test-method status="PASS" signature="批量结算列表()[pri:0, instance:com.test.TestWnsService@5d5eef3d]" name="批量结算列表" duration-ms="287" started-at="2022-09-07T06:40:26Z" finished-at="2022-09-07T06:40:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 批量结算列表 -->
+        <test-method status="PASS" signature="服务号ssubscribewxservice()[pri:0, instance:com.test.TestWnsService@5d5eef3d]" name="服务号ssubscribewxservice" duration-ms="170" started-at="2022-09-07T06:40:26Z" finished-at="2022-09-07T06:40:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 服务号ssubscribewxservice -->
+        <test-method status="PASS" signature="结算收入()[pri:0, instance:com.test.TestWnsService@5d5eef3d]" name="结算收入" duration-ms="182" started-at="2022-09-07T06:40:27Z" finished-at="2022-09-07T06:40:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 结算收入 -->
+        <test-method status="PASS" signature="获取个人信息()[pri:0, instance:com.test.TestWnsService@5d5eef3d]" name="获取个人信息" duration-ms="296" started-at="2022-09-07T06:40:27Z" finished-at="2022-09-07T06:40:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 获取个人信息 -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.TestWnsService@5d5eef3d]" name="teardown" is-config="true" duration-ms="0" started-at="2022-09-07T06:40:27Z" finished-at="2022-09-07T06:40:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.test.TestWnsService -->
+    </test> <!-- WnsService -->
+  </suite> <!-- C-api-Master-AutoTest -->
+</testng-results>
