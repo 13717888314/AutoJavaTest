@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">39 methods,   39 passed</span>
+                    <span class="method-stats">40 methods,   40 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,6 +108,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-C-api-Master-AutoTest" title="com.test.TestStaffingService" hash-for-method="addbankcards">addbankcards</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-C-api-Master-AutoTest" title="com.test.TestGateWayService" hash-for-method="deletereceiveraddress">deletereceiveraddress</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -313,6 +318,13 @@
               <span class="class-name">com.test.TestGateWayService</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deletereceiveraddress">
+                  </a> <!-- deletereceiveraddress -->
+                  <span class="method-name">deletereceiveraddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="getactivityurl">
@@ -618,6 +630,7 @@
     &lt;listener class-name=&quot;com.test.MyListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;GateWayService&quot;&gt;
+    &lt;parameter name=&quot;ass&quot; value=&quot;id&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.test.TestGateWayService&quot;/&gt;
     &lt;/classes&gt;
@@ -675,168 +688,172 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(39);
+data.addRows(40);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getactivityurl')
+data.setCell(0, 1, 'deletereceiveraddress')
 data.setCell(0, 2, 'com.test.TestGateWayService')
-data.setCell(0, 3, 1266);
+data.setCell(0, 3, 5473);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'v531Getinfo')
 data.setCell(1, 2, 'com.test.TestStaffingService')
-data.setCell(1, 3, 1259);
+data.setCell(1, 3, 1148);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, '个人信息')
 data.setCell(2, 2, 'com.test.TestStaffingService')
-data.setCell(2, 3, 1031);
+data.setCell(2, 3, 1086);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'getallcity')
-data.setCell(3, 2, 'com.test.TestGateWayService')
-data.setCell(3, 3, 886);
+data.setCell(3, 1, '获取个人信息')
+data.setCell(3, 2, 'com.test.TestWnsService')
+data.setCell(3, 3, 1074);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'Merchant合作商户')
-data.setCell(4, 2, 'com.test.TestWnsService')
-data.setCell(4, 3, 380);
+data.setCell(4, 1, 'getallcity')
+data.setCell(4, 2, 'com.test.TestGateWayService')
+data.setCell(4, 3, 883);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'getallreceiveraddress')
+data.setCell(5, 1, 'savereceiveraddress')
 data.setCell(5, 2, 'com.test.TestGateWayService')
-data.setCell(5, 3, 313);
+data.setCell(5, 3, 453);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, '获取个人信息')
-data.setCell(6, 2, 'com.test.TestWnsService')
-data.setCell(6, 3, 296);
+data.setCell(6, 1, 'getinfo兑换详情')
+data.setCell(6, 2, 'com.test.TestGateWayService')
+data.setCell(6, 3, 440);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, '批量结算列表')
-data.setCell(7, 2, 'com.test.TestWnsService')
-data.setCell(7, 3, 287);
+data.setCell(7, 1, 'gettaskinfo')
+data.setCell(7, 2, 'com.test.TestGateWayService')
+data.setCell(7, 3, 408);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'getidcardinfo')
-data.setCell(8, 2, 'com.test.TestWnsService')
-data.setCell(8, 3, 283);
+data.setCell(8, 1, 'getcontributiondeaillist')
+data.setCell(8, 2, 'com.test.TestGateWayService')
+data.setCell(8, 3, 375);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'getmobiles')
-data.setCell(9, 2, 'com.test.TestWnsService')
-data.setCell(9, 3, 278);
+data.setCell(9, 1, 'getquestions')
+data.setCell(9, 2, 'com.test.TestGateWayService')
+data.setCell(9, 3, 371);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, '我的签约wns')
-data.setCell(10, 2, 'com.test.TestWnsService')
-data.setCell(10, 3, 275);
+data.setCell(10, 1, 'getactivityurl')
+data.setCell(10, 2, 'com.test.TestGateWayService')
+data.setCell(10, 3, 369);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, '我的签约信息')
-data.setCell(11, 2, 'com.test.TestStaffingService')
-data.setCell(11, 3, 269);
+data.setCell(11, 1, 'getadvertisementimage')
+data.setCell(11, 2, 'com.test.TestGateWayService')
+data.setCell(11, 3, 366);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'getadvertisementimage')
+data.setCell(12, 1, 'getpersonalsummaryInfo')
 data.setCell(12, 2, 'com.test.TestStaffingService')
-data.setCell(12, 3, 263);
+data.setCell(12, 3, 316);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'getsettlementscount')
-data.setCell(13, 2, 'com.test.TestWnsService')
-data.setCell(13, 3, 258);
+data.setCell(13, 1, '我的签约信息')
+data.setCell(13, 2, 'com.test.TestStaffingService')
+data.setCell(13, 3, 299);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'gettaskfavorite')
-data.setCell(14, 2, 'com.test.TestStaffingService')
-data.setCell(14, 3, 254);
+data.setCell(14, 1, 'getallreceiveraddress')
+data.setCell(14, 2, 'com.test.TestGateWayService')
+data.setCell(14, 3, 294);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'getexchangelist')
+data.setCell(15, 1, 'getmyapplycourselist')
 data.setCell(15, 2, 'com.test.TestGateWayService')
-data.setCell(15, 3, 227);
+data.setCell(15, 3, 277);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, '报名详情')
+data.setCell(16, 1, 'getadvertisementimage')
 data.setCell(16, 2, 'com.test.TestStaffingService')
-data.setCell(16, 3, 227);
+data.setCell(16, 3, 270);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'getmyapplycourselist')
-data.setCell(17, 2, 'com.test.TestGateWayService')
-data.setCell(17, 3, 216);
+data.setCell(17, 1, 'getsettlementscount')
+data.setCell(17, 2, 'com.test.TestWnsService')
+data.setCell(17, 3, 269);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'addbankcards')
-data.setCell(18, 2, 'com.test.TestStaffingService')
-data.setCell(18, 3, 211);
+data.setCell(18, 1, 'getmobiles')
+data.setCell(18, 2, 'com.test.TestWnsService')
+data.setCell(18, 3, 268);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'getinfo兑换详情')
-data.setCell(19, 2, 'com.test.TestGateWayService')
-data.setCell(19, 3, 210);
+data.setCell(19, 1, 'gettaskfavorite')
+data.setCell(19, 2, 'com.test.TestStaffingService')
+data.setCell(19, 3, 261);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'getquestions')
-data.setCell(20, 2, 'com.test.TestGateWayService')
-data.setCell(20, 3, 205);
+data.setCell(20, 1, 'issubscribewxservice服务号')
+data.setCell(20, 2, 'com.test.TestStaffingService')
+data.setCell(20, 3, 247);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'getpersonalsummaryInfo')
-data.setCell(21, 2, 'com.test.TestStaffingService')
-data.setCell(21, 3, 196);
+data.setCell(21, 1, 'getexchangelist')
+data.setCell(21, 2, 'com.test.TestGateWayService')
+data.setCell(21, 3, 241);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, '我的报名信息')
+data.setCell(22, 1, '合作详情已结束')
 data.setCell(22, 2, 'com.test.TestStaffingService')
-data.setCell(22, 3, 196);
+data.setCell(22, 3, 232);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'savereceiveraddress')
-data.setCell(23, 2, 'com.test.TestGateWayService')
-data.setCell(23, 3, 194);
+data.setCell(23, 1, '服务号ssubscribewxservice')
+data.setCell(23, 2, 'com.test.TestWnsService')
+data.setCell(23, 3, 220);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, '合作详情已结束')
-data.setCell(24, 2, 'com.test.TestStaffingService')
-data.setCell(24, 3, 194);
+data.setCell(24, 1, '批量结算列表')
+data.setCell(24, 2, 'com.test.TestWnsService')
+data.setCell(24, 3, 219);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, '打款失败订单')
-data.setCell(25, 2, 'com.test.TestWnsService')
-data.setCell(25, 3, 186);
+data.setCell(25, 1, '任务列表')
+data.setCell(25, 2, 'com.test.TestStaffingService')
+data.setCell(25, 3, 216);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'getbankcards')
-data.setCell(26, 2, 'com.test.TestStaffingService')
-data.setCell(26, 3, 184);
+data.setCell(26, 1, 'Merchant合作商户')
+data.setCell(26, 2, 'com.test.TestWnsService')
+data.setCell(26, 3, 216);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, '任务列表')
+data.setCell(27, 1, '任务详情')
 data.setCell(27, 2, 'com.test.TestStaffingService')
-data.setCell(27, 3, 183);
+data.setCell(27, 3, 215);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'getnotsettleinfo')
-data.setCell(28, 2, 'com.test.TestWnsService')
-data.setCell(28, 3, 183);
+data.setCell(28, 1, 'getbankcards')
+data.setCell(28, 2, 'com.test.TestStaffingService')
+data.setCell(28, 3, 213);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, '结算收入')
+data.setCell(29, 1, 'getnotsettleinfo')
 data.setCell(29, 2, 'com.test.TestWnsService')
-data.setCell(29, 3, 182);
+data.setCell(29, 3, 208);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'gettaskinfo')
-data.setCell(30, 2, 'com.test.TestGateWayService')
-data.setCell(30, 3, 180);
+data.setCell(30, 1, '结算收入')
+data.setCell(30, 2, 'com.test.TestWnsService')
+data.setCell(30, 3, 207);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'issubscribewxservice服务号')
-data.setCell(31, 2, 'com.test.TestStaffingService')
-data.setCell(31, 3, 179);
+data.setCell(31, 1, 'getjoblist')
+data.setCell(31, 2, 'com.test.TestGateWayService')
+data.setCell(31, 3, 206);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'getcontributiondeaillist')
-data.setCell(32, 2, 'com.test.TestGateWayService')
-data.setCell(32, 3, 178);
+data.setCell(32, 1, 'getidcardinfo')
+data.setCell(32, 2, 'com.test.TestWnsService')
+data.setCell(32, 3, 203);
 data.setCell(33, 0, 33)
-data.setCell(33, 1, 'getjoblist')
-data.setCell(33, 2, 'com.test.TestGateWayService')
-data.setCell(33, 3, 175);
+data.setCell(33, 1, '我的报名信息')
+data.setCell(33, 2, 'com.test.TestStaffingService')
+data.setCell(33, 3, 193);
 data.setCell(34, 0, 34)
-data.setCell(34, 1, '任务详情')
-data.setCell(34, 2, 'com.test.TestStaffingService')
-data.setCell(34, 3, 175);
+data.setCell(34, 1, '我的签约wns')
+data.setCell(34, 2, 'com.test.TestWnsService')
+data.setCell(34, 3, 192);
 data.setCell(35, 0, 35)
-data.setCell(35, 1, 'getcontent')
-data.setCell(35, 2, 'com.test.TestWnsService')
-data.setCell(35, 3, 175);
+data.setCell(35, 1, 'addbankcards')
+data.setCell(35, 2, 'com.test.TestStaffingService')
+data.setCell(35, 3, 191);
 data.setCell(36, 0, 36)
-data.setCell(36, 1, 'getadvertisementimage')
-data.setCell(36, 2, 'com.test.TestGateWayService')
-data.setCell(36, 3, 174);
+data.setCell(36, 1, 'getcontent')
+data.setCell(36, 2, 'com.test.TestWnsService')
+data.setCell(36, 3, 188);
 data.setCell(37, 0, 37)
-data.setCell(37, 1, '协议gettaskagreements')
+data.setCell(37, 1, '报名详情')
 data.setCell(37, 2, 'com.test.TestStaffingService')
-data.setCell(37, 3, 172);
+data.setCell(37, 3, 179);
 data.setCell(38, 0, 38)
-data.setCell(38, 1, '服务号ssubscribewxservice')
+data.setCell(38, 1, '打款失败订单')
 data.setCell(38, 2, 'com.test.TestWnsService')
-data.setCell(38, 3, 170);
+data.setCell(38, 3, 172);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, '协议gettaskagreements')
+data.setCell(39, 2, 'com.test.TestStaffingService')
+data.setCell(39, 3, 170);
 window.suiteTableData['C-api-Master-AutoTest']= { tableData: data, tableDiv: 'times-div-C-api-Master-AutoTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-C-api-Master-AutoTest">
               </div> <!-- times-div-C-api-Master-AutoTest -->
             </div> <!-- times-div -->
@@ -868,186 +885,190 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <span class="method-name">deletereceiveraddress</span>
+                <span class="method-start">14 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">getactivityurl</span>
-                <span class="method-start">13 ms</span>
+                <span class="method-start">5487 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getadvertisementimage</span>
-                <span class="method-start">1279 ms</span>
+                <span class="method-start">5856 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getallcity</span>
-                <span class="method-start">1453 ms</span>
+                <span class="method-start">6223 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getallreceiveraddress</span>
-                <span class="method-start">2339 ms</span>
+                <span class="method-start">7106 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getcontributiondeaillist</span>
-                <span class="method-start">2652 ms</span>
+                <span class="method-start">7400 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getexchangelist</span>
-                <span class="method-start">2830 ms</span>
+                <span class="method-start">7775 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getinfo兑换详情</span>
-                <span class="method-start">3057 ms</span>
+                <span class="method-start">8016 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getjoblist</span>
-                <span class="method-start">3267 ms</span>
+                <span class="method-start">8456 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getmyapplycourselist</span>
-                <span class="method-start">3443 ms</span>
+                <span class="method-start">8662 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getquestions</span>
-                <span class="method-start">3659 ms</span>
+                <span class="method-start">8939 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">gettaskinfo</span>
-                <span class="method-start">3865 ms</span>
+                <span class="method-start">9310 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">savereceiveraddress</span>
-                <span class="method-start">4045 ms</span>
+                <span class="method-start">9718 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">4240 ms</span>
+                <span class="method-start">10172 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.TestStaffingService</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">4253 ms</span>
+                <span class="method-start">10185 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">addbankcards</span>
-                <span class="method-start">4254 ms</span>
+                <span class="method-start">10186 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getadvertisementimage</span>
-                <span class="method-start">4466 ms</span>
+                <span class="method-start">10377 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getbankcards</span>
-                <span class="method-start">4729 ms</span>
+                <span class="method-start">10648 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getpersonalsummaryInfo</span>
-                <span class="method-start">4913 ms</span>
+                <span class="method-start">10861 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">gettaskfavorite</span>
-                <span class="method-start">5109 ms</span>
+                <span class="method-start">11177 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">issubscribewxservice服务号</span>
-                <span class="method-start">5363 ms</span>
+                <span class="method-start">11438 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">v531Getinfo</span>
-                <span class="method-start">5542 ms</span>
+                <span class="method-start">11685 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">个人信息</span>
-                <span class="method-start">6801 ms</span>
+                <span class="method-start">12834 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">任务列表</span>
-                <span class="method-start">7832 ms</span>
+                <span class="method-start">13920 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">任务详情</span>
-                <span class="method-start">8016 ms</span>
+                <span class="method-start">14136 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">协议gettaskagreements</span>
-                <span class="method-start">8191 ms</span>
+                <span class="method-start">14351 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">合作详情已结束</span>
-                <span class="method-start">8363 ms</span>
+                <span class="method-start">14521 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">我的报名信息</span>
-                <span class="method-start">8557 ms</span>
+                <span class="method-start">14754 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">我的签约信息</span>
-                <span class="method-start">8753 ms</span>
+                <span class="method-start">14947 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">报名详情</span>
-                <span class="method-start">9022 ms</span>
+                <span class="method-start">15246 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">9249 ms</span>
+                <span class="method-start">15426 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.TestWnsService</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">9253 ms</span>
+                <span class="method-start">15430 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">Merchant合作商户</span>
-                <span class="method-start">9254 ms</span>
+                <span class="method-start">15430 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getcontent</span>
-                <span class="method-start">9634 ms</span>
+                <span class="method-start">15646 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getidcardinfo</span>
-                <span class="method-start">9809 ms</span>
+                <span class="method-start">15834 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getmobiles</span>
-                <span class="method-start">10092 ms</span>
+                <span class="method-start">16037 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getnotsettleinfo</span>
-                <span class="method-start">10371 ms</span>
+                <span class="method-start">16305 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getsettlementscount</span>
-                <span class="method-start">10554 ms</span>
+                <span class="method-start">16514 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">我的签约wns</span>
-                <span class="method-start">10812 ms</span>
+                <span class="method-start">16783 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">打款失败订单</span>
-                <span class="method-start">11087 ms</span>
+                <span class="method-start">16975 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">批量结算列表</span>
-                <span class="method-start">11274 ms</span>
+                <span class="method-start">17147 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">服务号ssubscribewxservice</span>
-                <span class="method-start">11561 ms</span>
+                <span class="method-start">17366 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">结算收入</span>
-                <span class="method-start">11731 ms</span>
+                <span class="method-start">17586 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">获取个人信息</span>
-                <span class="method-start">11913 ms</span>
+                <span class="method-start">17793 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">12209 ms</span>
+                <span class="method-start">18867 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

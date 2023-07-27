@@ -1,0 +1,4379 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='gbk' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+		<link href='http://extentreports.com/resx/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>C-api-AutoTest测试报告</title>
+
+	<style type='text/css'>
+			.node.level-1  ul{ display:none;} .node.level-1.active ul{display:block;}
+	</style>
+</head>
+
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>C-api-AutoTest测试报告</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Jul 4, 2023 06:12:35 PM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>3.1.5</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>C-api-Master-AutoTest</a></li>
+					<li><a href='#'>TestKwwGKService</a></li>
+					<li><a href='#'>TestKwwWzService</a></li>
+					<li><a href='#'>TestKwwXCXService</a></li>
+					<li><a href='#'>TestKwwCYService</a></li>
+					<li><a href='#'>TestKwwNRService</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>91</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>91</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>C-api-Master-AutoTest : TestKwwGKService</span>
+						<span class='test-time'>Jul 4, 2023 06:12:35 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 4, 2023 06:12:35 PM</span>
+	<span class='label end-time'>Jul 4, 2023 06:12:47 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+913ms</span>
+</div>
+	<div class='test-desc'>Pass: 41 ; Fail: 0 ; Skip: 0 ; </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>C-api-Master-AutoTest</span>
+				<span class='category label white-text'>TestKwwGKService</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='2'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>LoginKwauthLogin</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 25s+409ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='3'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>写文章入口isRealnameAuth</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 24s+411ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='4'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>私密文章发布apiV2Articles</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 24s+214ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='5'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>公开文章发布articles</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 23s+567ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='6'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>线上中心项目v1WeappManagerApplylist</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 22s+912ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='7'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>开问线上中心登录项目v1PersonsInformationbasic</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 22s+663ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='8'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>线上中心文章listArticlePublicSearch</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 22s+442ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='9'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>在线中心创建文章v1WeappManagerArticles</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 22s+171ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='10'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>在线中心文章编辑页v1ArticlesEdit</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 21s+712ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='11'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>线上中心活动v1WeappManagerActivitylist</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 21s+502ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='12'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>线上中心活动v1CommonsJudgesSensitivewords</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 21s+275ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='13'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>在线中心云协作v1WeappManagerProjectlsit</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 21s+64ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='14'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>在线中心圈子v1WeappManagerCirclelsit</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 20s+850ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='15'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>在线中心创建圈子apiV1circle</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 20s+634ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='16'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>圈子移出coManagerunbindAuthContent</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 20s+218ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='17'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>表单v1WeappBlongSurveylsit</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 19s+951ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='18'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>行业分类tpyeV1SurveyTemplateClass</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 19s+719ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='19'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>表单模板v1SurveyTemplateList</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 19s+492ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='20'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>创建空白自定义v1SurveyCreateBlank</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 19s+287ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='21'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>自动定义控件v1SurveyUpdate</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 19s+11ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='22'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>自定义表单添加控件v1SurveyQuestion</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 18s+301ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='23'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>自定义表单发布v1SurveyPublish</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 17s+925ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='24'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>表单删除apiV1SurveyDelete</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 17s+739ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='25'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>线上中心表单已授权v1WeappAuthedSurveytabList</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 17s+540ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='26'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>创建商品v1WeappManagerMallgoods</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 17s+332ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='27'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>商品下架v1WeappManagerMallisOnSale</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 17s+60ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='28'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>删除商品v1WeappManagerMalldelete</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 16s+857ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='29'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>商品操作日志mallGoodsLogspageList</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 16s+656ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='30'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>在线中心文集v1WeappManagerPageList</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 16s+423ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='31'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>创建文集v1WeappManagerColumnInfo</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 16s+205ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='32'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>文集详情v1WeappManagerColumnInfodetail</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 15s+985ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='33'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>文集下架v1WeappManagerisOnSale</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 15s+797ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='34'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>文集编辑PUTcolumnInfo</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 15s+600ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='35'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>删除文集v1WeappManagerdelete</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 15s+389ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='36'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>相册list</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 15s+173ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='37'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>创建相册albumInfo</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 14s+975ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='38'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>删除相册delete</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 14s+761ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='39'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>专栏v1WxThirdPartyWeappFirstClasspageList</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 14s+580ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='40'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>专栏模板templateList</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 14s+352ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='41'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>专栏空白创建v1WxThirdPartyWeappclass</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 14s+82ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='42'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>删除专栏v1WxThirdPartyWeappdelete</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 13s+765ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwGKService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='43'>
+					<div class='test-heading'>
+						<span class='test-name'>C-api-Master-AutoTest : TestKwwWzService</span>
+						<span class='test-time'>Jul 4, 2023 06:12:47 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 4, 2023 06:12:47 PM</span>
+	<span class='label end-time'>Jul 4, 2023 06:12:52 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+42ms</span>
+</div>
+	<div class='test-desc'>Pass: 22 ; Fail: 0 ; Skip: 0 ; </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>C-api-Master-AutoTest</span>
+				<span class='category label white-text'>TestKwwWzService</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='44'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>getToken</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 13s+559ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwWzService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='45'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>applylistToGetappid</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 13s+301ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwWzService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='46'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>首页设计homeClassidGetDatasID</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 13s+107ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwWzService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='47'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>classLayoutTypePut</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 12s+909ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwWzService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='48'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>classNavStyle</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 12s+705ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwWzService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='49'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>classSearchBarOpen</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 12s+531ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwWzService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='50'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>classNavLayoutType</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 12s+329ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwWzService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='51'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>NewDesignerAllData</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 12s+127ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwWzService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='52'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>NavLayoutType</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 11s+843ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwWzService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='53'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>headerNavGetId</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 11s+655ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwWzService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='54'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>footerCategor</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 11s+407ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwWzService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='55'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>headerNav</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 11s+192ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwWzService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='56'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>模板库homeClassid</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 10s+970ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwWzService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='57'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>模板templateStandardList</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 10s+802ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwWzService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='58'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>模板使用emplateStandard</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 10s+613ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwWzService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='59'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>userTypeList</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 10s+375ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwWzService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='60'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>noticeUnreadNum</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 10s+172ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwWzService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='61'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>weappLeftMenuData</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 9s+983ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwWzService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='62'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>skinList</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 9s+771ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwWzService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='63'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>weappSetSkin</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 9s+391ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwWzService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='64'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>手机网站详情websiteAppidDetail</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 9s+143ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwWzService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='65'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>手机网站详情保存apiV1WebsiteNicknameAndImg</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 8s+924ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwWzService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='66'>
+					<div class='test-heading'>
+						<span class='test-name'>C-api-Master-AutoTest : TestKwwXCXService</span>
+						<span class='test-time'>Jul 4, 2023 06:12:52 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 4, 2023 06:12:52 PM</span>
+	<span class='label end-time'>Jul 4, 2023 06:12:55 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+558ms</span>
+</div>
+	<div class='test-desc'>Pass: 9 ; Fail: 0 ; Skip: 0 ; </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>C-api-Master-AutoTest</span>
+				<span class='category label white-text'>TestKwwXCXService</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='67'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>getToken</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 8s+537ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwXCXService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='68'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>applylistToGetappid</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 8s+229ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwXCXService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='69'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>apiV1WxThirdPartyWeappGetFailPop</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 8s+16ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwXCXService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='70'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>apiV1WxThirdPartyHomeClassid</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 7s+763ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwXCXService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='71'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Getv1WeappApplyFooterCategory</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 7s+570ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwXCXService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='72'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>v1WeappManagerHeaderNav</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 7s+337ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwXCXService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='73'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Postv1WeappApplyFooterCategory</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 7s+130ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwXCXService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='74'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>v1WxThirdPartyHomeClassidAppType2</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 6s+870ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwXCXService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='75'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>小程序详情v1WxThirdPartyWeappAppidDetail</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 6s+602ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwXCXService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='76'>
+					<div class='test-heading'>
+						<span class='test-name'>C-api-Master-AutoTest : TestKwwCYService</span>
+						<span class='test-time'>Jul 4, 2023 06:12:55 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 4, 2023 06:12:55 PM</span>
+	<span class='label end-time'>Jul 4, 2023 06:12:57 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+848ms</span>
+</div>
+	<div class='test-desc'>Pass: 7 ; Fail: 0 ; Skip: 0 ; </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>C-api-Master-AutoTest</span>
+				<span class='category label white-text'>TestKwwCYService</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='77'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>getToken</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 5s+977ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwCYService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='78'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>applylistToGetappid</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 5s+495ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwCYService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='79'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>v1WeappManagerApplyContentLimit</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 5s+299ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwCYService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='80'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>邀请v1WeappInviteMember</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 5s+98ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwCYService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='81'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>v1MobileWeappUserSearch</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 4s+830ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwCYService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='82'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>权限变更v1WeappManagerUserUpdateRole</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 4s+647ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwCYService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='83'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>删除成员v1WeappManagerDeleteUser</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 4s+409ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwCYService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='84'>
+					<div class='test-heading'>
+						<span class='test-name'>C-api-Master-AutoTest : TestKwwNRService</span>
+						<span class='test-time'>Jul 4, 2023 06:12:57 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 4, 2023 06:12:57 PM</span>
+	<span class='label end-time'>Jul 4, 2023 06:13:01 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+909ms</span>
+</div>
+	<div class='test-desc'>Pass: 12 ; Fail: 0 ; Skip: 0 ; </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>C-api-Master-AutoTest</span>
+				<span class='category label white-text'>TestKwwNRService</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='85'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>getToken</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 4s+139ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwNRService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='86'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>applylistToGetappid</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 3s+810ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwNRService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='87'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>资料中心v1WeappMangerFileTotalSize</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 3s+558ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwNRService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='88'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>获取uuidWeappUploadToken</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 3s+260ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwNRService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='89'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>上传图片v1WeappManagerFile</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 3s+47ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwNRService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='90'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>获取图片idv1WeappManagerFileList</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 2s+778ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwNRService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='91'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>图片详情v1WeappManagerFileTPid</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 2s+596ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwNRService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='92'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>图片删除v1WeappManagerFileDelete</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 1s+877ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwNRService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='93'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>获取视频uuidV1WeappManagerFileUploadToken</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 1s+409ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwNRService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='94'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>上传视频v1WeappManagerFile</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 1s+199ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwNRService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='95'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>视频Listidv1WeappManagerFileLis</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+957ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwNRService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='96'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>删除视频v1WeappManagerFile</h5>
+						<span class="node-time label grey lighten-1 white-text">Jul 4, 2023 06:13:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+757ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>C-api-Master-AutoTest</span>
+								<span class='category label white-text'>TestKwwNRService</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:13:01?PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h3>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>C-api-Master-AutoTest</span>
+						<span class='category-status right'>
+							<span class='label pass'>96</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 96</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 4, 2023 06:12:35 PM</td>
+										<td class='linked' test-id='1'>TestKwwGKService</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:35 PM</td>
+										<td class='linked' test-id='2'>TestKwwGKService.LoginKwauthLogin</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:36 PM</td>
+										<td class='linked' test-id='3'>TestKwwGKService.写文章入口isRealnameAuth</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:37 PM</td>
+										<td class='linked' test-id='4'>TestKwwGKService.私密文章发布apiV2Articles</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:37 PM</td>
+										<td class='linked' test-id='5'>TestKwwGKService.公开文章发布articles</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:38 PM</td>
+										<td class='linked' test-id='6'>TestKwwGKService.线上中心项目v1WeappManagerApplylist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:38 PM</td>
+										<td class='linked' test-id='7'>TestKwwGKService.开问线上中心登录项目v1PersonsInformationbasic</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:38 PM</td>
+										<td class='linked' test-id='8'>TestKwwGKService.线上中心文章listArticlePublicSearch</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:39 PM</td>
+										<td class='linked' test-id='9'>TestKwwGKService.在线中心创建文章v1WeappManagerArticles</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:39 PM</td>
+										<td class='linked' test-id='10'>TestKwwGKService.在线中心文章编辑页v1ArticlesEdit</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:39 PM</td>
+										<td class='linked' test-id='11'>TestKwwGKService.线上中心活动v1WeappManagerActivitylist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:40 PM</td>
+										<td class='linked' test-id='12'>TestKwwGKService.线上中心活动v1CommonsJudgesSensitivewords</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:40 PM</td>
+										<td class='linked' test-id='13'>TestKwwGKService.在线中心云协作v1WeappManagerProjectlsit</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:40 PM</td>
+										<td class='linked' test-id='14'>TestKwwGKService.在线中心圈子v1WeappManagerCirclelsit</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:40 PM</td>
+										<td class='linked' test-id='15'>TestKwwGKService.在线中心创建圈子apiV1circle</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:41 PM</td>
+										<td class='linked' test-id='16'>TestKwwGKService.圈子移出coManagerunbindAuthContent</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:41 PM</td>
+										<td class='linked' test-id='17'>TestKwwGKService.表单v1WeappBlongSurveylsit</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:41 PM</td>
+										<td class='linked' test-id='18'>TestKwwGKService.行业分类tpyeV1SurveyTemplateClass</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:41 PM</td>
+										<td class='linked' test-id='19'>TestKwwGKService.表单模板v1SurveyTemplateList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:42 PM</td>
+										<td class='linked' test-id='20'>TestKwwGKService.创建空白自定义v1SurveyCreateBlank</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:42 PM</td>
+										<td class='linked' test-id='21'>TestKwwGKService.自动定义控件v1SurveyUpdate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:43 PM</td>
+										<td class='linked' test-id='22'>TestKwwGKService.自定义表单添加控件v1SurveyQuestion</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:43 PM</td>
+										<td class='linked' test-id='23'>TestKwwGKService.自定义表单发布v1SurveyPublish</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:43 PM</td>
+										<td class='linked' test-id='24'>TestKwwGKService.表单删除apiV1SurveyDelete</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:43 PM</td>
+										<td class='linked' test-id='25'>TestKwwGKService.线上中心表单已授权v1WeappAuthedSurveytabList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:44 PM</td>
+										<td class='linked' test-id='26'>TestKwwGKService.创建商品v1WeappManagerMallgoods</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:44 PM</td>
+										<td class='linked' test-id='27'>TestKwwGKService.商品下架v1WeappManagerMallisOnSale</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:44 PM</td>
+										<td class='linked' test-id='28'>TestKwwGKService.删除商品v1WeappManagerMalldelete</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:44 PM</td>
+										<td class='linked' test-id='29'>TestKwwGKService.商品操作日志mallGoodsLogspageList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:44 PM</td>
+										<td class='linked' test-id='30'>TestKwwGKService.在线中心文集v1WeappManagerPageList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:45 PM</td>
+										<td class='linked' test-id='31'>TestKwwGKService.创建文集v1WeappManagerColumnInfo</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:45 PM</td>
+										<td class='linked' test-id='32'>TestKwwGKService.文集详情v1WeappManagerColumnInfodetail</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:45 PM</td>
+										<td class='linked' test-id='33'>TestKwwGKService.文集下架v1WeappManagerisOnSale</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:45 PM</td>
+										<td class='linked' test-id='34'>TestKwwGKService.文集编辑PUTcolumnInfo</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:45 PM</td>
+										<td class='linked' test-id='35'>TestKwwGKService.删除文集v1WeappManagerdelete</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:46 PM</td>
+										<td class='linked' test-id='36'>TestKwwGKService.相册list</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:46 PM</td>
+										<td class='linked' test-id='37'>TestKwwGKService.创建相册albumInfo</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:46 PM</td>
+										<td class='linked' test-id='38'>TestKwwGKService.删除相册delete</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:46 PM</td>
+										<td class='linked' test-id='39'>TestKwwGKService.专栏v1WxThirdPartyWeappFirstClasspageList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:47 PM</td>
+										<td class='linked' test-id='40'>TestKwwGKService.专栏模板templateList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:47 PM</td>
+										<td class='linked' test-id='41'>TestKwwGKService.专栏空白创建v1WxThirdPartyWeappclass</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:47 PM</td>
+										<td class='linked' test-id='42'>TestKwwGKService.删除专栏v1WxThirdPartyWeappdelete</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:47 PM</td>
+										<td class='linked' test-id='43'>TestKwwWzService</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:47 PM</td>
+										<td class='linked' test-id='44'>TestKwwWzService.getToken</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:48 PM</td>
+										<td class='linked' test-id='45'>TestKwwWzService.applylistToGetappid</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:48 PM</td>
+										<td class='linked' test-id='46'>TestKwwWzService.首页设计homeClassidGetDatasID</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:48 PM</td>
+										<td class='linked' test-id='47'>TestKwwWzService.classLayoutTypePut</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:48 PM</td>
+										<td class='linked' test-id='48'>TestKwwWzService.classNavStyle</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:48 PM</td>
+										<td class='linked' test-id='49'>TestKwwWzService.classSearchBarOpen</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:49 PM</td>
+										<td class='linked' test-id='50'>TestKwwWzService.classNavLayoutType</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:49 PM</td>
+										<td class='linked' test-id='51'>TestKwwWzService.NewDesignerAllData</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:49 PM</td>
+										<td class='linked' test-id='52'>TestKwwWzService.NavLayoutType</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:49 PM</td>
+										<td class='linked' test-id='53'>TestKwwWzService.headerNavGetId</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:49 PM</td>
+										<td class='linked' test-id='54'>TestKwwWzService.footerCategor</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:50 PM</td>
+										<td class='linked' test-id='55'>TestKwwWzService.headerNav</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:50 PM</td>
+										<td class='linked' test-id='56'>TestKwwWzService.模板库homeClassid</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:50 PM</td>
+										<td class='linked' test-id='57'>TestKwwWzService.模板templateStandardList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:50 PM</td>
+										<td class='linked' test-id='58'>TestKwwWzService.模板使用emplateStandard</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:51 PM</td>
+										<td class='linked' test-id='59'>TestKwwWzService.userTypeList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:51 PM</td>
+										<td class='linked' test-id='60'>TestKwwWzService.noticeUnreadNum</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:51 PM</td>
+										<td class='linked' test-id='61'>TestKwwWzService.weappLeftMenuData</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:51 PM</td>
+										<td class='linked' test-id='62'>TestKwwWzService.skinList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:51 PM</td>
+										<td class='linked' test-id='63'>TestKwwWzService.weappSetSkin</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:52 PM</td>
+										<td class='linked' test-id='64'>TestKwwWzService.手机网站详情websiteAppidDetail</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:52 PM</td>
+										<td class='linked' test-id='65'>TestKwwWzService.手机网站详情保存apiV1WebsiteNicknameAndImg</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:52 PM</td>
+										<td class='linked' test-id='66'>TestKwwXCXService</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:52 PM</td>
+										<td class='linked' test-id='67'>TestKwwXCXService.getToken</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:53 PM</td>
+										<td class='linked' test-id='68'>TestKwwXCXService.applylistToGetappid</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:53 PM</td>
+										<td class='linked' test-id='69'>TestKwwXCXService.apiV1WxThirdPartyWeappGetFailPop</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:53 PM</td>
+										<td class='linked' test-id='70'>TestKwwXCXService.apiV1WxThirdPartyHomeClassid</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:53 PM</td>
+										<td class='linked' test-id='71'>TestKwwXCXService.Getv1WeappApplyFooterCategory</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:54 PM</td>
+										<td class='linked' test-id='72'>TestKwwXCXService.v1WeappManagerHeaderNav</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:54 PM</td>
+										<td class='linked' test-id='73'>TestKwwXCXService.Postv1WeappApplyFooterCategory</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:54 PM</td>
+										<td class='linked' test-id='74'>TestKwwXCXService.v1WxThirdPartyHomeClassidAppType2</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:54 PM</td>
+										<td class='linked' test-id='75'>TestKwwXCXService.小程序详情v1WxThirdPartyWeappAppidDetail</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:55 PM</td>
+										<td class='linked' test-id='76'>TestKwwCYService</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:55 PM</td>
+										<td class='linked' test-id='77'>TestKwwCYService.getToken</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:55 PM</td>
+										<td class='linked' test-id='78'>TestKwwCYService.applylistToGetappid</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:56 PM</td>
+										<td class='linked' test-id='79'>TestKwwCYService.v1WeappManagerApplyContentLimit</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:56 PM</td>
+										<td class='linked' test-id='80'>TestKwwCYService.邀请v1WeappInviteMember</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:56 PM</td>
+										<td class='linked' test-id='81'>TestKwwCYService.v1MobileWeappUserSearch</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:56 PM</td>
+										<td class='linked' test-id='82'>TestKwwCYService.权限变更v1WeappManagerUserUpdateRole</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:56 PM</td>
+										<td class='linked' test-id='83'>TestKwwCYService.删除成员v1WeappManagerDeleteUser</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:57 PM</td>
+										<td class='linked' test-id='84'>TestKwwNRService</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:57 PM</td>
+										<td class='linked' test-id='85'>TestKwwNRService.getToken</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:57 PM</td>
+										<td class='linked' test-id='86'>TestKwwNRService.applylistToGetappid</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:57 PM</td>
+										<td class='linked' test-id='87'>TestKwwNRService.资料中心v1WeappMangerFileTotalSize</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:58 PM</td>
+										<td class='linked' test-id='88'>TestKwwNRService.获取uuidWeappUploadToken</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:58 PM</td>
+										<td class='linked' test-id='89'>TestKwwNRService.上传图片v1WeappManagerFile</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:58 PM</td>
+										<td class='linked' test-id='90'>TestKwwNRService.获取图片idv1WeappManagerFileList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:58 PM</td>
+										<td class='linked' test-id='91'>TestKwwNRService.图片详情v1WeappManagerFileTPid</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:59 PM</td>
+										<td class='linked' test-id='92'>TestKwwNRService.图片删除v1WeappManagerFileDelete</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:59 PM</td>
+										<td class='linked' test-id='93'>TestKwwNRService.获取视频uuidV1WeappManagerFileUploadToken</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:13:00 PM</td>
+										<td class='linked' test-id='94'>TestKwwNRService.上传视频v1WeappManagerFile</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:13:00 PM</td>
+										<td class='linked' test-id='95'>TestKwwNRService.视频Listidv1WeappManagerFileLis</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:13:00 PM</td>
+										<td class='linked' test-id='96'>TestKwwNRService.删除视频v1WeappManagerFile</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>TestKwwGKService</span>
+						<span class='category-status right'>
+							<span class='label pass'>42</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 42</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 4, 2023 06:12:35 PM</td>
+										<td class='linked' test-id='1'>TestKwwGKService</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:35 PM</td>
+										<td class='linked' test-id='2'>TestKwwGKService.LoginKwauthLogin</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:36 PM</td>
+										<td class='linked' test-id='3'>TestKwwGKService.写文章入口isRealnameAuth</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:37 PM</td>
+										<td class='linked' test-id='4'>TestKwwGKService.私密文章发布apiV2Articles</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:37 PM</td>
+										<td class='linked' test-id='5'>TestKwwGKService.公开文章发布articles</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:38 PM</td>
+										<td class='linked' test-id='6'>TestKwwGKService.线上中心项目v1WeappManagerApplylist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:38 PM</td>
+										<td class='linked' test-id='7'>TestKwwGKService.开问线上中心登录项目v1PersonsInformationbasic</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:38 PM</td>
+										<td class='linked' test-id='8'>TestKwwGKService.线上中心文章listArticlePublicSearch</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:39 PM</td>
+										<td class='linked' test-id='9'>TestKwwGKService.在线中心创建文章v1WeappManagerArticles</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:39 PM</td>
+										<td class='linked' test-id='10'>TestKwwGKService.在线中心文章编辑页v1ArticlesEdit</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:39 PM</td>
+										<td class='linked' test-id='11'>TestKwwGKService.线上中心活动v1WeappManagerActivitylist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:40 PM</td>
+										<td class='linked' test-id='12'>TestKwwGKService.线上中心活动v1CommonsJudgesSensitivewords</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:40 PM</td>
+										<td class='linked' test-id='13'>TestKwwGKService.在线中心云协作v1WeappManagerProjectlsit</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:40 PM</td>
+										<td class='linked' test-id='14'>TestKwwGKService.在线中心圈子v1WeappManagerCirclelsit</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:40 PM</td>
+										<td class='linked' test-id='15'>TestKwwGKService.在线中心创建圈子apiV1circle</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:41 PM</td>
+										<td class='linked' test-id='16'>TestKwwGKService.圈子移出coManagerunbindAuthContent</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:41 PM</td>
+										<td class='linked' test-id='17'>TestKwwGKService.表单v1WeappBlongSurveylsit</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:41 PM</td>
+										<td class='linked' test-id='18'>TestKwwGKService.行业分类tpyeV1SurveyTemplateClass</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:41 PM</td>
+										<td class='linked' test-id='19'>TestKwwGKService.表单模板v1SurveyTemplateList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:42 PM</td>
+										<td class='linked' test-id='20'>TestKwwGKService.创建空白自定义v1SurveyCreateBlank</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:42 PM</td>
+										<td class='linked' test-id='21'>TestKwwGKService.自动定义控件v1SurveyUpdate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:43 PM</td>
+										<td class='linked' test-id='22'>TestKwwGKService.自定义表单添加控件v1SurveyQuestion</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:43 PM</td>
+										<td class='linked' test-id='23'>TestKwwGKService.自定义表单发布v1SurveyPublish</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:43 PM</td>
+										<td class='linked' test-id='24'>TestKwwGKService.表单删除apiV1SurveyDelete</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:43 PM</td>
+										<td class='linked' test-id='25'>TestKwwGKService.线上中心表单已授权v1WeappAuthedSurveytabList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:44 PM</td>
+										<td class='linked' test-id='26'>TestKwwGKService.创建商品v1WeappManagerMallgoods</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:44 PM</td>
+										<td class='linked' test-id='27'>TestKwwGKService.商品下架v1WeappManagerMallisOnSale</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:44 PM</td>
+										<td class='linked' test-id='28'>TestKwwGKService.删除商品v1WeappManagerMalldelete</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:44 PM</td>
+										<td class='linked' test-id='29'>TestKwwGKService.商品操作日志mallGoodsLogspageList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:44 PM</td>
+										<td class='linked' test-id='30'>TestKwwGKService.在线中心文集v1WeappManagerPageList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:45 PM</td>
+										<td class='linked' test-id='31'>TestKwwGKService.创建文集v1WeappManagerColumnInfo</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:45 PM</td>
+										<td class='linked' test-id='32'>TestKwwGKService.文集详情v1WeappManagerColumnInfodetail</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:45 PM</td>
+										<td class='linked' test-id='33'>TestKwwGKService.文集下架v1WeappManagerisOnSale</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:45 PM</td>
+										<td class='linked' test-id='34'>TestKwwGKService.文集编辑PUTcolumnInfo</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:45 PM</td>
+										<td class='linked' test-id='35'>TestKwwGKService.删除文集v1WeappManagerdelete</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:46 PM</td>
+										<td class='linked' test-id='36'>TestKwwGKService.相册list</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:46 PM</td>
+										<td class='linked' test-id='37'>TestKwwGKService.创建相册albumInfo</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:46 PM</td>
+										<td class='linked' test-id='38'>TestKwwGKService.删除相册delete</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:46 PM</td>
+										<td class='linked' test-id='39'>TestKwwGKService.专栏v1WxThirdPartyWeappFirstClasspageList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:47 PM</td>
+										<td class='linked' test-id='40'>TestKwwGKService.专栏模板templateList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:47 PM</td>
+										<td class='linked' test-id='41'>TestKwwGKService.专栏空白创建v1WxThirdPartyWeappclass</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:47 PM</td>
+										<td class='linked' test-id='42'>TestKwwGKService.删除专栏v1WxThirdPartyWeappdelete</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>TestKwwWzService</span>
+						<span class='category-status right'>
+							<span class='label pass'>23</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 23</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 4, 2023 06:12:47 PM</td>
+										<td class='linked' test-id='43'>TestKwwWzService</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:47 PM</td>
+										<td class='linked' test-id='44'>TestKwwWzService.getToken</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:48 PM</td>
+										<td class='linked' test-id='45'>TestKwwWzService.applylistToGetappid</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:48 PM</td>
+										<td class='linked' test-id='46'>TestKwwWzService.首页设计homeClassidGetDatasID</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:48 PM</td>
+										<td class='linked' test-id='47'>TestKwwWzService.classLayoutTypePut</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:48 PM</td>
+										<td class='linked' test-id='48'>TestKwwWzService.classNavStyle</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:48 PM</td>
+										<td class='linked' test-id='49'>TestKwwWzService.classSearchBarOpen</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:49 PM</td>
+										<td class='linked' test-id='50'>TestKwwWzService.classNavLayoutType</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:49 PM</td>
+										<td class='linked' test-id='51'>TestKwwWzService.NewDesignerAllData</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:49 PM</td>
+										<td class='linked' test-id='52'>TestKwwWzService.NavLayoutType</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:49 PM</td>
+										<td class='linked' test-id='53'>TestKwwWzService.headerNavGetId</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:49 PM</td>
+										<td class='linked' test-id='54'>TestKwwWzService.footerCategor</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:50 PM</td>
+										<td class='linked' test-id='55'>TestKwwWzService.headerNav</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:50 PM</td>
+										<td class='linked' test-id='56'>TestKwwWzService.模板库homeClassid</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:50 PM</td>
+										<td class='linked' test-id='57'>TestKwwWzService.模板templateStandardList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:50 PM</td>
+										<td class='linked' test-id='58'>TestKwwWzService.模板使用emplateStandard</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:51 PM</td>
+										<td class='linked' test-id='59'>TestKwwWzService.userTypeList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:51 PM</td>
+										<td class='linked' test-id='60'>TestKwwWzService.noticeUnreadNum</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:51 PM</td>
+										<td class='linked' test-id='61'>TestKwwWzService.weappLeftMenuData</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:51 PM</td>
+										<td class='linked' test-id='62'>TestKwwWzService.skinList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:51 PM</td>
+										<td class='linked' test-id='63'>TestKwwWzService.weappSetSkin</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:52 PM</td>
+										<td class='linked' test-id='64'>TestKwwWzService.手机网站详情websiteAppidDetail</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:52 PM</td>
+										<td class='linked' test-id='65'>TestKwwWzService.手机网站详情保存apiV1WebsiteNicknameAndImg</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>TestKwwXCXService</span>
+						<span class='category-status right'>
+							<span class='label pass'>10</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 10</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 4, 2023 06:12:52 PM</td>
+										<td class='linked' test-id='66'>TestKwwXCXService</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:52 PM</td>
+										<td class='linked' test-id='67'>TestKwwXCXService.getToken</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:53 PM</td>
+										<td class='linked' test-id='68'>TestKwwXCXService.applylistToGetappid</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:53 PM</td>
+										<td class='linked' test-id='69'>TestKwwXCXService.apiV1WxThirdPartyWeappGetFailPop</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:53 PM</td>
+										<td class='linked' test-id='70'>TestKwwXCXService.apiV1WxThirdPartyHomeClassid</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:53 PM</td>
+										<td class='linked' test-id='71'>TestKwwXCXService.Getv1WeappApplyFooterCategory</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:54 PM</td>
+										<td class='linked' test-id='72'>TestKwwXCXService.v1WeappManagerHeaderNav</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:54 PM</td>
+										<td class='linked' test-id='73'>TestKwwXCXService.Postv1WeappApplyFooterCategory</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:54 PM</td>
+										<td class='linked' test-id='74'>TestKwwXCXService.v1WxThirdPartyHomeClassidAppType2</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:54 PM</td>
+										<td class='linked' test-id='75'>TestKwwXCXService.小程序详情v1WxThirdPartyWeappAppidDetail</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>TestKwwCYService</span>
+						<span class='category-status right'>
+							<span class='label pass'>8</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 8</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 4, 2023 06:12:55 PM</td>
+										<td class='linked' test-id='76'>TestKwwCYService</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:55 PM</td>
+										<td class='linked' test-id='77'>TestKwwCYService.getToken</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:55 PM</td>
+										<td class='linked' test-id='78'>TestKwwCYService.applylistToGetappid</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:56 PM</td>
+										<td class='linked' test-id='79'>TestKwwCYService.v1WeappManagerApplyContentLimit</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:56 PM</td>
+										<td class='linked' test-id='80'>TestKwwCYService.邀请v1WeappInviteMember</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:56 PM</td>
+										<td class='linked' test-id='81'>TestKwwCYService.v1MobileWeappUserSearch</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:56 PM</td>
+										<td class='linked' test-id='82'>TestKwwCYService.权限变更v1WeappManagerUserUpdateRole</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:56 PM</td>
+										<td class='linked' test-id='83'>TestKwwCYService.删除成员v1WeappManagerDeleteUser</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>TestKwwNRService</span>
+						<span class='category-status right'>
+							<span class='label pass'>13</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 13</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 4, 2023 06:12:57 PM</td>
+										<td class='linked' test-id='84'>TestKwwNRService</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:57 PM</td>
+										<td class='linked' test-id='85'>TestKwwNRService.getToken</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:57 PM</td>
+										<td class='linked' test-id='86'>TestKwwNRService.applylistToGetappid</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:57 PM</td>
+										<td class='linked' test-id='87'>TestKwwNRService.资料中心v1WeappMangerFileTotalSize</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:58 PM</td>
+										<td class='linked' test-id='88'>TestKwwNRService.获取uuidWeappUploadToken</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:58 PM</td>
+										<td class='linked' test-id='89'>TestKwwNRService.上传图片v1WeappManagerFile</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:58 PM</td>
+										<td class='linked' test-id='90'>TestKwwNRService.获取图片idv1WeappManagerFileList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:58 PM</td>
+										<td class='linked' test-id='91'>TestKwwNRService.图片详情v1WeappManagerFileTPid</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:59 PM</td>
+										<td class='linked' test-id='92'>TestKwwNRService.图片删除v1WeappManagerFileDelete</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:12:59 PM</td>
+										<td class='linked' test-id='93'>TestKwwNRService.获取视频uuidV1WeappManagerFileUploadToken</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:13:00 PM</td>
+										<td class='linked' test-id='94'>TestKwwNRService.上传视频v1WeappManagerFile</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:13:00 PM</td>
+										<td class='linked' test-id='95'>TestKwwNRService.视频Listidv1WeappManagerFileLis</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2023 06:13:00 PM</td>
+										<td class='linked' test-id='96'>TestKwwNRService.删除视频v1WeappManagerFile</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view -->
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>91</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>91</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Jul 4, 2023 06:12:35 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Jul 4, 2023 06:13:01 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 0m 25s+510ms</div>
+				</div>
+			</div>
+			<div class='col s6'>
+				<div class='card-panel dashboard-categories'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+							<th>Passed %</th>
+						</tr>
+						<tr>
+							<td>C-api-Master-AutoTest</td>
+							<td>96</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>TestKwwGKService</td>
+							<td>42</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>TestKwwWzService</td>
+							<td>23</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>TestKwwXCXService</td>
+							<td>10</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>TestKwwCYService</td>
+							<td>8</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>TestKwwNRService</td>
+							<td>13</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 91,
+				failParent: 0,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 0,
+				
+				passChild: 91,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				exceptionsChild: 0,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='http://extentreports.com/resx/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+ 		<script type='text/javascript'>
+ 		</script>
+	</body>
+	
+</html>

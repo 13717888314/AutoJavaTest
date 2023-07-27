@@ -20,7 +20,7 @@ public class HttpJzhPost {
         HttpPost httpPost = new HttpPost(uu);
         //添加请求头
         httpPost.addHeader("Content-Type","application/json;charset=UTF-8");
-        httpPost.addHeader("Authorization",aa);
+        httpPost.addHeader("X-Authorization","Bearer"+" "+aa);
         //封装请求参数，将map集合转换成json格式
         JSONObject jsonString = new JSONObject(map);
         //使用StringEntity转换成实体类型

@@ -1,21 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="C-api-Master-AutoTest">
-    <test name="GateWayService" >
+<suite name="KW-api-AutoTest">
+<!--    <test name="GateWayService" >-->
+<!--        <parameter name="ass" value="id"/>-->
+<!--        <classes>-->
+<!--            <class name="com.test.TestGateWayService" />-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="StaffingService" >-->
+<!--        <classes>-->
+<!--            <class name="com.test.TestStaffingService" />-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="WnsService" >-->
+<!--        <classes>-->
+<!--            <class name="com.test.TestWnsService" />-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+    <test name="TestKwwGKService" >
         <classes>
-            <class name="com.test.TestGateWayService" />
+            <class name="com.test.TestKwwGKService" />
         </classes>
     </test>
-    <test name="StaffingService" >
+    <test name="TestKwwWzService" >
         <classes>
-            <class name="com.test.TestStaffingService" />
+            <class name="com.test.TestKwwWzService" />
         </classes>
     </test>
-    <test name="WnsService" >
+    <test name="TestKwwXCXService" >
         <classes>
-            <class name="com.test.TestWnsService" />
+            <class name="com.test.TestKwwXCXService" />
         </classes>
     </test>
+    <test name="TestKwwCYService" >
+        <classes>
+            <class name="com.test.TestKwwCYService" />
+        </classes>
+    </test>
+    <test name="TestKwwNRService" >
+        <classes>
+            <class name="com.test.TestKwwNRService" />
+        </classes>
+    </test>
+    <test name="TestKwwYYService" >
+        <classes>
+            <class name="com.test.TestKwwYYService" />
+        </classes>
+    </test>
+    <test name="TestKwwJXService" >
+        <classes>
+            <class name="com.test.TestKwwJXService" />
+        </classes>
+    </test>
+
+
+<!--    <test name="TestSuitNew" >-->
+<!--&lt;!&ndash;            <parameter name="a1" value="{ass}}"/>&ndash;&gt;-->
+<!--            <classes>-->
+<!--                <class name="com.test.TestSuitNew" />-->
+<!--            </classes>-->
+<!--        </test>-->
+
     <listeners>
         <listener class-name="com.test.MyListener"></listener>
     </listeners>

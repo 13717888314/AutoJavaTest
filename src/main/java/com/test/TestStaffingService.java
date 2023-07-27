@@ -47,7 +47,6 @@ public class TestStaffingService {
         String aa = Au;
         JSONObject result = httpjzhget.JzhGet(uu,aa);
         Assert.assertEquals(result.get("ActionResult"),"1","成功");
-
     }
 
     @Test
@@ -156,11 +155,8 @@ public class TestStaffingService {
     }
 
 
-
-
     @AfterTest
     public void teardown(){
-
         System.out.println("用例执行完后执行");
     }
 }

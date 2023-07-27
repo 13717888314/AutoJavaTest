@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [C-api-Master-AutoTest]">
+  <listeners>
+    <listener class-name="com.test.MyListener"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="StaffingService(failed)">
+    <classes>
+      <class name="com.test.TestStaffingService">
+        <methods>
+          <include name="我的报名信息"/>
+          <include name="报名详情"/>
+          <include name="v531Getinfo"/>
+          <include name="个人信息"/>
+          <include name="setup"/>
+          <include name="任务详情"/>
+          <include name="合作详情已结束"/>
+          <include name="addbankcards"/>
+          <include name="我的签约信息"/>
+          <include name="teardown"/>
+          <include name="getbankcards"/>
+          <include name="gettaskfavorite"/>
+          <include name="任务列表"/>
+          <include name="issubscribewxservice服务号"/>
+          <include name="getpersonalsummaryInfo"/>
+        </methods>
+      </class> <!-- com.test.TestStaffingService -->
+    </classes>
+  </test> <!-- StaffingService(failed) -->
+  <test thread-count="5" verbose="0" name="WnsService(failed)">
+    <classes>
+      <class name="com.test.TestWnsService">
+        <methods>
+          <include name="我的签约wns"/>
+          <include name="getmobiles"/>
+          <include name="服务号ssubscribewxservice"/>
+          <include name="getnotsettleinfo"/>
+          <include name="getsettlementscount"/>
+          <include name="Merchant合作商户"/>
+          <include name="打款失败订单"/>
+          <include name="setup"/>
+          <include name="批量结算列表"/>
+          <include name="获取个人信息"/>
+          <include name="结算收入"/>
+          <include name="teardown"/>
+          <include name="getidcardinfo"/>
+        </methods>
+      </class> <!-- com.test.TestWnsService -->
+    </classes>
+  </test> <!-- WnsService(failed) -->
+</suite> <!-- Failed suite [C-api-Master-AutoTest] -->

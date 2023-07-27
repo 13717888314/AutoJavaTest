@@ -1,4 +1,5 @@
 package com.test;
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.utils.Sources;
 import org.apache.xmlbeans.impl.jam.JSourcePosition;
@@ -23,6 +24,7 @@ public class TestGateWayService {
     Map map = new HashMap();
     String bb = Sources.xz_master_base_url;
     String Au = Sources.xz_master_Authorization;
+    public static String bss;
     @BeforeTest
     public void setup(){
         System.out.println("用例执行前执行");
@@ -57,6 +59,7 @@ public class TestGateWayService {
         Assert.assertEquals(result.get("ActionResult"),"1","成功");
 
     }
+
 
     @Test
     public  void  getinfo兑换详情() throws Exception{
@@ -129,6 +132,32 @@ public class TestGateWayService {
         JSONObject result = httpjzhget.JzhGet(uu,aa);
         Assert.assertEquals(result.get("ActionResult"),"1","成功");
     }
+
+    public String getBss() throws IOException{
+        String uu= bb+"/ReceiverAddress/getallreceiveraddress";
+        String aa = Au;
+        JSONObject result = httpjzhget.JzhGet(uu,aa);
+        Assert.assertEquals(result.get("ActionResult"),"1","成功");
+        bss = JSON.toJSONString(result.getJSONArray("Data").getJSONObject(0).get("id"));
+        System.out.println("getBss接口中bss:"+bss);
+        return bss;
+    }
+
+    @Test
+    public void deletereceiveraddress() throws IOException {
+        //构造登录参数
+
+        System.out.println("deletereceiver接口中bss为："+getBss());
+        map.put("id",getBss());
+        System.out.println("deletereceiver接口中bss为："+map);
+        String uu = bb+"/ReceiverAddress/deletereceiveraddress";
+        String aa = Au;
+        JSONObject result = httpjzhpost.JzhPost(map,uu,aa);
+        Assert.assertEquals(result.get("ActionResult"),"1","成功");
+
+    }
+
+
 
     @Test
     public  void  getcontributiondeaillist() throws Exception{

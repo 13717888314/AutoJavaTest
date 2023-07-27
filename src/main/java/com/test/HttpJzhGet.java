@@ -17,14 +17,14 @@ public class HttpJzhGet {
     //POST登录方法
     public JSONObject JzhGet(String uu,String aa) throws IOException
     {
-
         //创建一个获取连接客户端的工具
         CloseableHttpClient httpClient = HttpClients.createDefault();
         //创建Post请求
         HttpGet httpGet = new HttpGet(uu);
         //添加请求头
         httpGet.addHeader("Content-Type","application/json;charset=UTF-8");
-        httpGet.addHeader("Authorization",aa);
+        httpGet.addHeader("Connection","keep-alive");
+        httpGet.addHeader("X-Authorization","Bearer"+" "+aa);
         //执行请求
         CloseableHttpResponse response =  httpClient.execute(httpGet);
         //获取响应的实体

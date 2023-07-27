@@ -21,9 +21,10 @@ public class MyListener implements IReporter {
     static String second = String.format("%tS", date);
     //生成的路径以及文件名
     private static final String OUTPUT_FOLDER = "test-output/";
-    private static final String OUTPUT_F2 = "C:\\Users\\zihan.jia\\.jenkins\\workspace\\MasterAutoTest-C-Api\\";
+    //private static final String OUTPUT_F2 = "C:\\Users\\zihan.jia\\.jenkins\\workspace\\MasterAutoTest-C-Api\\";
+    private static final String OUTPUT_F2 = "C:\\Users\\86137\\Desktop\\周报\\";
 //    private static final String FILE_NAME = "C-api-master-AutoTest"+form+hour+minute+second+".html";
-    private static final String FILE_NAME = "C-api-master-AutoTest"+".html";
+    private static final String FILE_NAME = "KW-api-AutoTest"+".html";
     private ExtentReports extent;
 
     public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
@@ -106,15 +107,15 @@ public class MyListener implements IReporter {
         if(!reportDir.exists()&& !reportDir .isDirectory()){
             reportDir.mkdir();
         }
-        ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(OUTPUT_F2 + FILE_NAME);
-        ExtentHtmlReporter htmlReporter2 = new ExtentHtmlReporter(OUTPUT_FOLDER + FILE_NAME);
+        ExtentHtmlReporter htmlReporter2 = new ExtentHtmlReporter(OUTPUT_F2 + FILE_NAME);
+        ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(OUTPUT_FOLDER + FILE_NAME);
 
         // 设置静态文件的DNS
         htmlReporter.config().setResourceCDN(ResourceCDN.EXTENTREPORTS);
         //怎么样解决cdn.rawgit.com访问不了的情况
         htmlReporter.config().setResourceCDN(ResourceCDN.EXTENTREPORTS);
-        htmlReporter.config().setDocumentTitle("C-api-master-AutoTest测试报告");
-        htmlReporter.config().setReportName("C-api-master-AutoTest测试报告");
+        htmlReporter.config().setDocumentTitle("KW-api-AutoTest测试报告");
+        htmlReporter.config().setReportName("KW-api-AutoTest测试报告");
         htmlReporter.config().setChartVisibilityOnOpen(true);
         htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
         htmlReporter.config().setTheme(Theme.STANDARD);
