@@ -1,103 +1,238 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="19.926" tests="40" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="56.713" tests="175" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="java.specification.version" value="1.8"/>
+    <property name="java.specification.version" value="11"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="GBK"/>
-    <property name="java.class.path" value="D:\AutoJavaTest\target\test-classes;D:\AutoJavaTest\target\classes;C:\Users\zihan.jia\.m2\repository\com\aventstack\klov-reporter\5.0.8\klov-reporter-5.0.8.jar;C:\Users\zihan.jia\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\Users\zihan.jia\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\Users\zihan.jia\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\zihan.jia\.m2\repository\com\aventstack\extentreports\3.1.5\extentreports-3.1.5.jar;C:\Users\zihan.jia\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\zihan.jia\.m2\repository\org\jsoup\jsoup\1.9.2\jsoup-1.9.2.jar;C:\Users\zihan.jia\.m2\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;C:\Users\zihan.jia\.m2\repository\com\relevantcodes\extentreports\2.41.1\extentreports-2.41.1.jar;C:\Users\zihan.jia\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\zihan.jia\.m2\repository\com\vimalselvam\testng-extentsreport\1.3.1\testng-extentsreport-1.3.1.jar;C:\Users\zihan.jia\.m2\repository\com\google\guava\guava\20.0\guava-20.0.jar;C:\Users\zihan.jia\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\zihan.jia\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\zihan.jia\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\zihan.jia\.m2\repository\org\apache\poi\poi\4.0.1\poi-4.0.1.jar;C:\Users\zihan.jia\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\zihan.jia\.m2\repository\org\apache\commons\commons-collections4\4.2\commons-collections4-4.2.jar;C:\Users\zihan.jia\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\zihan.jia\.m2\repository\org\apache\poi\poi-ooxml\4.0.1\poi-ooxml-4.0.1.jar;C:\Users\zihan.jia\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.0.1\poi-ooxml-schemas-4.0.1.jar;C:\Users\zihan.jia\.m2\repository\org\apache\xmlbeans\xmlbeans\3.0.2\xmlbeans-3.0.2.jar;C:\Users\zihan.jia\.m2\repository\com\github\virtuald\curvesapi\1.05\curvesapi-1.05.jar;C:\Users\zihan.jia\.m2\repository\org\apache\httpcomponents\httpclient\4.5.6\httpclient-4.5.6.jar;C:\Users\zihan.jia\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\zihan.jia\.m2\repository\org\apache\httpcomponents\httpmime\4.5.6\httpmime-4.5.6.jar;C:\Users\zihan.jia\.m2\repository\org\apache\httpcomponents\httpcore\4.4.10\httpcore-4.4.10.jar;C:\Users\zihan.jia\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\zihan.jia\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\zihan.jia\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\zihan.jia\.m2\repository\com\alibaba\fastjson\1.2.52\fastjson-1.2.52.jar;C:\Users\zihan.jia\.m2\repository\net\sf\json-lib\json-lib\2.4\json-lib-2.4-jdk15.jar;C:\Users\zihan.jia\.m2\repository\commons-beanutils\commons-beanutils\1.8.0\commons-beanutils-1.8.0.jar;C:\Users\zihan.jia\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\zihan.jia\.m2\repository\commons-lang\commons-lang\2.5\commons-lang-2.5.jar;C:\Users\zihan.jia\.m2\repository\net\sf\ezmorph\ezmorph\1.0.6\ezmorph-1.0.6.jar;C:\Users\zihan.jia\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\zihan.jia\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.22.0\surefire-testng-utils-2.22.0.jar;C:\Users\zihan.jia\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.22.0\surefire-grouper-2.22.0.jar;"/>
+    <property name="java.class.path" value="D:\aaaa20221121\AutoJavaTest\AutoJavaTest\target\test-classes;D:\aaaa20221121\AutoJavaTest\AutoJavaTest\target\classes;C:\Users\86137\.m2\repository\com\aventstack\klov-reporter\5.0.8\klov-reporter-5.0.8.jar;C:\Users\86137\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\Users\86137\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\Users\86137\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\86137\.m2\repository\com\aventstack\extentreports\3.1.5\extentreports-3.1.5.jar;C:\Users\86137\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\86137\.m2\repository\org\jsoup\jsoup\1.9.2\jsoup-1.9.2.jar;C:\Users\86137\.m2\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;C:\Users\86137\.m2\repository\com\relevantcodes\extentreports\2.41.1\extentreports-2.41.1.jar;C:\Users\86137\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\86137\.m2\repository\com\vimalselvam\testng-extentsreport\1.3.1\testng-extentsreport-1.3.1.jar;C:\Users\86137\.m2\repository\com\google\guava\guava\20.0\guava-20.0.jar;C:\Users\86137\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\86137\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\86137\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\86137\.m2\repository\org\apache\poi\poi\4.0.1\poi-4.0.1.jar;C:\Users\86137\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\86137\.m2\repository\org\apache\commons\commons-collections4\4.2\commons-collections4-4.2.jar;C:\Users\86137\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\86137\.m2\repository\org\apache\poi\poi-ooxml\4.0.1\poi-ooxml-4.0.1.jar;C:\Users\86137\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.0.1\poi-ooxml-schemas-4.0.1.jar;C:\Users\86137\.m2\repository\org\apache\xmlbeans\xmlbeans\3.0.2\xmlbeans-3.0.2.jar;C:\Users\86137\.m2\repository\com\github\virtuald\curvesapi\1.05\curvesapi-1.05.jar;C:\Users\86137\.m2\repository\org\apache\httpcomponents\httpclient\4.5.6\httpclient-4.5.6.jar;C:\Users\86137\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\86137\.m2\repository\org\apache\httpcomponents\httpmime\4.5.6\httpmime-4.5.6.jar;C:\Users\86137\.m2\repository\org\apache\httpcomponents\httpcore\4.4.10\httpcore-4.4.10.jar;C:\Users\86137\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\86137\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\86137\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\86137\.m2\repository\com\alibaba\fastjson\1.2.52\fastjson-1.2.52.jar;C:\Users\86137\.m2\repository\net\sf\json-lib\json-lib\2.4\json-lib-2.4-jdk15.jar;C:\Users\86137\.m2\repository\commons-beanutils\commons-beanutils\1.8.0\commons-beanutils-1.8.0.jar;C:\Users\86137\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\86137\.m2\repository\commons-lang\commons-lang\2.5\commons-lang-2.5.jar;C:\Users\86137\.m2\repository\net\sf\ezmorph\ezmorph\1.0.6\ezmorph-1.0.6.jar;C:\Users\86137\.m2\repository\com\mysql\mysql-connector-j\8.0.33\mysql-connector-j-8.0.33.jar;C:\Users\86137\.m2\repository\com\google\protobuf\protobuf-java\3.21.9\protobuf-java-3.21.9.jar;C:\Users\86137\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\86137\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.22.0\surefire-testng-utils-2.22.0.jar;C:\Users\86137\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.22.0\surefire-grouper-2.22.0.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
     <property name="user.timezone" value="Asia/Shanghai"/>
-    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="java.vm.specification.version" value="11"/>
     <property name="os.name" value="Windows 10"/>
-    <property name="user.country" value="CN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.boot.library.path" value="D:\jdk1.8.0_181\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\zihan.jia\AppData\Local\Temp\surefire7919573513921120134\surefirebooter3574681439376288665.jar C:\Users\zihan.jia\AppData\Local\Temp\surefire7919573513921120134 2022-11-09T19-43-49_311-jvmRun1 surefire277337703520038775tmp surefire_06902873750794506655tmp"/>
-    <property name="surefire.test.class.path" value="D:\AutoJavaTest\target\test-classes;D:\AutoJavaTest\target\classes;C:\Users\zihan.jia\.m2\repository\com\aventstack\klov-reporter\5.0.8\klov-reporter-5.0.8.jar;C:\Users\zihan.jia\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\Users\zihan.jia\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\Users\zihan.jia\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\zihan.jia\.m2\repository\com\aventstack\extentreports\3.1.5\extentreports-3.1.5.jar;C:\Users\zihan.jia\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\zihan.jia\.m2\repository\org\jsoup\jsoup\1.9.2\jsoup-1.9.2.jar;C:\Users\zihan.jia\.m2\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;C:\Users\zihan.jia\.m2\repository\com\relevantcodes\extentreports\2.41.1\extentreports-2.41.1.jar;C:\Users\zihan.jia\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\zihan.jia\.m2\repository\com\vimalselvam\testng-extentsreport\1.3.1\testng-extentsreport-1.3.1.jar;C:\Users\zihan.jia\.m2\repository\com\google\guava\guava\20.0\guava-20.0.jar;C:\Users\zihan.jia\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\zihan.jia\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\zihan.jia\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\zihan.jia\.m2\repository\org\apache\poi\poi\4.0.1\poi-4.0.1.jar;C:\Users\zihan.jia\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\zihan.jia\.m2\repository\org\apache\commons\commons-collections4\4.2\commons-collections4-4.2.jar;C:\Users\zihan.jia\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\zihan.jia\.m2\repository\org\apache\poi\poi-ooxml\4.0.1\poi-ooxml-4.0.1.jar;C:\Users\zihan.jia\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.0.1\poi-ooxml-schemas-4.0.1.jar;C:\Users\zihan.jia\.m2\repository\org\apache\xmlbeans\xmlbeans\3.0.2\xmlbeans-3.0.2.jar;C:\Users\zihan.jia\.m2\repository\com\github\virtuald\curvesapi\1.05\curvesapi-1.05.jar;C:\Users\zihan.jia\.m2\repository\org\apache\httpcomponents\httpclient\4.5.6\httpclient-4.5.6.jar;C:\Users\zihan.jia\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\zihan.jia\.m2\repository\org\apache\httpcomponents\httpmime\4.5.6\httpmime-4.5.6.jar;C:\Users\zihan.jia\.m2\repository\org\apache\httpcomponents\httpcore\4.4.10\httpcore-4.4.10.jar;C:\Users\zihan.jia\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\zihan.jia\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\zihan.jia\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\zihan.jia\.m2\repository\com\alibaba\fastjson\1.2.52\fastjson-1.2.52.jar;C:\Users\zihan.jia\.m2\repository\net\sf\json-lib\json-lib\2.4\json-lib-2.4-jdk15.jar;C:\Users\zihan.jia\.m2\repository\commons-beanutils\commons-beanutils\1.8.0\commons-beanutils-1.8.0.jar;C:\Users\zihan.jia\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\zihan.jia\.m2\repository\commons-lang\commons-lang\2.5\commons-lang-2.5.jar;C:\Users\zihan.jia\.m2\repository\net\sf\ezmorph\ezmorph\1.0.6\ezmorph-1.0.6.jar;C:\Users\zihan.jia\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\zihan.jia\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.22.0\surefire-testng-utils-2.22.0.jar;C:\Users\zihan.jia\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.22.0\surefire-grouper-2.22.0.jar;"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="E:\Java\jdk-11.0.15\bin"/>
+    <property name="sun.java.command" value="C:\Users\86137\AppData\Local\Temp\surefire3128358588969840912\surefirebooter3561869996285923849.jar C:\Users\86137\AppData\Local\Temp\surefire3128358588969840912 2023-07-31T10-54-41_218-jvmRun1 surefire14936355721145158876tmp surefire_07453911487685383205tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\aaaa20221121\AutoJavaTest\AutoJavaTest\target\test-classes;D:\aaaa20221121\AutoJavaTest\AutoJavaTest\target\classes;C:\Users\86137\.m2\repository\com\aventstack\klov-reporter\5.0.8\klov-reporter-5.0.8.jar;C:\Users\86137\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\Users\86137\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\Users\86137\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\86137\.m2\repository\com\aventstack\extentreports\3.1.5\extentreports-3.1.5.jar;C:\Users\86137\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\86137\.m2\repository\org\jsoup\jsoup\1.9.2\jsoup-1.9.2.jar;C:\Users\86137\.m2\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;C:\Users\86137\.m2\repository\com\relevantcodes\extentreports\2.41.1\extentreports-2.41.1.jar;C:\Users\86137\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\86137\.m2\repository\com\vimalselvam\testng-extentsreport\1.3.1\testng-extentsreport-1.3.1.jar;C:\Users\86137\.m2\repository\com\google\guava\guava\20.0\guava-20.0.jar;C:\Users\86137\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\86137\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\86137\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\86137\.m2\repository\org\apache\poi\poi\4.0.1\poi-4.0.1.jar;C:\Users\86137\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\86137\.m2\repository\org\apache\commons\commons-collections4\4.2\commons-collections4-4.2.jar;C:\Users\86137\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\86137\.m2\repository\org\apache\poi\poi-ooxml\4.0.1\poi-ooxml-4.0.1.jar;C:\Users\86137\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.0.1\poi-ooxml-schemas-4.0.1.jar;C:\Users\86137\.m2\repository\org\apache\xmlbeans\xmlbeans\3.0.2\xmlbeans-3.0.2.jar;C:\Users\86137\.m2\repository\com\github\virtuald\curvesapi\1.05\curvesapi-1.05.jar;C:\Users\86137\.m2\repository\org\apache\httpcomponents\httpclient\4.5.6\httpclient-4.5.6.jar;C:\Users\86137\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\86137\.m2\repository\org\apache\httpcomponents\httpmime\4.5.6\httpmime-4.5.6.jar;C:\Users\86137\.m2\repository\org\apache\httpcomponents\httpcore\4.4.10\httpcore-4.4.10.jar;C:\Users\86137\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\86137\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\86137\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\86137\.m2\repository\com\alibaba\fastjson\1.2.52\fastjson-1.2.52.jar;C:\Users\86137\.m2\repository\net\sf\json-lib\json-lib\2.4\json-lib-2.4-jdk15.jar;C:\Users\86137\.m2\repository\commons-beanutils\commons-beanutils\1.8.0\commons-beanutils-1.8.0.jar;C:\Users\86137\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\86137\.m2\repository\commons-lang\commons-lang\2.5\commons-lang-2.5.jar;C:\Users\86137\.m2\repository\net\sf\ezmorph\ezmorph\1.0.6\ezmorph-1.0.6.jar;C:\Users\86137\.m2\repository\com\mysql\mysql-connector-j\8.0.33\mysql-connector-j-8.0.33.jar;C:\Users\86137\.m2\repository\com\google\protobuf\protobuf-java\3.21.9\protobuf-java-3.21.9.jar;C:\Users\86137\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\86137\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.22.0\surefire-testng-utils-2.22.0.jar;C:\Users\86137\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.22.0\surefire-grouper-2.22.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\zihan.jia"/>
+    <property name="user.home" value="C:\Users\86137"/>
     <property name="user.language" value="zh"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.home" value="D:\jdk1.8.0_181\jre"/>
-    <property name="basedir" value="D:\AutoJavaTest"/>
+    <property name="java.version.date" value="2022-04-19"/>
+    <property name="java.home" value="E:\Java\jdk-11.0.15"/>
     <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\aaaa20221121\AutoJavaTest\AutoJavaTest"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\zihan.jia\AppData\Local\Temp\surefire7919573513921120134\surefirebooter3574681439376288665.jar"/>
-    <property name="sun.boot.class.path" value="D:\jdk1.8.0_181\jre\lib\resources.jar;D:\jdk1.8.0_181\jre\lib\rt.jar;D:\jdk1.8.0_181\jre\lib\sunrsasign.jar;D:\jdk1.8.0_181\jre\lib\jsse.jar;D:\jdk1.8.0_181\jre\lib\jce.jar;D:\jdk1.8.0_181\jre\lib\charsets.jar;D:\jdk1.8.0_181\jre\lib\jfr.jar;D:\jdk1.8.0_181\jre\classes"/>
+    <property name="surefire.real.class.path" value="C:\Users\86137\AppData\Local\Temp\surefire3128358588969840912\surefirebooter3561869996285923849.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="1.8.0_181-b13"/>
-    <property name="user.name" value="Zihan.Jia"/>
+    <property name="java.runtime.version" value="11.0.15+8-LTS-149"/>
+    <property name="user.name" value="86137"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
-    <property name="java.endorsed.dirs" value="D:\jdk1.8.0_181\jre\lib\endorsed"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="GBK"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="localRepository" value="C:\Users\zihan.jia\.m2\repository"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="C:\Users\zihan.jia\AppData\Local\Temp\"/>
-    <property name="java.version" value="1.8.0_181"/>
-    <property name="user.dir" value="D:\AutoJavaTest"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\86137\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\86137\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.15"/>
+    <property name="user.dir" value="D:\aaaa20221121\AutoJavaTest\AutoJavaTest"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="D:\jdk1.8.0_181\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Python38\Scripts\;D:\Python38;C:\Program Files\VanDyke Software\Clients\;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;D:\jdk1.8.0_181\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\apache-tomcat-8.5.20\apache-tomcat-8.5.20\bin;C:\ProgramData\chocolatey\bin;D:\Xshll 7\;D:\TortoiseGit\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\strawberry\c\bin;C:\strawberry\perl\bin;D:\Go\bin;D:\Git\cmd;D:\nodejs\;D:\Python38\Tools\scripts;D:\IntelliJ IDEA 2020.1\plugins\maven\lib\maven3\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\RabbitMQ Server\rabbitmq_server-3.10.7\sbin\;D:\微信web开发者工具\dll;D:\Ruby31-x64\bin;D:\工具\android-sdk-windows\platform-tools;D:\工具\android-sdk-windows\tools;C:\Program Files\Google\Chrome\Application;D:\Ruby31-x64\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;D:\Python311-32\Scripts\;D:\Python311-32\;C:\Users\zihan.jia\AppData\Local\Microsoft\WindowsApps;D:\PyCharm 2018.3.3\bin;;D:\GoLand 2020.1\bin;;C:\Users\zihan.jia\AppData\Roaming\npm;D:\IntelliJ IDEA 2020.1\bin;;."/>
-    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.library.path" value="E:\Java\jdk-11.0.15\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;D:\Python310;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;D:\TortoiseGit\bin;D:\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;D:\Python310\Scripts;D:\TortoiseSVN\bin;D:\微信web开发者工具\dll;D:\maven\bin;C:\Users\86137\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\86137\AppData\Local\Programs\Python\Python39\;C:\Users\86137\AppData\Local\Microsoft\WindowsApps;;E:\PyCharm 2020.1\bin;;C:\Users\86137\AppData\Roaming\npm;D:\IntelliJ IDEA 2022.3.3\bin;;E:\Fiddler;E:\IntelliJ IDEA 2022.1.3new\bin;;."/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="25.181-b13"/>
-    <property name="java.ext.dirs" value="D:\jdk1.8.0_181\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.15+8-LTS-149"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="52.0"/>
+    <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="deletereceiveraddress" classname="com.test.TestGateWayService" time="5.473"/>
-  <testcase name="getactivityurl" classname="com.test.TestGateWayService" time="0.368"/>
-  <testcase name="getadvertisementimage" classname="com.test.TestGateWayService" time="0.366"/>
-  <testcase name="getallcity" classname="com.test.TestGateWayService" time="0.883"/>
-  <testcase name="getallreceiveraddress" classname="com.test.TestGateWayService" time="0.294"/>
-  <testcase name="getcontributiondeaillist" classname="com.test.TestGateWayService" time="0.375"/>
-  <testcase name="getexchangelist" classname="com.test.TestGateWayService" time="0.241"/>
-  <testcase name="getinfo兑换详情" classname="com.test.TestGateWayService" time="0.44"/>
-  <testcase name="getjoblist" classname="com.test.TestGateWayService" time="0.206"/>
-  <testcase name="getmyapplycourselist" classname="com.test.TestGateWayService" time="0.276"/>
-  <testcase name="getquestions" classname="com.test.TestGateWayService" time="0.371"/>
-  <testcase name="gettaskinfo" classname="com.test.TestGateWayService" time="0.408"/>
-  <testcase name="savereceiveraddress" classname="com.test.TestGateWayService" time="0.452"/>
-  <testcase name="addbankcards" classname="com.test.TestStaffingService" time="0.191"/>
-  <testcase name="getadvertisementimage" classname="com.test.TestStaffingService" time="0.271"/>
-  <testcase name="getbankcards" classname="com.test.TestStaffingService" time="0.213"/>
-  <testcase name="getpersonalsummaryInfo" classname="com.test.TestStaffingService" time="0.316"/>
-  <testcase name="gettaskfavorite" classname="com.test.TestStaffingService" time="0.261"/>
-  <testcase name="issubscribewxservice服务号" classname="com.test.TestStaffingService" time="0.247"/>
-  <testcase name="v531Getinfo" classname="com.test.TestStaffingService" time="1.149"/>
-  <testcase name="个人信息" classname="com.test.TestStaffingService" time="1.086"/>
-  <testcase name="任务列表" classname="com.test.TestStaffingService" time="0.216"/>
-  <testcase name="任务详情" classname="com.test.TestStaffingService" time="0.215"/>
-  <testcase name="协议gettaskagreements" classname="com.test.TestStaffingService" time="0.17"/>
-  <testcase name="合作详情已结束" classname="com.test.TestStaffingService" time="0.233"/>
-  <testcase name="我的报名信息" classname="com.test.TestStaffingService" time="0.193"/>
-  <testcase name="我的签约信息" classname="com.test.TestStaffingService" time="0.299"/>
-  <testcase name="报名详情" classname="com.test.TestStaffingService" time="0.18"/>
-  <testcase name="Merchant合作商户" classname="com.test.TestWnsService" time="0.216"/>
-  <testcase name="getcontent" classname="com.test.TestWnsService" time="0.188"/>
-  <testcase name="getidcardinfo" classname="com.test.TestWnsService" time="0.202"/>
-  <testcase name="getmobiles" classname="com.test.TestWnsService" time="0.268"/>
-  <testcase name="getnotsettleinfo" classname="com.test.TestWnsService" time="0.209"/>
-  <testcase name="getsettlementscount" classname="com.test.TestWnsService" time="0.269"/>
-  <testcase name="我的签约wns" classname="com.test.TestWnsService" time="0.191"/>
-  <testcase name="打款失败订单" classname="com.test.TestWnsService" time="0.172"/>
-  <testcase name="批量结算列表" classname="com.test.TestWnsService" time="0.219"/>
-  <testcase name="服务号ssubscribewxservice" classname="com.test.TestWnsService" time="0.22"/>
-  <testcase name="结算收入" classname="com.test.TestWnsService" time="0.207"/>
-  <testcase name="获取个人信息" classname="com.test.TestWnsService" time="1.074"/>
+  <testcase name="LoginKwauthLogin" classname="com.test.TestKwwGKService" time="1.439"/>
+  <testcase name="写文章入口isRealnameAuth" classname="com.test.TestKwwGKService" time="0.259"/>
+  <testcase name="私密文章发布apiV2Articles" classname="com.test.TestKwwGKService" time="0.626"/>
+  <testcase name="公开文章发布articles" classname="com.test.TestKwwGKService" time="0.477"/>
+  <testcase name="线上中心项目v1WeappManagerApplylist" classname="com.test.TestKwwGKService" time="0.22"/>
+  <testcase name="开问线上中心登录项目v1PersonsInformationbasic" classname="com.test.TestKwwGKService" time="0.194"/>
+  <testcase name="线上中心文章listArticlePublicSearch" classname="com.test.TestKwwGKService" time="0.271"/>
+  <testcase name="在线中心创建文章v1WeappManagerArticles" classname="com.test.TestKwwGKService" time="0.497"/>
+  <testcase name="在线中心文章编辑页v1ArticlesEdit" classname="com.test.TestKwwGKService" time="0.208"/>
+  <testcase name="线上中心活动v1WeappManagerActivitylist" classname="com.test.TestKwwGKService" time="0.203"/>
+  <testcase name="线上中心活动v1CommonsJudgesSensitivewords" classname="com.test.TestKwwGKService" time="0.216"/>
+  <testcase name="在线中心云协作v1WeappManagerProjectlsit" classname="com.test.TestKwwGKService" time="0.209"/>
+  <testcase name="在线中心圈子v1WeappManagerCirclelsit" classname="com.test.TestKwwGKService" time="0.216"/>
+  <testcase name="在线中心创建圈子apiV1circle" classname="com.test.TestKwwGKService" time="0.582"/>
+  <testcase name="圈子移出coManagerunbindAuthContent" classname="com.test.TestKwwGKService" time="0.221"/>
+  <testcase name="表单v1WeappBlongSurveylsit" classname="com.test.TestKwwGKService" time="0.193"/>
+  <testcase name="行业分类tpyeV1SurveyTemplateClass" classname="com.test.TestKwwGKService" time="0.173"/>
+  <testcase name="表单模板v1SurveyTemplateList" classname="com.test.TestKwwGKService" time="0.188"/>
+  <testcase name="创建空白自定义v1SurveyCreateBlank" classname="com.test.TestKwwGKService" time="0.193"/>
+  <testcase name="自动定义控件v1SurveyUpdate" classname="com.test.TestKwwGKService" time="0.366"/>
+  <testcase name="自定义表单添加控件v1SurveyQuestion" classname="com.test.TestKwwGKService" time="0.366"/>
+  <testcase name="自定义表单发布v1SurveyPublish" classname="com.test.TestKwwGKService" time="0.184"/>
+  <testcase name="表单删除apiV1SurveyDelete" classname="com.test.TestKwwGKService" time="0.193"/>
+  <testcase name="线上中心表单已授权v1WeappAuthedSurveytabList" classname="com.test.TestKwwGKService" time="0.17"/>
+  <testcase name="创建商品v1WeappManagerMallgoods" classname="com.test.TestKwwGKService" time="0.234"/>
+  <testcase name="商品下架v1WeappManagerMallisOnSale" classname="com.test.TestKwwGKService" time="0.186"/>
+  <testcase name="删除商品v1WeappManagerMalldelete" classname="com.test.TestKwwGKService" time="0.211"/>
+  <testcase name="商品操作日志mallGoodsLogspageList" classname="com.test.TestKwwGKService" time="0.169"/>
+  <testcase name="在线中心文集v1WeappManagerPageList" classname="com.test.TestKwwGKService" time="0.181"/>
+  <testcase name="创建文集v1WeappManagerColumnInfo" classname="com.test.TestKwwGKService" time="0.191"/>
+  <testcase name="文集详情v1WeappManagerColumnInfodetail" classname="com.test.TestKwwGKService" time="0.175"/>
+  <testcase name="文集下架v1WeappManagerisOnSale" classname="com.test.TestKwwGKService" time="0.203"/>
+  <testcase name="文集编辑PUTcolumnInfo" classname="com.test.TestKwwGKService" time="0.197"/>
+  <testcase name="删除文集v1WeappManagerdelete" classname="com.test.TestKwwGKService" time="0.195"/>
+  <testcase name="相册list" classname="com.test.TestKwwGKService" time="0.203"/>
+  <testcase name="创建相册albumInfo" classname="com.test.TestKwwGKService" time="0.198"/>
+  <testcase name="删除相册delete" classname="com.test.TestKwwGKService" time="0.173"/>
+  <testcase name="专栏v1WxThirdPartyWeappFirstClasspageList" classname="com.test.TestKwwGKService" time="0.187"/>
+  <testcase name="专栏模板templateList" classname="com.test.TestKwwGKService" time="0.186"/>
+  <testcase name="专栏空白创建v1WxThirdPartyWeappclass" classname="com.test.TestKwwGKService" time="0.246"/>
+  <testcase name="删除专栏v1WxThirdPartyWeappdelete" classname="com.test.TestKwwGKService" time="0.19"/>
+  <testcase name="getToken" classname="com.test.TestKwwWzService" time="0.298"/>
+  <testcase name="applylistToGetappid" classname="com.test.TestKwwWzService" time="0.167"/>
+  <testcase name="首页设计homeClassidGetDatasID" classname="com.test.TestKwwWzService" time="0.168"/>
+  <testcase name="classLayoutTypePut" classname="com.test.TestKwwWzService" time="0.172"/>
+  <testcase name="classNavStyle" classname="com.test.TestKwwWzService" time="0.169"/>
+  <testcase name="classSearchBarOpen" classname="com.test.TestKwwWzService" time="0.174"/>
+  <testcase name="classNavLayoutType" classname="com.test.TestKwwWzService" time="0.172"/>
+  <testcase name="NewDesignerAllData" classname="com.test.TestKwwWzService" time="0.22"/>
+  <testcase name="NavLayoutType" classname="com.test.TestKwwWzService" time="0.169"/>
+  <testcase name="headerNavGetId" classname="com.test.TestKwwWzService" time="0.237"/>
+  <testcase name="footerCategor" classname="com.test.TestKwwWzService" time="0.167"/>
+  <testcase name="headerNav" classname="com.test.TestKwwWzService" time="0.183"/>
+  <testcase name="模板库homeClassid" classname="com.test.TestKwwWzService" time="0.182"/>
+  <testcase name="模板templateStandardList" classname="com.test.TestKwwWzService" time="0.185"/>
+  <testcase name="模板使用emplateStandard" classname="com.test.TestKwwWzService" time="0.2"/>
+  <testcase name="userTypeList" classname="com.test.TestKwwWzService" time="0.172"/>
+  <testcase name="noticeUnreadNum" classname="com.test.TestKwwWzService" time="0.165"/>
+  <testcase name="weappLeftMenuData" classname="com.test.TestKwwWzService" time="0.175"/>
+  <testcase name="skinList" classname="com.test.TestKwwWzService" time="0.22"/>
+  <testcase name="weappSetSkin" classname="com.test.TestKwwWzService" time="0.171"/>
+  <testcase name="手机网站详情websiteAppidDetail" classname="com.test.TestKwwWzService" time="0.178"/>
+  <testcase name="手机网站详情保存apiV1WebsiteNicknameAndImg" classname="com.test.TestKwwWzService" time="0.532"/>
+  <testcase name="getToken" classname="com.test.TestKwwXCXService" time="0.285"/>
+  <testcase name="applylistToGetappid" classname="com.test.TestKwwXCXService" time="0.191"/>
+  <testcase name="apiV1WxThirdPartyWeappGetFailPop" classname="com.test.TestKwwXCXService" time="0.203"/>
+  <testcase name="apiV1WxThirdPartyHomeClassid" classname="com.test.TestKwwXCXService" time="0.179"/>
+  <testcase name="Getv1WeappApplyFooterCategory" classname="com.test.TestKwwXCXService" time="0.159"/>
+  <testcase name="v1WeappManagerHeaderNav" classname="com.test.TestKwwXCXService" time="0.175"/>
+  <testcase name="Postv1WeappApplyFooterCategory" classname="com.test.TestKwwXCXService" time="0.193"/>
+  <testcase name="v1WxThirdPartyHomeClassidAppType2" classname="com.test.TestKwwXCXService" time="0.176"/>
+  <testcase name="小程序详情v1WxThirdPartyWeappAppidDetail" classname="com.test.TestKwwXCXService" time="0.465"/>
+  <testcase name="getToken" classname="com.test.TestKwwCYService" time="0.272"/>
+  <testcase name="applylistToGetappid" classname="com.test.TestKwwCYService" time="0.17"/>
+  <testcase name="v1WeappManagerApplyContentLimit" classname="com.test.TestKwwCYService" time="0.162"/>
+  <testcase name="邀请v1WeappInviteMember" classname="com.test.TestKwwCYService" time="0.212"/>
+  <testcase name="v1MobileWeappUserSearch" classname="com.test.TestKwwCYService" time="0.178"/>
+  <testcase name="权限变更v1WeappManagerUserUpdateRole" classname="com.test.TestKwwCYService" time="0.18"/>
+  <testcase name="删除成员v1WeappManagerDeleteUser" classname="com.test.TestKwwCYService" time="0.179"/>
+  <testcase name="getToken" classname="com.test.TestKwwNRService" time="0.267"/>
+  <testcase name="applylistToGetappid" classname="com.test.TestKwwNRService" time="0.166"/>
+  <testcase name="资料中心v1WeappMangerFileTotalSize" classname="com.test.TestKwwNRService" time="0.165"/>
+  <testcase name="获取uuidWeappUploadToken" classname="com.test.TestKwwNRService" time="0.176"/>
+  <testcase name="上传图片v1WeappManagerFile" classname="com.test.TestKwwNRService" time="0.188"/>
+  <testcase name="获取图片idv1WeappManagerFileList" classname="com.test.TestKwwNRService" time="0.189"/>
+  <testcase name="图片详情v1WeappManagerFileTPid" classname="com.test.TestKwwNRService" time="1.261"/>
+  <testcase name="图片删除v1WeappManagerFileDelete" classname="com.test.TestKwwNRService" time="0.448"/>
+  <testcase name="获取视频uuidV1WeappManagerFileUploadToken" classname="com.test.TestKwwNRService" time="0.179"/>
+  <testcase name="上传视频v1WeappManagerFile" classname="com.test.TestKwwNRService" time="0.176"/>
+  <testcase name="视频Listidv1WeappManagerFileLis" classname="com.test.TestKwwNRService" time="0.164"/>
+  <testcase name="删除视频v1WeappManagerFile" classname="com.test.TestKwwNRService" time="0.388"/>
+  <testcase name="音频Listv1WeappManagerFileList" classname="com.test.TestKwwNRService" time="0.224"/>
+  <testcase name="音频获取uuidv1WeappManagerFileUploadToken" classname="com.test.TestKwwNRService" time="0.172"/>
+  <testcase name="提交音频V1WeappManagerFile" classname="com.test.TestKwwNRService" time="0.174"/>
+  <testcase name="删除音频文件V1WeappManagerFile" classname="com.test.TestKwwNRService" time="0.381"/>
+  <testcase name="获取文档uuidv1WeappManagerFileUploadToken" classname="com.test.TestKwwNRService" time="0.195"/>
+  <testcase name="上传文档v1WeappManagerFile" classname="com.test.TestKwwNRService" time="0.177"/>
+  <testcase name="文档PageListv1WeappManagerFileList" classname="com.test.TestKwwNRService" time="0.186"/>
+  <testcase name="文档删除v1WeappManagerFile" classname="com.test.TestKwwNRService" time="0.414"/>
+  <testcase name="快捷导航PageListv1WeappManagerQuickNavSearch" classname="com.test.TestKwwNRService" time="0.156"/>
+  <testcase name="创建快捷导航v1WeappManagerQuickNav" classname="com.test.TestKwwNRService" time="0.191"/>
+  <testcase name="导航重命名v1WeappManagerQuickNavName" classname="com.test.TestKwwNRService" time="0.189"/>
+  <testcase name="编辑快捷导航v1WeappManagerQuickNavSetting" classname="com.test.TestKwwNRService" time="0.186"/>
+  <testcase name="删除快捷导航v1WeappManagerQuickNav" classname="com.test.TestKwwNRService" time="0.178"/>
+  <testcase name="授权内容已授权tabLISTminiProgramCoManagerAuthApplyAuditStatus" classname="com.test.TestKwwNRService" time="1.488"/>
+  <testcase name="授权搜索LISTweappManageAuthApplyActivitySearch" classname="com.test.TestKwwNRService" time="0.603"/>
+  <testcase name="内容待授权miniProgramCoManagerAuthApplyAuditStatus" classname="com.test.TestKwwNRService" time="1.251"/>
+  <testcase name="微页面获取模板weappManagerMicroPagesSysTemplates" classname="com.test.TestKwwNRService" time="0.237"/>
+  <testcase name="微页面创建H5v1WeappManagerMicroPages" classname="com.test.TestKwwNRService" time="0.27"/>
+  <testcase name="H5设计创建v1WeappManagerMicroPages" classname="com.test.TestKwwNRService" time="0.217"/>
+  <testcase name="微页面H5复制weappManagerMicroPages" classname="com.test.TestKwwNRService" time="0.349"/>
+  <testcase name="删除微页面H5v1WeappManagerMicroPages" classname="com.test.TestKwwNRService" time="0.214"/>
+  <testcase name="发布微页面H5weappManagerMicroPagesPublish" classname="com.test.TestKwwNRService" time="0.257"/>
+  <testcase name="删除复制H5weappManagerMicroPages" classname="com.test.TestKwwNRService" time="0.256"/>
+  <testcase name="创建微页面长页v1WeappManagerMicroPages" classname="com.test.TestKwwNRService" time="0.201"/>
+  <testcase name="微页面创建发布长页v1WeappManagerMicroPages" classname="com.test.TestKwwNRService" time="0.206"/>
+  <testcase name="微页面复制长页weappManagerMicroPagesCopy" classname="com.test.TestKwwNRService" time="0.235"/>
+  <testcase name="删除微页面长页v1WeappManagerMicroPagesCYID" classname="com.test.TestKwwNRService" time="0.191"/>
+  <testcase name="微页面长页发布v1WeappManagerMicroPagesPublish" classname="com.test.TestKwwNRService" time="0.182"/>
+  <testcase name="删除微页面复制长页weappManagerMicroPagesCopycyid" classname="com.test.TestKwwNRService" time="0.182"/>
+  <testcase name="微页面创建电脑网站weappManagerMicroPages" classname="com.test.TestKwwNRService" time="0.198"/>
+  <testcase name="发布微页面网站v1WeappManagerMicroPages" classname="com.test.TestKwwNRService" time="0.186"/>
+  <testcase name="微页面网站复制weappManagerMicroPagesCopy" classname="com.test.TestKwwNRService" time="0.213"/>
+  <testcase name="删除网站页面v1WeappManagerMicroPages" classname="com.test.TestKwwNRService" time="0.175"/>
+  <testcase name="微页面网站发布weappManagerMicroPagesPublish" classname="com.test.TestKwwNRService" time="0.176"/>
+  <testcase name="删除复制网站页weappManagerMicroPages" classname="com.test.TestKwwNRService" time="0.189"/>
+  <testcase name="getToken" classname="com.test.TestKwwYYService" time="0.801"/>
+  <testcase name="applylistToGetappid" classname="com.test.TestKwwYYService" time="0.183"/>
+  <testcase name="AI助手LISTweappManagerAiAssistantList" classname="com.test.TestKwwYYService" time="0.177"/>
+  <testcase name="创建AI助手weappManagerAiAssistant" classname="com.test.TestKwwYYService" time="1.441"/>
+  <testcase name="AI内容库添加内容weappManagerAiAssistantLibrary" classname="com.test.TestKwwYYService" time="3.139"/>
+  <testcase name="AI助手内容库ListWeappManagerAiAssistantLibraryList" classname="com.test.TestKwwYYService" time="0.174"/>
+  <testcase name="AI助手内容库内容同步managerAiAssistantUnsyncCountAssistantId" classname="com.test.TestKwwYYService" time="0.167"/>
+  <testcase name="内容库删除managerAiAssistantLibraryNRID" classname="com.test.TestKwwYYService" time="4.123"/>
+  <testcase name="AI助手提问v2AiQuestionAnswer" classname="com.test.TestKwwYYService" time="0.373"/>
+  <testcase name="AI助手设置weappManagerAiAssistantDetail" classname="com.test.TestKwwYYService" time="0.183"/>
+  <testcase name="修改AI助手weappManagerAiAssistant" classname="com.test.TestKwwYYService" time="0.41"/>
+  <testcase name="AI助手查看分析数据weappManagerAiAssistantQuestionAnswerList" classname="com.test.TestKwwYYService" time="0.168"/>
+  <testcase name="AI助手回答点赞踩统计weappManagerAiAssistantQuestionAnswerLikeNumber" classname="com.test.TestKwwYYService" time="0.159"/>
+  <testcase name="删除AI助手weappManagerAiAssistant" classname="com.test.TestKwwYYService" time="0.599"/>
+  <testcase name="订单查询managerMallOrdersSearch" classname="com.test.TestKwwYYService" time="0.169"/>
+  <testcase name="推广员已通过审核LISTmanagerMarketCenterSalesListAuditStatus1" classname="com.test.TestKwwYYService" time="0.178"/>
+  <testcase name="推广员待审核LISTmanagerMarketCenterSalesListAuditStatus2" classname="com.test.TestKwwYYService" time="0.169"/>
+  <testcase name="推广内容LISTweappMarketCenterProductList" classname="com.test.TestKwwYYService" time="0.172"/>
+  <testcase name="添加推广内容weappManagerMarketCenterProduct" classname="com.test.TestKwwYYService" time="0.196"/>
+  <testcase name="编辑推广内容weappManagerMarketCenterProduct" classname="com.test.TestKwwYYService" time="0.18"/>
+  <testcase name="删除推广内容managerMarketCenterProductId" classname="com.test.TestKwwYYService" time="0.184"/>
+  <testcase name="招募计划确认编辑weappManagerMarketCenterRecruitment" classname="com.test.TestKwwYYService" time="0.176"/>
+  <testcase name="提现管理未打款LISTweappManagerMarketCenterSalesWithdrawSearch" classname="com.test.TestKwwYYService" time="0.18"/>
+  <testcase name="提现管理已打款weappManagerMarketCenterSalesWithdrawSearchPage1" classname="com.test.TestKwwYYService" time="0.172"/>
+  <testcase name="提现管理已拒绝weappManagerMarketCenterSalesWithdrawSearchPage1" classname="com.test.TestKwwYYService" time="0.174"/>
+  <testcase name="钱包流水记录LISTweappManagerWalletFlowSearch" classname="com.test.TestKwwYYService" time="0.171"/>
+  <testcase name="用户分类管理用户列表weappManagerCollectionResultSearch" classname="com.test.TestKwwYYService" time="0.182"/>
+  <testcase name="用户列表导出数据weappManagerCollectionResultExport" classname="com.test.TestKwwYYService" time="0.233"/>
+  <testcase name="采集信息设置weappManagerCollectionConfig" classname="com.test.TestKwwYYService" time="0.192"/>
+  <testcase name="添加会员卡weappManagerPaySetting" classname="com.test.TestKwwYYService" time="0.185"/>
+  <testcase name="会员卡设置LISTweappManagerPaySettingList" classname="com.test.TestKwwYYService" time="0.169"/>
+  <testcase name="删除会员卡weappManagerPaySettingId" classname="com.test.TestKwwYYService" time="0.171"/>
+  <testcase name="付费折扣权益添加商品weappManagerPaySettingDiscountItemBatchAdd" classname="com.test.TestKwwYYService" time="0.212"/>
+  <testcase name="付费折扣权益LISTmanagerPaySettingDiscountItemList" classname="com.test.TestKwwYYService" time="0.164"/>
+  <testcase name="付费折扣权益商品移除weappManagerPaySettingDiscountItem" classname="com.test.TestKwwYYService" time="0.174"/>
+  <testcase name="getToken" classname="com.test.TestKwwJXService" time="0.253"/>
+  <testcase name="applylistToGetappid" classname="com.test.TestKwwJXService" time="0.163"/>
+  <testcase name="班级管理创建weappManagerClassCreateInfo" classname="com.test.TestKwwJXService" time="0.174"/>
+  <testcase name="班级添加班主任weappManagerClassisManager1" classname="com.test.TestKwwJXService" time="0.195"/>
+  <testcase name="班级添加教师weappManagerClassisManager0" classname="com.test.TestKwwJXService" time="0.207"/>
+  <testcase name="班级中角色listManagerClassAllMembers" classname="com.test.TestKwwJXService" time="0.181"/>
+  <testcase name="班级管理通知weappClassNotifys" classname="com.test.TestKwwJXService" time="0.184"/>
+  <testcase name="班级管理ListManagerClassClassInfosPage" classname="com.test.TestKwwJXService" time="0.178"/>
+  <testcase name="班级管理删除班级weappManagerClassClassInfoId" classname="com.test.TestKwwJXService" time="0.246"/>
+  <testcase name="教师管理添加教师weappManagerClassTeacher" classname="com.test.TestKwwJXService" time="0.184"/>
+  <testcase name="教师管理删除教师weappManagerClassTeacherId" classname="com.test.TestKwwJXService" time="0.186"/>
+  <testcase name="教师管理LISTmanagerClassTeachers" classname="com.test.TestKwwJXService" time="0.193"/>
+  <testcase name="发布通知weappManagerClassNotifyNotice" classname="com.test.TestKwwJXService" time="0.424"/>
+  <testcase name="发布通知ListWeappManagerClassNotifyList" classname="com.test.TestKwwJXService" time="0.183"/>
 </testsuite>

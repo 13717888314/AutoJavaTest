@@ -1,205 +1,793 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="40" passed="40">
+<testng-results ignored="0" total="175" passed="175" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="C-api-Master-AutoTest" duration-ms="18867" started-at="2022-11-09T11:43:51Z" finished-at="2022-11-09T11:44:10Z">
+  <suite started-at="2023-07-31T02:54:48Z" name="KW-api-AutoTest" finished-at="2023-07-31T02:55:40Z" duration-ms="52219">
     <groups>
     </groups>
-    <test name="GateWayService" duration-ms="10172" started-at="2022-11-09T11:43:51Z" finished-at="2022-11-09T11:44:01Z">
-      <class name="com.test.TestGateWayService">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.TestGateWayService@7ca48474]" name="setup" is-config="true" duration-ms="6" started-at="2022-11-09T11:43:51Z" finished-at="2022-11-09T11:43:51Z">
+    <test started-at="2023-07-31T02:54:48Z" name="TestKwwGKService" finished-at="2023-07-31T02:54:59Z" duration-ms="11262">
+      <class name="com.test.TestKwwGKService">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:48Z" name="setup" finished-at="2023-07-31T02:54:48Z" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="deletereceiveraddress()[pri:0, instance:com.test.TestGateWayService@7ca48474]" name="deletereceiveraddress" duration-ms="5473" started-at="2022-11-09T11:43:51Z" finished-at="2022-11-09T11:43:56Z">
+        <test-method signature="LoginKwauthLogin()[pri:1, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:48Z" name="LoginKwauthLogin" finished-at="2023-07-31T02:54:49Z" duration-ms="1437" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deletereceiveraddress -->
-        <test-method status="PASS" signature="getactivityurl()[pri:0, instance:com.test.TestGateWayService@7ca48474]" name="getactivityurl" duration-ms="369" started-at="2022-11-09T11:43:56Z" finished-at="2022-11-09T11:43:57Z">
+        </test-method> <!-- LoginKwauthLogin -->
+        <test-method signature="写文章入口isRealnameAuth()[pri:2, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:49Z" name="写文章入口isRealnameAuth" finished-at="2023-07-31T02:54:50Z" duration-ms="256" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getactivityurl -->
-        <test-method status="PASS" signature="getadvertisementimage()[pri:0, instance:com.test.TestGateWayService@7ca48474]" name="getadvertisementimage" duration-ms="366" started-at="2022-11-09T11:43:57Z" finished-at="2022-11-09T11:43:57Z">
+        </test-method> <!-- 写文章入口isRealnameAuth -->
+        <test-method signature="私密文章发布apiV2Articles()[pri:3, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:50Z" name="私密文章发布apiV2Articles" finished-at="2023-07-31T02:54:50Z" duration-ms="626" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getadvertisementimage -->
-        <test-method status="PASS" signature="getallcity()[pri:0, instance:com.test.TestGateWayService@7ca48474]" name="getallcity" duration-ms="883" started-at="2022-11-09T11:43:57Z" finished-at="2022-11-09T11:43:58Z">
+        </test-method> <!-- 私密文章发布apiV2Articles -->
+        <test-method signature="公开文章发布articles()[pri:4, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:50Z" name="公开文章发布articles" finished-at="2023-07-31T02:54:51Z" duration-ms="476" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getallcity -->
-        <test-method status="PASS" signature="getallreceiveraddress()[pri:0, instance:com.test.TestGateWayService@7ca48474]" name="getallreceiveraddress" duration-ms="294" started-at="2022-11-09T11:43:58Z" finished-at="2022-11-09T11:43:58Z">
+        </test-method> <!-- 公开文章发布articles -->
+        <test-method signature="线上中心项目v1WeappManagerApplylist()[pri:5, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:51Z" name="线上中心项目v1WeappManagerApplylist" finished-at="2023-07-31T02:54:51Z" duration-ms="217" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getallreceiveraddress -->
-        <test-method status="PASS" signature="getcontributiondeaillist()[pri:0, instance:com.test.TestGateWayService@7ca48474]" name="getcontributiondeaillist" duration-ms="375" started-at="2022-11-09T11:43:58Z" finished-at="2022-11-09T11:43:59Z">
+        </test-method> <!-- 线上中心项目v1WeappManagerApplylist -->
+        <test-method signature="开问线上中心登录项目v1PersonsInformationbasic()[pri:6, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:51Z" name="开问线上中心登录项目v1PersonsInformationbasic" finished-at="2023-07-31T02:54:51Z" duration-ms="196" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getcontributiondeaillist -->
-        <test-method status="PASS" signature="getexchangelist()[pri:0, instance:com.test.TestGateWayService@7ca48474]" name="getexchangelist" duration-ms="241" started-at="2022-11-09T11:43:59Z" finished-at="2022-11-09T11:43:59Z">
+        </test-method> <!-- 开问线上中心登录项目v1PersonsInformationbasic -->
+        <test-method signature="线上中心文章listArticlePublicSearch()[pri:7, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:51Z" name="线上中心文章listArticlePublicSearch" finished-at="2023-07-31T02:54:51Z" duration-ms="271" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getexchangelist -->
-        <test-method status="PASS" signature="getinfo兑换详情()[pri:0, instance:com.test.TestGateWayService@7ca48474]" name="getinfo兑换详情" duration-ms="440" started-at="2022-11-09T11:43:59Z" finished-at="2022-11-09T11:43:59Z">
+        </test-method> <!-- 线上中心文章listArticlePublicSearch -->
+        <test-method signature="在线中心创建文章v1WeappManagerArticles()[pri:8, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:51Z" name="在线中心创建文章v1WeappManagerArticles" finished-at="2023-07-31T02:54:52Z" duration-ms="495" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getinfo兑换详情 -->
-        <test-method status="PASS" signature="getjoblist()[pri:0, instance:com.test.TestGateWayService@7ca48474]" name="getjoblist" duration-ms="206" started-at="2022-11-09T11:43:59Z" finished-at="2022-11-09T11:43:59Z">
+        </test-method> <!-- 在线中心创建文章v1WeappManagerArticles -->
+        <test-method signature="在线中心文章编辑页v1ArticlesEdit()[pri:9, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:52Z" name="在线中心文章编辑页v1ArticlesEdit" finished-at="2023-07-31T02:54:52Z" duration-ms="203" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getjoblist -->
-        <test-method status="PASS" signature="getmyapplycourselist()[pri:0, instance:com.test.TestGateWayService@7ca48474]" name="getmyapplycourselist" duration-ms="277" started-at="2022-11-09T11:43:59Z" finished-at="2022-11-09T11:44:00Z">
+        </test-method> <!-- 在线中心文章编辑页v1ArticlesEdit -->
+        <test-method signature="线上中心活动v1WeappManagerActivitylist()[pri:10, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:52Z" name="线上中心活动v1WeappManagerActivitylist" finished-at="2023-07-31T02:54:52Z" duration-ms="205" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getmyapplycourselist -->
-        <test-method status="PASS" signature="getquestions()[pri:0, instance:com.test.TestGateWayService@7ca48474]" name="getquestions" duration-ms="371" started-at="2022-11-09T11:44:00Z" finished-at="2022-11-09T11:44:00Z">
+        </test-method> <!-- 线上中心活动v1WeappManagerActivitylist -->
+        <test-method signature="线上中心活动v1CommonsJudgesSensitivewords()[pri:11, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:52Z" name="线上中心活动v1CommonsJudgesSensitivewords" finished-at="2023-07-31T02:54:53Z" duration-ms="216" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getquestions -->
-        <test-method status="PASS" signature="gettaskinfo()[pri:0, instance:com.test.TestGateWayService@7ca48474]" name="gettaskinfo" duration-ms="408" started-at="2022-11-09T11:44:00Z" finished-at="2022-11-09T11:44:01Z">
+        </test-method> <!-- 线上中心活动v1CommonsJudgesSensitivewords -->
+        <test-method signature="在线中心云协作v1WeappManagerProjectlsit()[pri:12, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:53Z" name="在线中心云协作v1WeappManagerProjectlsit" finished-at="2023-07-31T02:54:53Z" duration-ms="205" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- gettaskinfo -->
-        <test-method status="PASS" signature="savereceiveraddress()[pri:0, instance:com.test.TestGateWayService@7ca48474]" name="savereceiveraddress" duration-ms="453" started-at="2022-11-09T11:44:01Z" finished-at="2022-11-09T11:44:01Z">
+        </test-method> <!-- 在线中心云协作v1WeappManagerProjectlsit -->
+        <test-method signature="在线中心圈子v1WeappManagerCirclelsit()[pri:13, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:53Z" name="在线中心圈子v1WeappManagerCirclelsit" finished-at="2023-07-31T02:54:53Z" duration-ms="202" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- savereceiveraddress -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.TestGateWayService@7ca48474]" name="teardown" is-config="true" duration-ms="0" started-at="2022-11-09T11:44:01Z" finished-at="2022-11-09T11:44:01Z">
+        </test-method> <!-- 在线中心圈子v1WeappManagerCirclelsit -->
+        <test-method signature="在线中心创建圈子apiV1circle()[pri:14, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:53Z" name="在线中心创建圈子apiV1circle" finished-at="2023-07-31T02:54:54Z" duration-ms="597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 在线中心创建圈子apiV1circle -->
+        <test-method signature="圈子移出coManagerunbindAuthContent()[pri:15, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:54Z" name="圈子移出coManagerunbindAuthContent" finished-at="2023-07-31T02:54:54Z" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 圈子移出coManagerunbindAuthContent -->
+        <test-method signature="表单v1WeappBlongSurveylsit()[pri:16, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:54Z" name="表单v1WeappBlongSurveylsit" finished-at="2023-07-31T02:54:54Z" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 表单v1WeappBlongSurveylsit -->
+        <test-method signature="行业分类tpyeV1SurveyTemplateClass()[pri:17, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:54Z" name="行业分类tpyeV1SurveyTemplateClass" finished-at="2023-07-31T02:54:54Z" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 行业分类tpyeV1SurveyTemplateClass -->
+        <test-method signature="表单模板v1SurveyTemplateList()[pri:18, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:54Z" name="表单模板v1SurveyTemplateList" finished-at="2023-07-31T02:54:54Z" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 表单模板v1SurveyTemplateList -->
+        <test-method signature="创建空白自定义v1SurveyCreateBlank()[pri:19, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:54Z" name="创建空白自定义v1SurveyCreateBlank" finished-at="2023-07-31T02:54:55Z" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 创建空白自定义v1SurveyCreateBlank -->
+        <test-method signature="自动定义控件v1SurveyUpdate()[pri:20, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:55Z" name="自动定义控件v1SurveyUpdate" finished-at="2023-07-31T02:54:55Z" duration-ms="364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 自动定义控件v1SurveyUpdate -->
+        <test-method signature="自定义表单添加控件v1SurveyQuestion()[pri:21, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:55Z" name="自定义表单添加控件v1SurveyQuestion" finished-at="2023-07-31T02:54:55Z" duration-ms="369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 自定义表单添加控件v1SurveyQuestion -->
+        <test-method signature="自定义表单发布v1SurveyPublish()[pri:22, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:55Z" name="自定义表单发布v1SurveyPublish" finished-at="2023-07-31T02:54:55Z" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 自定义表单发布v1SurveyPublish -->
+        <test-method signature="表单删除apiV1SurveyDelete()[pri:23, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:55Z" name="表单删除apiV1SurveyDelete" finished-at="2023-07-31T02:54:56Z" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 表单删除apiV1SurveyDelete -->
+        <test-method signature="线上中心表单已授权v1WeappAuthedSurveytabList()[pri:24, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:56Z" name="线上中心表单已授权v1WeappAuthedSurveytabList" finished-at="2023-07-31T02:54:56Z" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 线上中心表单已授权v1WeappAuthedSurveytabList -->
+        <test-method signature="创建商品v1WeappManagerMallgoods()[pri:25, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:56Z" name="创建商品v1WeappManagerMallgoods" finished-at="2023-07-31T02:54:56Z" duration-ms="235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 创建商品v1WeappManagerMallgoods -->
+        <test-method signature="商品下架v1WeappManagerMallisOnSale()[pri:26, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:56Z" name="商品下架v1WeappManagerMallisOnSale" finished-at="2023-07-31T02:54:56Z" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 商品下架v1WeappManagerMallisOnSale -->
+        <test-method signature="删除商品v1WeappManagerMalldelete()[pri:27, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:56Z" name="删除商品v1WeappManagerMalldelete" finished-at="2023-07-31T02:54:56Z" duration-ms="211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 删除商品v1WeappManagerMalldelete -->
+        <test-method signature="商品操作日志mallGoodsLogspageList()[pri:28, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:56Z" name="商品操作日志mallGoodsLogspageList" finished-at="2023-07-31T02:54:57Z" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 商品操作日志mallGoodsLogspageList -->
+        <test-method signature="在线中心文集v1WeappManagerPageList()[pri:29, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:57Z" name="在线中心文集v1WeappManagerPageList" finished-at="2023-07-31T02:54:57Z" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 在线中心文集v1WeappManagerPageList -->
+        <test-method signature="创建文集v1WeappManagerColumnInfo()[pri:30, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:57Z" name="创建文集v1WeappManagerColumnInfo" finished-at="2023-07-31T02:54:57Z" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 创建文集v1WeappManagerColumnInfo -->
+        <test-method signature="文集详情v1WeappManagerColumnInfodetail()[pri:31, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:57Z" name="文集详情v1WeappManagerColumnInfodetail" finished-at="2023-07-31T02:54:57Z" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 文集详情v1WeappManagerColumnInfodetail -->
+        <test-method signature="文集下架v1WeappManagerisOnSale()[pri:32, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:57Z" name="文集下架v1WeappManagerisOnSale" finished-at="2023-07-31T02:54:57Z" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 文集下架v1WeappManagerisOnSale -->
+        <test-method signature="文集编辑PUTcolumnInfo()[pri:33, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:57Z" name="文集编辑PUTcolumnInfo" finished-at="2023-07-31T02:54:58Z" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 文集编辑PUTcolumnInfo -->
+        <test-method signature="删除文集v1WeappManagerdelete()[pri:34, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:58Z" name="删除文集v1WeappManagerdelete" finished-at="2023-07-31T02:54:58Z" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 删除文集v1WeappManagerdelete -->
+        <test-method signature="相册list()[pri:35, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:58Z" name="相册list" finished-at="2023-07-31T02:54:58Z" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 相册list -->
+        <test-method signature="创建相册albumInfo()[pri:36, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:58Z" name="创建相册albumInfo" finished-at="2023-07-31T02:54:58Z" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 创建相册albumInfo -->
+        <test-method signature="删除相册delete()[pri:37, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:58Z" name="删除相册delete" finished-at="2023-07-31T02:54:58Z" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 删除相册delete -->
+        <test-method signature="专栏v1WxThirdPartyWeappFirstClasspageList()[pri:38, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:58Z" name="专栏v1WxThirdPartyWeappFirstClasspageList" finished-at="2023-07-31T02:54:59Z" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 专栏v1WxThirdPartyWeappFirstClasspageList -->
+        <test-method signature="专栏模板templateList()[pri:39, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:59Z" name="专栏模板templateList" finished-at="2023-07-31T02:54:59Z" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 专栏模板templateList -->
+        <test-method signature="专栏空白创建v1WxThirdPartyWeappclass()[pri:40, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:59Z" name="专栏空白创建v1WxThirdPartyWeappclass" finished-at="2023-07-31T02:54:59Z" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 专栏空白创建v1WxThirdPartyWeappclass -->
+        <test-method signature="删除专栏v1WxThirdPartyWeappdelete()[pri:41, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:59Z" name="删除专栏v1WxThirdPartyWeappdelete" finished-at="2023-07-31T02:54:59Z" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 删除专栏v1WxThirdPartyWeappdelete -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.TestKwwGKService@399c4be1]" started-at="2023-07-31T02:54:59Z" name="teardown" finished-at="2023-07-31T02:54:59Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.test.TestGateWayService -->
-    </test> <!-- GateWayService -->
-    <test name="StaffingService" duration-ms="5241" started-at="2022-11-09T11:44:01Z" finished-at="2022-11-09T11:44:06Z">
-      <class name="com.test.TestStaffingService">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.TestStaffingService@32d992b2]" name="setup" is-config="true" duration-ms="1" started-at="2022-11-09T11:44:01Z" finished-at="2022-11-09T11:44:01Z">
+      </class> <!-- com.test.TestKwwGKService -->
+    </test> <!-- TestKwwGKService -->
+    <test started-at="2023-07-31T02:54:59Z" name="TestKwwWzService" finished-at="2023-07-31T02:55:04Z" duration-ms="4484">
+      <class name="com.test.TestKwwWzService">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.TestKwwWzService@6a03bcb1]" started-at="2023-07-31T02:54:59Z" name="setup" finished-at="2023-07-31T02:54:59Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="addbankcards()[pri:0, instance:com.test.TestStaffingService@32d992b2]" name="addbankcards" duration-ms="191" started-at="2022-11-09T11:44:01Z" finished-at="2022-11-09T11:44:01Z">
+        <test-method signature="getToken()[pri:1, instance:com.test.TestKwwWzService@6a03bcb1]" started-at="2023-07-31T02:54:59Z" name="getToken" finished-at="2023-07-31T02:54:59Z" duration-ms="297" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addbankcards -->
-        <test-method status="PASS" signature="getadvertisementimage()[pri:0, instance:com.test.TestStaffingService@32d992b2]" name="getadvertisementimage" duration-ms="270" started-at="2022-11-09T11:44:01Z" finished-at="2022-11-09T11:44:01Z">
+        </test-method> <!-- getToken -->
+        <test-method signature="applylistToGetappid()[pri:2, instance:com.test.TestKwwWzService@6a03bcb1]" started-at="2023-07-31T02:54:59Z" name="applylistToGetappid" finished-at="2023-07-31T02:55:00Z" duration-ms="166" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getadvertisementimage -->
-        <test-method status="PASS" signature="getbankcards()[pri:0, instance:com.test.TestStaffingService@32d992b2]" name="getbankcards" duration-ms="213" started-at="2022-11-09T11:44:01Z" finished-at="2022-11-09T11:44:02Z">
+        </test-method> <!-- applylistToGetappid -->
+        <test-method signature="首页设计homeClassidGetDatasID()[pri:3, instance:com.test.TestKwwWzService@6a03bcb1]" started-at="2023-07-31T02:55:00Z" name="首页设计homeClassidGetDatasID" finished-at="2023-07-31T02:55:00Z" duration-ms="167" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getbankcards -->
-        <test-method status="PASS" signature="getpersonalsummaryInfo()[pri:0, instance:com.test.TestStaffingService@32d992b2]" name="getpersonalsummaryInfo" duration-ms="316" started-at="2022-11-09T11:44:02Z" finished-at="2022-11-09T11:44:02Z">
+        </test-method> <!-- 首页设计homeClassidGetDatasID -->
+        <test-method signature="classLayoutTypePut()[pri:4, instance:com.test.TestKwwWzService@6a03bcb1]" started-at="2023-07-31T02:55:00Z" name="classLayoutTypePut" finished-at="2023-07-31T02:55:00Z" duration-ms="172" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getpersonalsummaryInfo -->
-        <test-method status="PASS" signature="gettaskfavorite()[pri:0, instance:com.test.TestStaffingService@32d992b2]" name="gettaskfavorite" duration-ms="261" started-at="2022-11-09T11:44:02Z" finished-at="2022-11-09T11:44:02Z">
+        </test-method> <!-- classLayoutTypePut -->
+        <test-method signature="classNavStyle()[pri:5, instance:com.test.TestKwwWzService@6a03bcb1]" started-at="2023-07-31T02:55:00Z" name="classNavStyle" finished-at="2023-07-31T02:55:00Z" duration-ms="169" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- gettaskfavorite -->
-        <test-method status="PASS" signature="issubscribewxservice服务号()[pri:0, instance:com.test.TestStaffingService@32d992b2]" name="issubscribewxservice服务号" duration-ms="247" started-at="2022-11-09T11:44:02Z" finished-at="2022-11-09T11:44:02Z">
+        </test-method> <!-- classNavStyle -->
+        <test-method signature="classSearchBarOpen()[pri:6, instance:com.test.TestKwwWzService@6a03bcb1]" started-at="2023-07-31T02:55:00Z" name="classSearchBarOpen" finished-at="2023-07-31T02:55:00Z" duration-ms="174" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- issubscribewxservice服务号 -->
-        <test-method status="PASS" signature="v531Getinfo()[pri:0, instance:com.test.TestStaffingService@32d992b2]" name="v531Getinfo" duration-ms="1148" started-at="2022-11-09T11:44:02Z" finished-at="2022-11-09T11:44:04Z">
+        </test-method> <!-- classSearchBarOpen -->
+        <test-method signature="classNavLayoutType()[pri:7, instance:com.test.TestKwwWzService@6a03bcb1]" started-at="2023-07-31T02:55:00Z" name="classNavLayoutType" finished-at="2023-07-31T02:55:01Z" duration-ms="172" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- v531Getinfo -->
-        <test-method status="PASS" signature="个人信息()[pri:0, instance:com.test.TestStaffingService@32d992b2]" name="个人信息" duration-ms="1086" started-at="2022-11-09T11:44:04Z" finished-at="2022-11-09T11:44:05Z">
+        </test-method> <!-- classNavLayoutType -->
+        <test-method signature="NewDesignerAllData()[pri:8, instance:com.test.TestKwwWzService@6a03bcb1]" started-at="2023-07-31T02:55:01Z" name="NewDesignerAllData" finished-at="2023-07-31T02:55:01Z" duration-ms="220" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- 个人信息 -->
-        <test-method status="PASS" signature="任务列表()[pri:0, instance:com.test.TestStaffingService@32d992b2]" name="任务列表" duration-ms="216" started-at="2022-11-09T11:44:05Z" finished-at="2022-11-09T11:44:05Z">
+        </test-method> <!-- NewDesignerAllData -->
+        <test-method signature="NavLayoutType()[pri:9, instance:com.test.TestKwwWzService@6a03bcb1]" started-at="2023-07-31T02:55:01Z" name="NavLayoutType" finished-at="2023-07-31T02:55:01Z" duration-ms="170" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- 任务列表 -->
-        <test-method status="PASS" signature="任务详情()[pri:0, instance:com.test.TestStaffingService@32d992b2]" name="任务详情" duration-ms="215" started-at="2022-11-09T11:44:05Z" finished-at="2022-11-09T11:44:05Z">
+        </test-method> <!-- NavLayoutType -->
+        <test-method signature="headerNavGetId()[pri:10, instance:com.test.TestKwwWzService@6a03bcb1]" started-at="2023-07-31T02:55:01Z" name="headerNavGetId" finished-at="2023-07-31T02:55:01Z" duration-ms="238" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- 任务详情 -->
-        <test-method status="PASS" signature="协议gettaskagreements()[pri:0, instance:com.test.TestStaffingService@32d992b2]" name="协议gettaskagreements" duration-ms="170" started-at="2022-11-09T11:44:05Z" finished-at="2022-11-09T11:44:05Z">
+        </test-method> <!-- headerNavGetId -->
+        <test-method signature="footerCategor()[pri:11, instance:com.test.TestKwwWzService@6a03bcb1]" started-at="2023-07-31T02:55:01Z" name="footerCategor" finished-at="2023-07-31T02:55:01Z" duration-ms="167" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- 协议gettaskagreements -->
-        <test-method status="PASS" signature="合作详情已结束()[pri:0, instance:com.test.TestStaffingService@32d992b2]" name="合作详情已结束" duration-ms="232" started-at="2022-11-09T11:44:05Z" finished-at="2022-11-09T11:44:06Z">
+        </test-method> <!-- footerCategor -->
+        <test-method signature="headerNav()[pri:12, instance:com.test.TestKwwWzService@6a03bcb1]" started-at="2023-07-31T02:55:01Z" name="headerNav" finished-at="2023-07-31T02:55:01Z" duration-ms="183" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- 合作详情已结束 -->
-        <test-method status="PASS" signature="我的报名信息()[pri:0, instance:com.test.TestStaffingService@32d992b2]" name="我的报名信息" duration-ms="193" started-at="2022-11-09T11:44:06Z" finished-at="2022-11-09T11:44:06Z">
+        </test-method> <!-- headerNav -->
+        <test-method signature="模板库homeClassid()[pri:13, instance:com.test.TestKwwWzService@6a03bcb1]" started-at="2023-07-31T02:55:01Z" name="模板库homeClassid" finished-at="2023-07-31T02:55:02Z" duration-ms="182" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- 我的报名信息 -->
-        <test-method status="PASS" signature="我的签约信息()[pri:0, instance:com.test.TestStaffingService@32d992b2]" name="我的签约信息" duration-ms="299" started-at="2022-11-09T11:44:06Z" finished-at="2022-11-09T11:44:06Z">
+        </test-method> <!-- 模板库homeClassid -->
+        <test-method signature="模板templateStandardList()[pri:14, instance:com.test.TestKwwWzService@6a03bcb1]" started-at="2023-07-31T02:55:02Z" name="模板templateStandardList" finished-at="2023-07-31T02:55:02Z" duration-ms="185" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- 我的签约信息 -->
-        <test-method status="PASS" signature="报名详情()[pri:0, instance:com.test.TestStaffingService@32d992b2]" name="报名详情" duration-ms="179" started-at="2022-11-09T11:44:06Z" finished-at="2022-11-09T11:44:06Z">
+        </test-method> <!-- 模板templateStandardList -->
+        <test-method signature="模板使用emplateStandard()[pri:15, instance:com.test.TestKwwWzService@6a03bcb1]" started-at="2023-07-31T02:55:02Z" name="模板使用emplateStandard" finished-at="2023-07-31T02:55:02Z" duration-ms="201" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- 报名详情 -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.TestStaffingService@32d992b2]" name="teardown" is-config="true" duration-ms="0" started-at="2022-11-09T11:44:06Z" finished-at="2022-11-09T11:44:06Z">
+        </test-method> <!-- 模板使用emplateStandard -->
+        <test-method signature="userTypeList()[pri:16, instance:com.test.TestKwwWzService@6a03bcb1]" started-at="2023-07-31T02:55:02Z" name="userTypeList" finished-at="2023-07-31T02:55:02Z" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userTypeList -->
+        <test-method signature="noticeUnreadNum()[pri:17, instance:com.test.TestKwwWzService@6a03bcb1]" started-at="2023-07-31T02:55:02Z" name="noticeUnreadNum" finished-at="2023-07-31T02:55:02Z" duration-ms="165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- noticeUnreadNum -->
+        <test-method signature="weappLeftMenuData()[pri:18, instance:com.test.TestKwwWzService@6a03bcb1]" started-at="2023-07-31T02:55:02Z" name="weappLeftMenuData" finished-at="2023-07-31T02:55:03Z" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- weappLeftMenuData -->
+        <test-method signature="skinList()[pri:19, instance:com.test.TestKwwWzService@6a03bcb1]" started-at="2023-07-31T02:55:03Z" name="skinList" finished-at="2023-07-31T02:55:03Z" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- skinList -->
+        <test-method signature="weappSetSkin()[pri:20, instance:com.test.TestKwwWzService@6a03bcb1]" started-at="2023-07-31T02:55:03Z" name="weappSetSkin" finished-at="2023-07-31T02:55:03Z" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- weappSetSkin -->
+        <test-method signature="手机网站详情websiteAppidDetail()[pri:21, instance:com.test.TestKwwWzService@6a03bcb1]" started-at="2023-07-31T02:55:03Z" name="手机网站详情websiteAppidDetail" finished-at="2023-07-31T02:55:03Z" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 手机网站详情websiteAppidDetail -->
+        <test-method signature="手机网站详情保存apiV1WebsiteNicknameAndImg()[pri:22, instance:com.test.TestKwwWzService@6a03bcb1]" started-at="2023-07-31T02:55:03Z" name="手机网站详情保存apiV1WebsiteNicknameAndImg" finished-at="2023-07-31T02:55:04Z" duration-ms="531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 手机网站详情保存apiV1WebsiteNicknameAndImg -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.TestKwwWzService@6a03bcb1]" started-at="2023-07-31T02:55:04Z" name="teardown" finished-at="2023-07-31T02:55:04Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.test.TestStaffingService -->
-    </test> <!-- StaffingService -->
-    <test name="WnsService" duration-ms="3437" started-at="2022-11-09T11:44:06Z" finished-at="2022-11-09T11:44:10Z">
-      <class name="com.test.TestWnsService">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.TestWnsService@6cc4c815]" name="setup" is-config="true" duration-ms="0" started-at="2022-11-09T11:44:06Z" finished-at="2022-11-09T11:44:06Z">
+      </class> <!-- com.test.TestKwwWzService -->
+    </test> <!-- TestKwwWzService -->
+    <test started-at="2023-07-31T02:55:04Z" name="TestKwwXCXService" finished-at="2023-07-31T02:55:06Z" duration-ms="2030">
+      <class name="com.test.TestKwwXCXService">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.TestKwwXCXService@32910148]" started-at="2023-07-31T02:55:04Z" name="setup" finished-at="2023-07-31T02:55:04Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Merchant合作商户()[pri:0, instance:com.test.TestWnsService@6cc4c815]" name="Merchant合作商户" duration-ms="216" started-at="2022-11-09T11:44:06Z" finished-at="2022-11-09T11:44:06Z">
+        <test-method signature="getToken()[pri:1, instance:com.test.TestKwwXCXService@32910148]" started-at="2023-07-31T02:55:04Z" name="getToken" finished-at="2023-07-31T02:55:04Z" duration-ms="285" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Merchant合作商户 -->
-        <test-method status="PASS" signature="getcontent()[pri:0, instance:com.test.TestWnsService@6cc4c815]" name="getcontent" duration-ms="188" started-at="2022-11-09T11:44:06Z" finished-at="2022-11-09T11:44:07Z">
+        </test-method> <!-- getToken -->
+        <test-method signature="applylistToGetappid()[pri:2, instance:com.test.TestKwwXCXService@32910148]" started-at="2023-07-31T02:55:04Z" name="applylistToGetappid" finished-at="2023-07-31T02:55:04Z" duration-ms="190" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getcontent -->
-        <test-method status="PASS" signature="getidcardinfo()[pri:0, instance:com.test.TestWnsService@6cc4c815]" name="getidcardinfo" duration-ms="203" started-at="2022-11-09T11:44:07Z" finished-at="2022-11-09T11:44:07Z">
+        </test-method> <!-- applylistToGetappid -->
+        <test-method signature="apiV1WxThirdPartyWeappGetFailPop()[pri:3, instance:com.test.TestKwwXCXService@32910148]" started-at="2023-07-31T02:55:04Z" name="apiV1WxThirdPartyWeappGetFailPop" finished-at="2023-07-31T02:55:04Z" duration-ms="203" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getidcardinfo -->
-        <test-method status="PASS" signature="getmobiles()[pri:0, instance:com.test.TestWnsService@6cc4c815]" name="getmobiles" duration-ms="268" started-at="2022-11-09T11:44:07Z" finished-at="2022-11-09T11:44:07Z">
+        </test-method> <!-- apiV1WxThirdPartyWeappGetFailPop -->
+        <test-method signature="apiV1WxThirdPartyHomeClassid()[pri:4, instance:com.test.TestKwwXCXService@32910148]" started-at="2023-07-31T02:55:04Z" name="apiV1WxThirdPartyHomeClassid" finished-at="2023-07-31T02:55:05Z" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getmobiles -->
-        <test-method status="PASS" signature="getnotsettleinfo()[pri:0, instance:com.test.TestWnsService@6cc4c815]" name="getnotsettleinfo" duration-ms="208" started-at="2022-11-09T11:44:07Z" finished-at="2022-11-09T11:44:07Z">
+        </test-method> <!-- apiV1WxThirdPartyHomeClassid -->
+        <test-method signature="Getv1WeappApplyFooterCategory()[pri:5, instance:com.test.TestKwwXCXService@32910148]" started-at="2023-07-31T02:55:05Z" name="Getv1WeappApplyFooterCategory" finished-at="2023-07-31T02:55:05Z" duration-ms="159" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getnotsettleinfo -->
-        <test-method status="PASS" signature="getsettlementscount()[pri:0, instance:com.test.TestWnsService@6cc4c815]" name="getsettlementscount" duration-ms="269" started-at="2022-11-09T11:44:07Z" finished-at="2022-11-09T11:44:08Z">
+        </test-method> <!-- Getv1WeappApplyFooterCategory -->
+        <test-method signature="v1WeappManagerHeaderNav()[pri:6, instance:com.test.TestKwwXCXService@32910148]" started-at="2023-07-31T02:55:05Z" name="v1WeappManagerHeaderNav" finished-at="2023-07-31T02:55:05Z" duration-ms="174" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getsettlementscount -->
-        <test-method status="PASS" signature="我的签约wns()[pri:0, instance:com.test.TestWnsService@6cc4c815]" name="我的签约wns" duration-ms="192" started-at="2022-11-09T11:44:08Z" finished-at="2022-11-09T11:44:08Z">
+        </test-method> <!-- v1WeappManagerHeaderNav -->
+        <test-method signature="Postv1WeappApplyFooterCategory()[pri:7, instance:com.test.TestKwwXCXService@32910148]" started-at="2023-07-31T02:55:05Z" name="Postv1WeappApplyFooterCategory" finished-at="2023-07-31T02:55:05Z" duration-ms="193" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- 我的签约wns -->
-        <test-method status="PASS" signature="打款失败订单()[pri:0, instance:com.test.TestWnsService@6cc4c815]" name="打款失败订单" duration-ms="172" started-at="2022-11-09T11:44:08Z" finished-at="2022-11-09T11:44:08Z">
+        </test-method> <!-- Postv1WeappApplyFooterCategory -->
+        <test-method signature="v1WxThirdPartyHomeClassidAppType2()[pri:8, instance:com.test.TestKwwXCXService@32910148]" started-at="2023-07-31T02:55:05Z" name="v1WxThirdPartyHomeClassidAppType2" finished-at="2023-07-31T02:55:05Z" duration-ms="177" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- 打款失败订单 -->
-        <test-method status="PASS" signature="批量结算列表()[pri:0, instance:com.test.TestWnsService@6cc4c815]" name="批量结算列表" duration-ms="219" started-at="2022-11-09T11:44:08Z" finished-at="2022-11-09T11:44:08Z">
+        </test-method> <!-- v1WxThirdPartyHomeClassidAppType2 -->
+        <test-method signature="小程序详情v1WxThirdPartyWeappAppidDetail()[pri:9, instance:com.test.TestKwwXCXService@32910148]" started-at="2023-07-31T02:55:05Z" name="小程序详情v1WxThirdPartyWeappAppidDetail" finished-at="2023-07-31T02:55:06Z" duration-ms="465" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- 批量结算列表 -->
-        <test-method status="PASS" signature="服务号ssubscribewxservice()[pri:0, instance:com.test.TestWnsService@6cc4c815]" name="服务号ssubscribewxservice" duration-ms="220" started-at="2022-11-09T11:44:08Z" finished-at="2022-11-09T11:44:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- 服务号ssubscribewxservice -->
-        <test-method status="PASS" signature="结算收入()[pri:0, instance:com.test.TestWnsService@6cc4c815]" name="结算收入" duration-ms="207" started-at="2022-11-09T11:44:08Z" finished-at="2022-11-09T11:44:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- 结算收入 -->
-        <test-method status="PASS" signature="获取个人信息()[pri:0, instance:com.test.TestWnsService@6cc4c815]" name="获取个人信息" duration-ms="1074" started-at="2022-11-09T11:44:09Z" finished-at="2022-11-09T11:44:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- 获取个人信息 -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.TestWnsService@6cc4c815]" name="teardown" is-config="true" duration-ms="0" started-at="2022-11-09T11:44:10Z" finished-at="2022-11-09T11:44:10Z">
+        </test-method> <!-- 小程序详情v1WxThirdPartyWeappAppidDetail -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.TestKwwXCXService@32910148]" started-at="2023-07-31T02:55:06Z" name="teardown" finished-at="2023-07-31T02:55:06Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.test.TestWnsService -->
-    </test> <!-- WnsService -->
-  </suite> <!-- C-api-Master-AutoTest -->
+      </class> <!-- com.test.TestKwwXCXService -->
+    </test> <!-- TestKwwXCXService -->
+    <test started-at="2023-07-31T02:55:06Z" name="TestKwwCYService" finished-at="2023-07-31T02:55:07Z" duration-ms="1354">
+      <class name="com.test.TestKwwCYService">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.TestKwwCYService@55740540]" started-at="2023-07-31T02:55:06Z" name="setup" finished-at="2023-07-31T02:55:06Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getToken()[pri:1, instance:com.test.TestKwwCYService@55740540]" started-at="2023-07-31T02:55:06Z" name="getToken" finished-at="2023-07-31T02:55:06Z" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getToken -->
+        <test-method signature="applylistToGetappid()[pri:2, instance:com.test.TestKwwCYService@55740540]" started-at="2023-07-31T02:55:06Z" name="applylistToGetappid" finished-at="2023-07-31T02:55:06Z" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applylistToGetappid -->
+        <test-method signature="v1WeappManagerApplyContentLimit()[pri:3, instance:com.test.TestKwwCYService@55740540]" started-at="2023-07-31T02:55:06Z" name="v1WeappManagerApplyContentLimit" finished-at="2023-07-31T02:55:06Z" duration-ms="162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- v1WeappManagerApplyContentLimit -->
+        <test-method signature="邀请v1WeappInviteMember()[pri:4, instance:com.test.TestKwwCYService@55740540]" started-at="2023-07-31T02:55:06Z" name="邀请v1WeappInviteMember" finished-at="2023-07-31T02:55:07Z" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 邀请v1WeappInviteMember -->
+        <test-method signature="v1MobileWeappUserSearch()[pri:5, instance:com.test.TestKwwCYService@55740540]" started-at="2023-07-31T02:55:07Z" name="v1MobileWeappUserSearch" finished-at="2023-07-31T02:55:07Z" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- v1MobileWeappUserSearch -->
+        <test-method signature="权限变更v1WeappManagerUserUpdateRole()[pri:6, instance:com.test.TestKwwCYService@55740540]" started-at="2023-07-31T02:55:07Z" name="权限变更v1WeappManagerUserUpdateRole" finished-at="2023-07-31T02:55:07Z" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 权限变更v1WeappManagerUserUpdateRole -->
+        <test-method signature="删除成员v1WeappManagerDeleteUser()[pri:7, instance:com.test.TestKwwCYService@55740540]" started-at="2023-07-31T02:55:07Z" name="删除成员v1WeappManagerDeleteUser" finished-at="2023-07-31T02:55:07Z" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 删除成员v1WeappManagerDeleteUser -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.TestKwwCYService@55740540]" started-at="2023-07-31T02:55:07Z" name="teardown" finished-at="2023-07-31T02:55:07Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.test.TestKwwCYService -->
+    </test> <!-- TestKwwCYService -->
+    <test started-at="2023-07-31T02:55:07Z" name="TestKwwNRService" finished-at="2023-07-31T02:55:21Z" duration-ms="14085">
+      <class name="com.test.TestKwwNRService">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:07Z" name="setup" finished-at="2023-07-31T02:55:07Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getToken()[pri:1, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:07Z" name="getToken" finished-at="2023-07-31T02:55:07Z" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getToken -->
+        <test-method signature="applylistToGetappid()[pri:2, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:07Z" name="applylistToGetappid" finished-at="2023-07-31T02:55:08Z" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applylistToGetappid -->
+        <test-method signature="资料中心v1WeappMangerFileTotalSize()[pri:3, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:08Z" name="资料中心v1WeappMangerFileTotalSize" finished-at="2023-07-31T02:55:08Z" duration-ms="165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 资料中心v1WeappMangerFileTotalSize -->
+        <test-method signature="获取uuidWeappUploadToken()[pri:4, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:08Z" name="获取uuidWeappUploadToken" finished-at="2023-07-31T02:55:08Z" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 获取uuidWeappUploadToken -->
+        <test-method signature="上传图片v1WeappManagerFile()[pri:5, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:08Z" name="上传图片v1WeappManagerFile" finished-at="2023-07-31T02:55:08Z" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 上传图片v1WeappManagerFile -->
+        <test-method signature="获取图片idv1WeappManagerFileList()[pri:6, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:08Z" name="获取图片idv1WeappManagerFileList" finished-at="2023-07-31T02:55:08Z" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 获取图片idv1WeappManagerFileList -->
+        <test-method signature="图片详情v1WeappManagerFileTPid()[pri:7, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:08Z" name="图片详情v1WeappManagerFileTPid" finished-at="2023-07-31T02:55:10Z" duration-ms="1261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 图片详情v1WeappManagerFileTPid -->
+        <test-method signature="图片删除v1WeappManagerFileDelete()[pri:8, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:10Z" name="图片删除v1WeappManagerFileDelete" finished-at="2023-07-31T02:55:10Z" duration-ms="448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 图片删除v1WeappManagerFileDelete -->
+        <test-method signature="获取视频uuidV1WeappManagerFileUploadToken()[pri:9, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:10Z" name="获取视频uuidV1WeappManagerFileUploadToken" finished-at="2023-07-31T02:55:10Z" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 获取视频uuidV1WeappManagerFileUploadToken -->
+        <test-method signature="上传视频v1WeappManagerFile()[pri:10, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:10Z" name="上传视频v1WeappManagerFile" finished-at="2023-07-31T02:55:10Z" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 上传视频v1WeappManagerFile -->
+        <test-method signature="视频Listidv1WeappManagerFileLis()[pri:11, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:10Z" name="视频Listidv1WeappManagerFileLis" finished-at="2023-07-31T02:55:10Z" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 视频Listidv1WeappManagerFileLis -->
+        <test-method signature="删除视频v1WeappManagerFile()[pri:12, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:10Z" name="删除视频v1WeappManagerFile" finished-at="2023-07-31T02:55:11Z" duration-ms="388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 删除视频v1WeappManagerFile -->
+        <test-method signature="音频Listv1WeappManagerFileList()[pri:13, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:11Z" name="音频Listv1WeappManagerFileList" finished-at="2023-07-31T02:55:11Z" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 音频Listv1WeappManagerFileList -->
+        <test-method signature="音频获取uuidv1WeappManagerFileUploadToken()[pri:14, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:11Z" name="音频获取uuidv1WeappManagerFileUploadToken" finished-at="2023-07-31T02:55:11Z" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 音频获取uuidv1WeappManagerFileUploadToken -->
+        <test-method signature="提交音频V1WeappManagerFile()[pri:15, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:11Z" name="提交音频V1WeappManagerFile" finished-at="2023-07-31T02:55:11Z" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 提交音频V1WeappManagerFile -->
+        <test-method signature="删除音频文件V1WeappManagerFile()[pri:16, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:11Z" name="删除音频文件V1WeappManagerFile" finished-at="2023-07-31T02:55:12Z" duration-ms="381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 删除音频文件V1WeappManagerFile -->
+        <test-method signature="获取文档uuidv1WeappManagerFileUploadToken()[pri:17, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:12Z" name="获取文档uuidv1WeappManagerFileUploadToken" finished-at="2023-07-31T02:55:12Z" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 获取文档uuidv1WeappManagerFileUploadToken -->
+        <test-method signature="上传文档v1WeappManagerFile()[pri:18, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:12Z" name="上传文档v1WeappManagerFile" finished-at="2023-07-31T02:55:12Z" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 上传文档v1WeappManagerFile -->
+        <test-method signature="文档PageListv1WeappManagerFileList()[pri:19, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:12Z" name="文档PageListv1WeappManagerFileList" finished-at="2023-07-31T02:55:12Z" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 文档PageListv1WeappManagerFileList -->
+        <test-method signature="文档删除v1WeappManagerFile()[pri:20, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:12Z" name="文档删除v1WeappManagerFile" finished-at="2023-07-31T02:55:13Z" duration-ms="414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 文档删除v1WeappManagerFile -->
+        <test-method signature="快捷导航PageListv1WeappManagerQuickNavSearch()[pri:21, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:13Z" name="快捷导航PageListv1WeappManagerQuickNavSearch" finished-at="2023-07-31T02:55:13Z" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 快捷导航PageListv1WeappManagerQuickNavSearch -->
+        <test-method signature="创建快捷导航v1WeappManagerQuickNav()[pri:22, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:13Z" name="创建快捷导航v1WeappManagerQuickNav" finished-at="2023-07-31T02:55:13Z" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 创建快捷导航v1WeappManagerQuickNav -->
+        <test-method signature="导航重命名v1WeappManagerQuickNavName()[pri:23, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:13Z" name="导航重命名v1WeappManagerQuickNavName" finished-at="2023-07-31T02:55:13Z" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 导航重命名v1WeappManagerQuickNavName -->
+        <test-method signature="编辑快捷导航v1WeappManagerQuickNavSetting()[pri:24, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:13Z" name="编辑快捷导航v1WeappManagerQuickNavSetting" finished-at="2023-07-31T02:55:14Z" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 编辑快捷导航v1WeappManagerQuickNavSetting -->
+        <test-method signature="删除快捷导航v1WeappManagerQuickNav()[pri:25, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:14Z" name="删除快捷导航v1WeappManagerQuickNav" finished-at="2023-07-31T02:55:14Z" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 删除快捷导航v1WeappManagerQuickNav -->
+        <test-method signature="授权内容已授权tabLISTminiProgramCoManagerAuthApplyAuditStatus()[pri:26, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:14Z" name="授权内容已授权tabLISTminiProgramCoManagerAuthApplyAuditStatus" finished-at="2023-07-31T02:55:15Z" duration-ms="1488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 授权内容已授权tabLISTminiProgramCoManagerAuthApplyAuditStatus -->
+        <test-method signature="授权搜索LISTweappManageAuthApplyActivitySearch()[pri:27, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:15Z" name="授权搜索LISTweappManageAuthApplyActivitySearch" finished-at="2023-07-31T02:55:16Z" duration-ms="603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 授权搜索LISTweappManageAuthApplyActivitySearch -->
+        <test-method signature="内容待授权miniProgramCoManagerAuthApplyAuditStatus()[pri:28, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:16Z" name="内容待授权miniProgramCoManagerAuthApplyAuditStatus" finished-at="2023-07-31T02:55:17Z" duration-ms="1245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 内容待授权miniProgramCoManagerAuthApplyAuditStatus -->
+        <test-method signature="微页面获取模板weappManagerMicroPagesSysTemplates()[pri:29, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:17Z" name="微页面获取模板weappManagerMicroPagesSysTemplates" finished-at="2023-07-31T02:55:17Z" duration-ms="225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 微页面获取模板weappManagerMicroPagesSysTemplates -->
+        <test-method signature="微页面创建H5v1WeappManagerMicroPages()[pri:30, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:17Z" name="微页面创建H5v1WeappManagerMicroPages" finished-at="2023-07-31T02:55:18Z" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 微页面创建H5v1WeappManagerMicroPages -->
+        <test-method signature="H5设计创建v1WeappManagerMicroPages()[pri:31, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:18Z" name="H5设计创建v1WeappManagerMicroPages" finished-at="2023-07-31T02:55:18Z" duration-ms="244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- H5设计创建v1WeappManagerMicroPages -->
+        <test-method signature="微页面H5复制weappManagerMicroPages()[pri:32, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:18Z" name="微页面H5复制weappManagerMicroPages" finished-at="2023-07-31T02:55:18Z" duration-ms="342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 微页面H5复制weappManagerMicroPages -->
+        <test-method signature="删除微页面H5v1WeappManagerMicroPages()[pri:33, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:18Z" name="删除微页面H5v1WeappManagerMicroPages" finished-at="2023-07-31T02:55:18Z" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 删除微页面H5v1WeappManagerMicroPages -->
+        <test-method signature="发布微页面H5weappManagerMicroPagesPublish()[pri:33, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:18Z" name="发布微页面H5weappManagerMicroPagesPublish" finished-at="2023-07-31T02:55:19Z" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 发布微页面H5weappManagerMicroPagesPublish -->
+        <test-method signature="删除复制H5weappManagerMicroPages()[pri:34, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:19Z" name="删除复制H5weappManagerMicroPages" finished-at="2023-07-31T02:55:19Z" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 删除复制H5weappManagerMicroPages -->
+        <test-method signature="创建微页面长页v1WeappManagerMicroPages()[pri:35, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:19Z" name="创建微页面长页v1WeappManagerMicroPages" finished-at="2023-07-31T02:55:19Z" duration-ms="212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 创建微页面长页v1WeappManagerMicroPages -->
+        <test-method signature="微页面创建发布长页v1WeappManagerMicroPages()[pri:36, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:19Z" name="微页面创建发布长页v1WeappManagerMicroPages" finished-at="2023-07-31T02:55:19Z" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 微页面创建发布长页v1WeappManagerMicroPages -->
+        <test-method signature="微页面复制长页weappManagerMicroPagesCopy()[pri:37, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:19Z" name="微页面复制长页weappManagerMicroPagesCopy" finished-at="2023-07-31T02:55:19Z" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 微页面复制长页weappManagerMicroPagesCopy -->
+        <test-method signature="删除微页面长页v1WeappManagerMicroPagesCYID()[pri:38, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:19Z" name="删除微页面长页v1WeappManagerMicroPagesCYID" finished-at="2023-07-31T02:55:20Z" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 删除微页面长页v1WeappManagerMicroPagesCYID -->
+        <test-method signature="微页面长页发布v1WeappManagerMicroPagesPublish()[pri:39, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:20Z" name="微页面长页发布v1WeappManagerMicroPagesPublish" finished-at="2023-07-31T02:55:20Z" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 微页面长页发布v1WeappManagerMicroPagesPublish -->
+        <test-method signature="删除微页面复制长页weappManagerMicroPagesCopycyid()[pri:40, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:20Z" name="删除微页面复制长页weappManagerMicroPagesCopycyid" finished-at="2023-07-31T02:55:20Z" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 删除微页面复制长页weappManagerMicroPagesCopycyid -->
+        <test-method signature="微页面创建电脑网站weappManagerMicroPages()[pri:41, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:20Z" name="微页面创建电脑网站weappManagerMicroPages" finished-at="2023-07-31T02:55:20Z" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 微页面创建电脑网站weappManagerMicroPages -->
+        <test-method signature="发布微页面网站v1WeappManagerMicroPages()[pri:42, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:20Z" name="发布微页面网站v1WeappManagerMicroPages" finished-at="2023-07-31T02:55:20Z" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 发布微页面网站v1WeappManagerMicroPages -->
+        <test-method signature="微页面网站复制weappManagerMicroPagesCopy()[pri:43, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:20Z" name="微页面网站复制weappManagerMicroPagesCopy" finished-at="2023-07-31T02:55:21Z" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 微页面网站复制weappManagerMicroPagesCopy -->
+        <test-method signature="删除网站页面v1WeappManagerMicroPages()[pri:44, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:21Z" name="删除网站页面v1WeappManagerMicroPages" finished-at="2023-07-31T02:55:21Z" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 删除网站页面v1WeappManagerMicroPages -->
+        <test-method signature="微页面网站发布weappManagerMicroPagesPublish()[pri:45, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:21Z" name="微页面网站发布weappManagerMicroPagesPublish" finished-at="2023-07-31T02:55:21Z" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 微页面网站发布weappManagerMicroPagesPublish -->
+        <test-method signature="删除复制网站页weappManagerMicroPages()[pri:46, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:21Z" name="删除复制网站页weappManagerMicroPages" finished-at="2023-07-31T02:55:21Z" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 删除复制网站页weappManagerMicroPages -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.TestKwwNRService@6c779568]" started-at="2023-07-31T02:55:21Z" name="teardown" finished-at="2023-07-31T02:55:21Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.test.TestKwwNRService -->
+    </test> <!-- TestKwwNRService -->
+    <test started-at="2023-07-31T02:55:21Z" name="TestKwwYYService" finished-at="2023-07-31T02:55:37Z" duration-ms="15908">
+      <class name="com.test.TestKwwYYService">
+        <test-method signature="getToken()[pri:1, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:21Z" name="getToken" finished-at="2023-07-31T02:55:22Z" duration-ms="801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getToken -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:21Z" name="setup" finished-at="2023-07-31T02:55:21Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="applylistToGetappid()[pri:2, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:22Z" name="applylistToGetappid" finished-at="2023-07-31T02:55:22Z" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applylistToGetappid -->
+        <test-method signature="AI助手LISTweappManagerAiAssistantList()[pri:3, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:22Z" name="AI助手LISTweappManagerAiAssistantList" finished-at="2023-07-31T02:55:22Z" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AI助手LISTweappManagerAiAssistantList -->
+        <test-method signature="创建AI助手weappManagerAiAssistant()[pri:4, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:22Z" name="创建AI助手weappManagerAiAssistant" finished-at="2023-07-31T02:55:24Z" duration-ms="1440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 创建AI助手weappManagerAiAssistant -->
+        <test-method signature="AI内容库添加内容weappManagerAiAssistantLibrary()[pri:5, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:24Z" name="AI内容库添加内容weappManagerAiAssistantLibrary" finished-at="2023-07-31T02:55:27Z" duration-ms="3139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AI内容库添加内容weappManagerAiAssistantLibrary -->
+        <test-method signature="AI助手内容库ListWeappManagerAiAssistantLibraryList()[pri:6, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:27Z" name="AI助手内容库ListWeappManagerAiAssistantLibraryList" finished-at="2023-07-31T02:55:27Z" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AI助手内容库ListWeappManagerAiAssistantLibraryList -->
+        <test-method signature="AI助手内容库内容同步managerAiAssistantUnsyncCountAssistantId()[pri:7, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:27Z" name="AI助手内容库内容同步managerAiAssistantUnsyncCountAssistantId" finished-at="2023-07-31T02:55:27Z" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AI助手内容库内容同步managerAiAssistantUnsyncCountAssistantId -->
+        <test-method signature="内容库删除managerAiAssistantLibraryNRID()[pri:8, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:27Z" name="内容库删除managerAiAssistantLibraryNRID" finished-at="2023-07-31T02:55:31Z" duration-ms="4123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 内容库删除managerAiAssistantLibraryNRID -->
+        <test-method signature="AI助手提问v2AiQuestionAnswer()[pri:9, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:31Z" name="AI助手提问v2AiQuestionAnswer" finished-at="2023-07-31T02:55:32Z" duration-ms="373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AI助手提问v2AiQuestionAnswer -->
+        <test-method signature="AI助手设置weappManagerAiAssistantDetail()[pri:10, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:32Z" name="AI助手设置weappManagerAiAssistantDetail" finished-at="2023-07-31T02:55:32Z" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AI助手设置weappManagerAiAssistantDetail -->
+        <test-method signature="修改AI助手weappManagerAiAssistant()[pri:11, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:32Z" name="修改AI助手weappManagerAiAssistant" finished-at="2023-07-31T02:55:32Z" duration-ms="410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 修改AI助手weappManagerAiAssistant -->
+        <test-method signature="AI助手查看分析数据weappManagerAiAssistantQuestionAnswerList()[pri:12, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:32Z" name="AI助手查看分析数据weappManagerAiAssistantQuestionAnswerList" finished-at="2023-07-31T02:55:33Z" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AI助手查看分析数据weappManagerAiAssistantQuestionAnswerList -->
+        <test-method signature="AI助手回答点赞踩统计weappManagerAiAssistantQuestionAnswerLikeNumber()[pri:13, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:33Z" name="AI助手回答点赞踩统计weappManagerAiAssistantQuestionAnswerLikeNumber" finished-at="2023-07-31T02:55:33Z" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AI助手回答点赞踩统计weappManagerAiAssistantQuestionAnswerLikeNumber -->
+        <test-method signature="删除AI助手weappManagerAiAssistant()[pri:14, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:33Z" name="删除AI助手weappManagerAiAssistant" finished-at="2023-07-31T02:55:33Z" duration-ms="598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 删除AI助手weappManagerAiAssistant -->
+        <test-method signature="订单查询managerMallOrdersSearch()[pri:15, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:33Z" name="订单查询managerMallOrdersSearch" finished-at="2023-07-31T02:55:33Z" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 订单查询managerMallOrdersSearch -->
+        <test-method signature="推广员已通过审核LISTmanagerMarketCenterSalesListAuditStatus1()[pri:16, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:33Z" name="推广员已通过审核LISTmanagerMarketCenterSalesListAuditStatus1" finished-at="2023-07-31T02:55:34Z" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 推广员已通过审核LISTmanagerMarketCenterSalesListAuditStatus1 -->
+        <test-method signature="推广员待审核LISTmanagerMarketCenterSalesListAuditStatus2()[pri:17, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:34Z" name="推广员待审核LISTmanagerMarketCenterSalesListAuditStatus2" finished-at="2023-07-31T02:55:34Z" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 推广员待审核LISTmanagerMarketCenterSalesListAuditStatus2 -->
+        <test-method signature="推广内容LISTweappMarketCenterProductList()[pri:18, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:34Z" name="推广内容LISTweappMarketCenterProductList" finished-at="2023-07-31T02:55:34Z" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 推广内容LISTweappMarketCenterProductList -->
+        <test-method signature="添加推广内容weappManagerMarketCenterProduct()[pri:19, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:34Z" name="添加推广内容weappManagerMarketCenterProduct" finished-at="2023-07-31T02:55:34Z" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 添加推广内容weappManagerMarketCenterProduct -->
+        <test-method signature="编辑推广内容weappManagerMarketCenterProduct()[pri:20, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:34Z" name="编辑推广内容weappManagerMarketCenterProduct" finished-at="2023-07-31T02:55:34Z" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 编辑推广内容weappManagerMarketCenterProduct -->
+        <test-method signature="删除推广内容managerMarketCenterProductId()[pri:21, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:34Z" name="删除推广内容managerMarketCenterProductId" finished-at="2023-07-31T02:55:35Z" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 删除推广内容managerMarketCenterProductId -->
+        <test-method signature="招募计划确认编辑weappManagerMarketCenterRecruitment()[pri:22, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:35Z" name="招募计划确认编辑weappManagerMarketCenterRecruitment" finished-at="2023-07-31T02:55:35Z" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 招募计划确认编辑weappManagerMarketCenterRecruitment -->
+        <test-method signature="提现管理未打款LISTweappManagerMarketCenterSalesWithdrawSearch()[pri:23, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:35Z" name="提现管理未打款LISTweappManagerMarketCenterSalesWithdrawSearch" finished-at="2023-07-31T02:55:35Z" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 提现管理未打款LISTweappManagerMarketCenterSalesWithdrawSearch -->
+        <test-method signature="提现管理已打款weappManagerMarketCenterSalesWithdrawSearchPage1()[pri:24, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:35Z" name="提现管理已打款weappManagerMarketCenterSalesWithdrawSearchPage1" finished-at="2023-07-31T02:55:35Z" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 提现管理已打款weappManagerMarketCenterSalesWithdrawSearchPage1 -->
+        <test-method signature="提现管理已拒绝weappManagerMarketCenterSalesWithdrawSearchPage1()[pri:25, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:35Z" name="提现管理已拒绝weappManagerMarketCenterSalesWithdrawSearchPage1" finished-at="2023-07-31T02:55:35Z" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 提现管理已拒绝weappManagerMarketCenterSalesWithdrawSearchPage1 -->
+        <test-method signature="钱包流水记录LISTweappManagerWalletFlowSearch()[pri:26, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:35Z" name="钱包流水记录LISTweappManagerWalletFlowSearch" finished-at="2023-07-31T02:55:35Z" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 钱包流水记录LISTweappManagerWalletFlowSearch -->
+        <test-method signature="用户分类管理用户列表weappManagerCollectionResultSearch()[pri:27, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:35Z" name="用户分类管理用户列表weappManagerCollectionResultSearch" finished-at="2023-07-31T02:55:36Z" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 用户分类管理用户列表weappManagerCollectionResultSearch -->
+        <test-method signature="用户列表导出数据weappManagerCollectionResultExport()[pri:28, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:36Z" name="用户列表导出数据weappManagerCollectionResultExport" finished-at="2023-07-31T02:55:36Z" duration-ms="234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 用户列表导出数据weappManagerCollectionResultExport -->
+        <test-method signature="采集信息设置weappManagerCollectionConfig()[pri:29, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:36Z" name="采集信息设置weappManagerCollectionConfig" finished-at="2023-07-31T02:55:36Z" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 采集信息设置weappManagerCollectionConfig -->
+        <test-method signature="添加会员卡weappManagerPaySetting()[pri:30, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:36Z" name="添加会员卡weappManagerPaySetting" finished-at="2023-07-31T02:55:36Z" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 添加会员卡weappManagerPaySetting -->
+        <test-method signature="会员卡设置LISTweappManagerPaySettingList()[pri:31, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:36Z" name="会员卡设置LISTweappManagerPaySettingList" finished-at="2023-07-31T02:55:36Z" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 会员卡设置LISTweappManagerPaySettingList -->
+        <test-method signature="删除会员卡weappManagerPaySettingId()[pri:32, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:36Z" name="删除会员卡weappManagerPaySettingId" finished-at="2023-07-31T02:55:37Z" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 删除会员卡weappManagerPaySettingId -->
+        <test-method signature="付费折扣权益添加商品weappManagerPaySettingDiscountItemBatchAdd()[pri:33, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:37Z" name="付费折扣权益添加商品weappManagerPaySettingDiscountItemBatchAdd" finished-at="2023-07-31T02:55:37Z" duration-ms="212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 付费折扣权益添加商品weappManagerPaySettingDiscountItemBatchAdd -->
+        <test-method signature="付费折扣权益LISTmanagerPaySettingDiscountItemList()[pri:34, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:37Z" name="付费折扣权益LISTmanagerPaySettingDiscountItemList" finished-at="2023-07-31T02:55:37Z" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 付费折扣权益LISTmanagerPaySettingDiscountItemList -->
+        <test-method signature="付费折扣权益商品移除weappManagerPaySettingDiscountItem()[pri:35, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:37Z" name="付费折扣权益商品移除weappManagerPaySettingDiscountItem" finished-at="2023-07-31T02:55:37Z" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 付费折扣权益商品移除weappManagerPaySettingDiscountItem -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.TestKwwYYService@770d3326]" started-at="2023-07-31T02:55:37Z" name="teardown" finished-at="2023-07-31T02:55:37Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.test.TestKwwYYService -->
+    </test> <!-- TestKwwYYService -->
+    <test started-at="2023-07-31T02:55:37Z" name="TestKwwJXService" finished-at="2023-07-31T02:55:40Z" duration-ms="2960">
+      <class name="com.test.TestKwwJXService">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.TestKwwJXService@3a6bb9bf]" started-at="2023-07-31T02:55:37Z" name="setup" finished-at="2023-07-31T02:55:37Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getToken()[pri:1, instance:com.test.TestKwwJXService@3a6bb9bf]" started-at="2023-07-31T02:55:37Z" name="getToken" finished-at="2023-07-31T02:55:37Z" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getToken -->
+        <test-method signature="applylistToGetappid()[pri:2, instance:com.test.TestKwwJXService@3a6bb9bf]" started-at="2023-07-31T02:55:37Z" name="applylistToGetappid" finished-at="2023-07-31T02:55:38Z" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applylistToGetappid -->
+        <test-method signature="班级管理创建weappManagerClassCreateInfo()[pri:3, instance:com.test.TestKwwJXService@3a6bb9bf]" started-at="2023-07-31T02:55:38Z" name="班级管理创建weappManagerClassCreateInfo" finished-at="2023-07-31T02:55:38Z" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 班级管理创建weappManagerClassCreateInfo -->
+        <test-method signature="班级添加班主任weappManagerClassisManager1()[pri:4, instance:com.test.TestKwwJXService@3a6bb9bf]" started-at="2023-07-31T02:55:38Z" name="班级添加班主任weappManagerClassisManager1" finished-at="2023-07-31T02:55:38Z" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 班级添加班主任weappManagerClassisManager1 -->
+        <test-method signature="班级添加教师weappManagerClassisManager0()[pri:5, instance:com.test.TestKwwJXService@3a6bb9bf]" started-at="2023-07-31T02:55:38Z" name="班级添加教师weappManagerClassisManager0" finished-at="2023-07-31T02:55:38Z" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 班级添加教师weappManagerClassisManager0 -->
+        <test-method signature="班级中角色listManagerClassAllMembers()[pri:6, instance:com.test.TestKwwJXService@3a6bb9bf]" started-at="2023-07-31T02:55:38Z" name="班级中角色listManagerClassAllMembers" finished-at="2023-07-31T02:55:38Z" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 班级中角色listManagerClassAllMembers -->
+        <test-method signature="班级管理通知weappClassNotifys()[pri:7, instance:com.test.TestKwwJXService@3a6bb9bf]" started-at="2023-07-31T02:55:38Z" name="班级管理通知weappClassNotifys" finished-at="2023-07-31T02:55:38Z" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 班级管理通知weappClassNotifys -->
+        <test-method signature="班级管理ListManagerClassClassInfosPage()[pri:8, instance:com.test.TestKwwJXService@3a6bb9bf]" started-at="2023-07-31T02:55:38Z" name="班级管理ListManagerClassClassInfosPage" finished-at="2023-07-31T02:55:39Z" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 班级管理ListManagerClassClassInfosPage -->
+        <test-method signature="班级管理删除班级weappManagerClassClassInfoId()[pri:9, instance:com.test.TestKwwJXService@3a6bb9bf]" started-at="2023-07-31T02:55:39Z" name="班级管理删除班级weappManagerClassClassInfoId" finished-at="2023-07-31T02:55:39Z" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 班级管理删除班级weappManagerClassClassInfoId -->
+        <test-method signature="教师管理添加教师weappManagerClassTeacher()[pri:10, instance:com.test.TestKwwJXService@3a6bb9bf]" started-at="2023-07-31T02:55:39Z" name="教师管理添加教师weappManagerClassTeacher" finished-at="2023-07-31T02:55:39Z" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 教师管理添加教师weappManagerClassTeacher -->
+        <test-method signature="教师管理删除教师weappManagerClassTeacherId()[pri:11, instance:com.test.TestKwwJXService@3a6bb9bf]" started-at="2023-07-31T02:55:39Z" name="教师管理删除教师weappManagerClassTeacherId" finished-at="2023-07-31T02:55:39Z" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 教师管理删除教师weappManagerClassTeacherId -->
+        <test-method signature="教师管理LISTmanagerClassTeachers()[pri:12, instance:com.test.TestKwwJXService@3a6bb9bf]" started-at="2023-07-31T02:55:39Z" name="教师管理LISTmanagerClassTeachers" finished-at="2023-07-31T02:55:39Z" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 教师管理LISTmanagerClassTeachers -->
+        <test-method signature="发布通知weappManagerClassNotifyNotice()[pri:13, instance:com.test.TestKwwJXService@3a6bb9bf]" started-at="2023-07-31T02:55:39Z" name="发布通知weappManagerClassNotifyNotice" finished-at="2023-07-31T02:55:40Z" duration-ms="425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 发布通知weappManagerClassNotifyNotice -->
+        <test-method signature="发布通知ListWeappManagerClassNotifyList()[pri:14, instance:com.test.TestKwwJXService@3a6bb9bf]" started-at="2023-07-31T02:55:40Z" name="发布通知ListWeappManagerClassNotifyList" finished-at="2023-07-31T02:55:40Z" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- 发布通知ListWeappManagerClassNotifyList -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.TestKwwJXService@3a6bb9bf]" started-at="2023-07-31T02:55:40Z" name="teardown" finished-at="2023-07-31T02:55:40Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.test.TestKwwJXService -->
+    </test> <!-- TestKwwJXService -->
+  </suite> <!-- KW-api-AutoTest -->
 </testng-results>

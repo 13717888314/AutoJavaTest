@@ -54,6 +54,11 @@
             <class name="com.test.TestKwwJXService" />
         </classes>
     </test>
+    <test name="TestKwwZyzSzService" >
+        <classes>
+            <class name="com.test.TestKwwZyzSzService" />
+        </classes>
+    </test>
 
 
 <!--    <test name="TestSuitNew" >-->
