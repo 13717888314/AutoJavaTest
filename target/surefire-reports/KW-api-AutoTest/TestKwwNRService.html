@@ -1,0 +1,314 @@
+<html>
+<head>
+<title>TestNG:  TestKwwNRService</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestKwwNRService</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>47/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 31 10:55:07 CST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>14 seconds (14085 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.test.TestKwwNRService.H5设计创建v1WeappManagerMicroPages()'><b>H5设计创建v1WeappManagerMicroPages</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.applylistToGetappid()'><b>applylistToGetappid</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.getToken()'><b>getToken</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.上传图片v1WeappManagerFile()'><b>上传图片v1WeappManagerFile</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.上传文档v1WeappManagerFile()'><b>上传文档v1WeappManagerFile</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.上传视频v1WeappManagerFile()'><b>上传视频v1WeappManagerFile</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.内容待授权miniProgramCoManagerAuthApplyAuditStatus()'><b>内容待授权miniProgramCoManagerAuthApplyAuditStatus</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>1</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.创建微页面长页v1WeappManagerMicroPages()'><b>创建微页面长页v1WeappManagerMicroPages</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.创建快捷导航v1WeappManagerQuickNav()'><b>创建快捷导航v1WeappManagerQuickNav</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.删除复制H5weappManagerMicroPages()'><b>删除复制H5weappManagerMicroPages</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.删除复制网站页weappManagerMicroPages()'><b>删除复制网站页weappManagerMicroPages</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.删除微页面H5v1WeappManagerMicroPages()'><b>删除微页面H5v1WeappManagerMicroPages</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.删除微页面复制长页weappManagerMicroPagesCopycyid()'><b>删除微页面复制长页weappManagerMicroPagesCopycyid</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.删除微页面长页v1WeappManagerMicroPagesCYID()'><b>删除微页面长页v1WeappManagerMicroPagesCYID</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.删除快捷导航v1WeappManagerQuickNav()'><b>删除快捷导航v1WeappManagerQuickNav</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.删除网站页面v1WeappManagerMicroPages()'><b>删除网站页面v1WeappManagerMicroPages</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.删除视频v1WeappManagerFile()'><b>删除视频v1WeappManagerFile</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.删除音频文件V1WeappManagerFile()'><b>删除音频文件V1WeappManagerFile</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.发布微页面H5weappManagerMicroPagesPublish()'><b>发布微页面H5weappManagerMicroPagesPublish</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.发布微页面网站v1WeappManagerMicroPages()'><b>发布微页面网站v1WeappManagerMicroPages</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.图片删除v1WeappManagerFileDelete()'><b>图片删除v1WeappManagerFileDelete</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.图片详情v1WeappManagerFileTPid()'><b>图片详情v1WeappManagerFileTPid</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>1</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.导航重命名v1WeappManagerQuickNavName()'><b>导航重命名v1WeappManagerQuickNavName</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.微页面H5复制weappManagerMicroPages()'><b>微页面H5复制weappManagerMicroPages</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.微页面创建H5v1WeappManagerMicroPages()'><b>微页面创建H5v1WeappManagerMicroPages</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.微页面创建发布长页v1WeappManagerMicroPages()'><b>微页面创建发布长页v1WeappManagerMicroPages</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.微页面创建电脑网站weappManagerMicroPages()'><b>微页面创建电脑网站weappManagerMicroPages</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.微页面复制长页weappManagerMicroPagesCopy()'><b>微页面复制长页weappManagerMicroPagesCopy</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.微页面网站发布weappManagerMicroPagesPublish()'><b>微页面网站发布weappManagerMicroPagesPublish</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.微页面网站复制weappManagerMicroPagesCopy()'><b>微页面网站复制weappManagerMicroPagesCopy</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.微页面获取模板weappManagerMicroPagesSysTemplates()'><b>微页面获取模板weappManagerMicroPagesSysTemplates</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.微页面长页发布v1WeappManagerMicroPagesPublish()'><b>微页面长页发布v1WeappManagerMicroPagesPublish</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.快捷导航PageListv1WeappManagerQuickNavSearch()'><b>快捷导航PageListv1WeappManagerQuickNavSearch</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.授权内容已授权tabLISTminiProgramCoManagerAuthApplyAuditStatus()'><b>授权内容已授权tabLISTminiProgramCoManagerAuthApplyAuditStatus</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>1</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.授权搜索LISTweappManageAuthApplyActivitySearch()'><b>授权搜索LISTweappManageAuthApplyActivitySearch</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.提交音频V1WeappManagerFile()'><b>提交音频V1WeappManagerFile</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.文档PageListv1WeappManagerFileList()'><b>文档PageListv1WeappManagerFileList</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.文档删除v1WeappManagerFile()'><b>文档删除v1WeappManagerFile</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.编辑快捷导航v1WeappManagerQuickNavSetting()'><b>编辑快捷导航v1WeappManagerQuickNavSetting</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.获取uuidWeappUploadToken()'><b>获取uuidWeappUploadToken</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.获取图片idv1WeappManagerFileList()'><b>获取图片idv1WeappManagerFileList</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.获取文档uuidv1WeappManagerFileUploadToken()'><b>获取文档uuidv1WeappManagerFileUploadToken</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.获取视频uuidV1WeappManagerFileUploadToken()'><b>获取视频uuidV1WeappManagerFileUploadToken</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.视频Listidv1WeappManagerFileLis()'><b>视频Listidv1WeappManagerFileLis</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.资料中心v1WeappMangerFileTotalSize()'><b>资料中心v1WeappMangerFileTotalSize</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.音频Listv1WeappManagerFileList()'><b>音频Listv1WeappManagerFileList</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+<tr>
+<td title='com.test.TestKwwNRService.音频获取uuidv1WeappManagerFileUploadToken()'><b>音频获取uuidv1WeappManagerFileUploadToken</b><br>Test class: com.test.TestKwwNRService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwNRService@6c779568</td></tr>
+</table><p>
+</body>
+</html>

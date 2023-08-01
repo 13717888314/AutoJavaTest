@@ -1,0 +1,284 @@
+<html>
+<head>
+<title>TestNG:  TestKwwGKService</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestKwwGKService</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>41/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 31 10:54:48 CST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>11 seconds (11262 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.test.TestKwwGKService.LoginKwauthLogin()'><b>LoginKwauthLogin</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>1</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.专栏v1WxThirdPartyWeappFirstClasspageList()'><b>专栏v1WxThirdPartyWeappFirstClasspageList</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.专栏模板templateList()'><b>专栏模板templateList</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.专栏空白创建v1WxThirdPartyWeappclass()'><b>专栏空白创建v1WxThirdPartyWeappclass</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.公开文章发布articles()'><b>公开文章发布articles</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.写文章入口isRealnameAuth()'><b>写文章入口isRealnameAuth</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.创建商品v1WeappManagerMallgoods()'><b>创建商品v1WeappManagerMallgoods</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.创建文集v1WeappManagerColumnInfo()'><b>创建文集v1WeappManagerColumnInfo</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.创建相册albumInfo()'><b>创建相册albumInfo</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.创建空白自定义v1SurveyCreateBlank()'><b>创建空白自定义v1SurveyCreateBlank</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.删除专栏v1WxThirdPartyWeappdelete()'><b>删除专栏v1WxThirdPartyWeappdelete</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.删除商品v1WeappManagerMalldelete()'><b>删除商品v1WeappManagerMalldelete</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.删除文集v1WeappManagerdelete()'><b>删除文集v1WeappManagerdelete</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.删除相册delete()'><b>删除相册delete</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.商品下架v1WeappManagerMallisOnSale()'><b>商品下架v1WeappManagerMallisOnSale</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.商品操作日志mallGoodsLogspageList()'><b>商品操作日志mallGoodsLogspageList</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.圈子移出coManagerunbindAuthContent()'><b>圈子移出coManagerunbindAuthContent</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.在线中心云协作v1WeappManagerProjectlsit()'><b>在线中心云协作v1WeappManagerProjectlsit</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.在线中心创建圈子apiV1circle()'><b>在线中心创建圈子apiV1circle</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.在线中心创建文章v1WeappManagerArticles()'><b>在线中心创建文章v1WeappManagerArticles</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.在线中心圈子v1WeappManagerCirclelsit()'><b>在线中心圈子v1WeappManagerCirclelsit</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.在线中心文章编辑页v1ArticlesEdit()'><b>在线中心文章编辑页v1ArticlesEdit</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.在线中心文集v1WeappManagerPageList()'><b>在线中心文集v1WeappManagerPageList</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.开问线上中心登录项目v1PersonsInformationbasic()'><b>开问线上中心登录项目v1PersonsInformationbasic</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.文集下架v1WeappManagerisOnSale()'><b>文集下架v1WeappManagerisOnSale</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.文集编辑PUTcolumnInfo()'><b>文集编辑PUTcolumnInfo</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.文集详情v1WeappManagerColumnInfodetail()'><b>文集详情v1WeappManagerColumnInfodetail</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.相册list()'><b>相册list</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.私密文章发布apiV2Articles()'><b>私密文章发布apiV2Articles</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.线上中心文章listArticlePublicSearch()'><b>线上中心文章listArticlePublicSearch</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.线上中心活动v1CommonsJudgesSensitivewords()'><b>线上中心活动v1CommonsJudgesSensitivewords</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.线上中心活动v1WeappManagerActivitylist()'><b>线上中心活动v1WeappManagerActivitylist</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.线上中心表单已授权v1WeappAuthedSurveytabList()'><b>线上中心表单已授权v1WeappAuthedSurveytabList</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.线上中心项目v1WeappManagerApplylist()'><b>线上中心项目v1WeappManagerApplylist</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.自动定义控件v1SurveyUpdate()'><b>自动定义控件v1SurveyUpdate</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.自定义表单发布v1SurveyPublish()'><b>自定义表单发布v1SurveyPublish</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.自定义表单添加控件v1SurveyQuestion()'><b>自定义表单添加控件v1SurveyQuestion</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.行业分类tpyeV1SurveyTemplateClass()'><b>行业分类tpyeV1SurveyTemplateClass</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.表单v1WeappBlongSurveylsit()'><b>表单v1WeappBlongSurveylsit</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.表单删除apiV1SurveyDelete()'><b>表单删除apiV1SurveyDelete</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+<tr>
+<td title='com.test.TestKwwGKService.表单模板v1SurveyTemplateList()'><b>表单模板v1SurveyTemplateList</b><br>Test class: com.test.TestKwwGKService</td>
+<td></td>
+<td>0</td>
+<td>com.test.TestKwwGKService@399c4be1</td></tr>
+</table><p>
+</body>
+</html>
