@@ -1,5 +1,4 @@
-package com.zwtx.oswn.core.exception;
-
+package com.utils;
 /**
  * @author HuangTao
  * @version v1.0

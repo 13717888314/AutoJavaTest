@@ -61,6 +61,7 @@ public class TestPost {
         //打印返回结果
 //      jsonObject.get("code")
         System.out.println(jsonObject.get("code"));
+        System.out.println("Http状态码："+response.getStatusLine().getStatusCode());
         System.out.println(ResBody);
         //System.out.println(jsonObject.get("datas"));
 

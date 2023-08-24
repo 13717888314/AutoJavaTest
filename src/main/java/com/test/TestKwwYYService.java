@@ -28,7 +28,9 @@ public class TestKwwYYService {
     HttpJzhPostAppidArryList httpJzhPostAppidArryList = new HttpJzhPostAppidArryList();
     Date now = new Date();
     long time = now.getTime();
-    Map map = new HashMap();
+    Map map = new HashMap<>();
+
+    Map mapNew = new HashMap<>();
     HttpJzhPost httpJzhPost = new HttpJzhPost();
     public static String token;
     public static String appid;
@@ -40,6 +42,7 @@ public class TestKwwYYService {
 
     public static String hykid;
     public static String ffzkspid;
+    public static String cxid;
 
     public static String idd = null;
     List<BasicNameValuePair> pairList= new ArrayList<BasicNameValuePair>();
@@ -398,8 +401,6 @@ public class TestKwwYYService {
 
         map.put("sceneList",arrayList2);
         map.put("styleId","1");
-
-
         String uu="https://open.openwhy.net/api/v1/weapp/manager/pay-setting";
         String aa = token;
         JSONObject result = httpJzhPostAppid.JzhPost(map,uu,aa,appid);
@@ -430,8 +431,7 @@ public class TestKwwYYService {
         JSONObject jsonString = new JSONObject(map);
         String str1 = "[" + jsonString + "]";
         String uu="https://open.openwhy.net/api/v1/weapp/manager/pay-setting/discount/item/batch-add";
-        String aa = token;
-        JSONObject result = httpJzhPostAppidArryList.JzhPost(str1,uu,aa,appid);
+        JSONObject result = httpJzhPostAppidArryList.JzhPost(str1,uu,token,appid);
         Assert.assertEquals(result.get("code"),"000000","成功");
     }
 
@@ -448,11 +448,109 @@ public class TestKwwYYService {
     @Test(priority = 35)
     public  void 付费折扣权益商品移除weappManagerPaySettingDiscountItem() throws Exception{
         String uu="https://open.openwhy.net/api/v1/weapp/manager/pay-setting/discount/item?id="+ffzkspid;
-        String aa = token;
-        JSONObject result = httpJzhDeleteAppid.JzhDelete(uu,aa,appid);
+        JSONObject result = httpJzhDeleteAppid.JzhDelete(uu,token,appid);
         Assert.assertEquals(result.get("code"),"000000","成功");
     }
 
+
+    @Test(priority = 36)
+    public  void 查询列表listweappManagerQueryInfoSearch() throws Exception{
+        mapNew.put("","");
+        String uu="https://open.openwhy.net/api/v1/weapp/manager/query-info/search?page=1";
+        JSONObject result = httpJzhPostAppid.JzhPost(mapNew,uu,token,appid);
+        Assert.assertEquals(result.get("code"),"000000","成功");
+    }
+
+
+    @Test(priority = 37)
+    public  void 创建查询v1WeappManagerQueryInfo() throws Exception{
+        mapNew.put("name","api创建查询new");
+        mapNew.put("introHtml","");
+        mapNew.put("titleImg","");
+        mapNew.put("queryType","1");
+
+        ArrayList queryConditionList = new ArrayList<>();
+        Map queryConditionListMap = new HashMap<>();
+        queryConditionListMap.put("sourceColId","1694541306262589440");
+        queryConditionListMap.put("colName","美食名字");
+        queryConditionListMap.put("isRequired",1);
+        queryConditionListMap.put("searchType","2");
+        queryConditionList.add(queryConditionListMap);
+        mapNew.put("queryConditionList",queryConditionList);
+
+        ArrayList resultColIdList = new ArrayList<>();
+        resultColIdList.add("1694541306262589441");
+        resultColIdList.add("1694541306262589442");
+        resultColIdList.add("1694541306262589443");
+        mapNew.put("resultColIdList",resultColIdList);
+
+        mapNew.put("phoneColId","");
+
+        ArrayList colList = new ArrayList<>();
+        Map colListMap1 = new HashMap<>();
+        colListMap1.put("id","1694541306258395136");
+        colListMap1.put("sourceId","1694541302902951936");
+        colListMap1.put("fieldName","field1");
+        colListMap1.put("colName","序号");
+        colListMap1.put("orderIndex",1);
+        Map colListMap2 = new HashMap<>();
+        colListMap2.put("id","1694541306262589440");
+        colListMap2.put("sourceId","1694541302902951936");
+        colListMap2.put("fieldName","field2");
+        colListMap2.put("colName","美食名字");
+        colListMap2.put("orderIndex",2);
+        colListMap2.put("checked1",true);
+        Map colListMap3 = new HashMap<>();
+        colListMap3.put("id","1694541306262589441");
+        colListMap3.put("sourceId","1694541302902951936");
+        colListMap3.put("fieldName","field3");
+        colListMap3.put("colName","美食价格");
+        colListMap3.put("orderIndex",3);
+        colListMap3.put("checked1",true);
+        Map colListMap4 = new HashMap<>();
+        colListMap4.put("id","1694541306262589442");
+        colListMap4.put("sourceId","1694541302902951936");
+        colListMap4.put("fieldName","field4");
+        colListMap4.put("colName","备注");
+        colListMap4.put("orderIndex",4);
+        colListMap4.put("checked1",true);
+        Map colListMap5 = new HashMap<>();
+        colListMap5.put("id","1694541306262589443");
+        colListMap5.put("sourceId","1694541302902951936");
+        colListMap5.put("fieldName","field5");
+        colListMap5.put("colName","猜你喜欢");
+        colListMap5.put("orderIndex",5);
+        colListMap5.put("checked1",true);
+        colList.add(colListMap1);
+        colList.add(colListMap2);
+        colList.add(colListMap3);
+        colList.add(colListMap4);
+        colList.add(colListMap5);
+        mapNew.put("colList",colList);
+        mapNew.put("sourceId","1694541302902951936");
+        System.out.println("mapNew::"+mapNew);
+        System.out.println("37map::"+map);
+        String uu="https://open.openwhy.net/api/v1/weapp/manager/query-info";
+        JSONObject result = httpJzhPostAppid.JzhPost(mapNew,uu,token,appid);
+        System.out.println("restu:::"+result);
+        Assert.assertEquals(result.get("code"),"000000","成功");
+        cxid = (String) result.getJSONObject("datas").get("id");
+    }
+
+    @Test(priority = 38)
+    public  void 查询分享managerApply() throws Exception{
+
+        String uu="https://open.openwhy.net/api/v1/weapp/manager/apply/"+appid+"/detail";
+        JSONObject result = httpJzhGetAppid.JzhGet(uu,token,appid);
+        Assert.assertEquals(result.get("code"),"000000","成功");
+    }
+
+    @Test(priority = 39)
+    public  void 删除查询weappManagerQueryInfoId() throws Exception{
+        String uu="https://open.openwhy.net/api/v1/weapp/manager/query-info?id="+cxid;
+        JSONObject result = httpJzhDeleteAppid.JzhDelete(uu,token,appid);
+        Assert.assertEquals(result.get("code"),"000000","成功");
+    }
 
     @AfterTest
     public void teardown(){

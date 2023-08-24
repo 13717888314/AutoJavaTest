@@ -19,6 +19,8 @@ public class TestKwwNRService {
     HttpJzhGetAppid httpJzhGetAppid = new HttpJzhGetAppid();
     HttpJzhPut httpJzhPut = new HttpJzhPut();
     HttpJzhPostAppid httpJzhPostAppid = new HttpJzhPostAppid();
+
+    HttpClientGetCode  httpClientGetCode = new HttpClientGetCode();
     HttpJzhDeleteAppid httpJzhDeleteAppid = new HttpJzhDeleteAppid();
     HttpJzhPutAppidArryList httpJzhPutAppidArryList = new HttpJzhPutAppidArryList();
     HttpJzhPostAppidArryList httpJzhPostAppidArryList = new HttpJzhPostAppidArryList();
@@ -47,6 +49,8 @@ public class TestKwwNRService {
     public static String copycyid;
     public static String wzid;
     public static String copywzid;
+
+    public static String yyid;
 
     List<BasicNameValuePair> pairList= new ArrayList<BasicNameValuePair>();
     String bb = Sources.kww_test_base_url;
@@ -94,6 +98,7 @@ public class TestKwwNRService {
         JSONObject result = httpJzhGetAppid.JzhGet(uu,aa,appid);
         Assert.assertEquals(result.get("code"),"000000","成功");
         tpuuid=(String)result.getJSONObject("datas").get("id");
+
     }
 
     @Test(priority = 5)
@@ -560,6 +565,177 @@ public class TestKwwNRService {
     @Test(priority = 46)
     public void 删除复制网站页weappManagerMicroPages() throws Exception{
         String uu ="https://open.openwhy.net/api/v1/weapp/manager/micro-pages/"+copywzid;
+        JSONObject result = httpJzhDeleteAppid.JzhDelete(uu,token,appid);
+        Assert.assertEquals(result.get("code"),"000000","成功");
+    }
+
+    @Test(priority = 47)
+    public void 预约列表managerReservationListPage() throws Exception{
+        map.put("","");
+        String uu ="https://open.openwhy.net/api/v1/weapp/manager/reservation/list?page=1";
+        JSONObject result = httpJzhPostAppid.JzhPost(map,uu,token,appid);
+        Assert.assertEquals(result.get("code"),"000000","成功");
+    }
+
+    @Test(priority = 48)
+    public void 获取预约类型v1WeappManagerReservationTemplateClass() throws Exception{
+        String uu ="https://open.openwhy.net/api/v1/weapp/manager/reservation/template-class";
+        JSONObject result = httpJzhGetAppid.JzhGet(uu,token,appid);
+        Assert.assertEquals(result.get("code"),"000000","成功");
+    }
+
+    @Test(priority = 49)
+    public void 预约创建weappManagerReservation() throws Exception{
+        map.put("baseInfo","");
+        Map mapbaseInfo = new HashMap<>();
+        mapbaseInfo.put("name","api测试创建");
+        mapbaseInfo.put("titleImg","//r.openwhy.cn/activity-top-img-recreation-7.png");
+        mapbaseInfo.put("content","<p>api测试创建</p>");
+        mapbaseInfo.put("notice","");
+        mapbaseInfo.put("address","");
+        mapbaseInfo.put("contactInfo","");
+        mapbaseInfo.put("btnName","立即预约");
+        mapbaseInfo.put("contactType",1);
+        map.put("baseInfo",mapbaseInfo);
+
+        Map maptimeInfo = new HashMap<>();
+        maptimeInfo.put("timeOpen",0);
+        maptimeInfo.put("timeModel",1);
+        maptimeInfo.put("futureDays",7);
+        maptimeInfo.put("timeSelectMode",1);
+        maptimeInfo.put("minNum",1);
+        maptimeInfo.put("maxNum",-1);
+        maptimeInfo.put("isRepeatSelect",1);
+        map.put("timeInfo",maptimeInfo);
+
+        Map mapcollectionInfo = new HashMap<>();
+        mapcollectionInfo.put("collectionOpen","1");
+
+
+        ArrayList itemList = new ArrayList<>();
+        Map itemmap1 = new HashMap<>();
+        itemmap1.put("itemName","姓名");
+        itemmap1.put("type",30);
+        itemmap1.put("required",1);
+        itemmap1.put("autoNo",1);
+
+        ArrayList optionlist = new ArrayList<>();
+        Map ma1 = new HashMap();
+        ma1.put("text","选项1");
+        ma1.put("isSelected",0);
+        Map ma2 = new HashMap();
+        ma2.put("text","选项2");
+        ma2.put("isSelected",0);
+        optionlist.add(ma1);
+        optionlist.add(ma2);
+        itemmap1.put("optionList",optionlist);
+        itemmap1.put("score",0);
+
+        ArrayList blankslist = new ArrayList<>();
+        Map mapblanks = new HashMap<>();
+        mapblanks.put("keys","");
+        blankslist.add(mapblanks);
+        itemmap1.put("blanks",blankslist);
+        itemmap1.put("num",1);
+        itemmap1.put("itemType",30);
+
+        Map itemmap2 = new HashMap<>();
+        itemmap2.put("itemName","手机号码");
+        itemmap2.put("type",30);
+        itemmap2.put("required",1);
+        itemmap2.put("autoNo",1);
+        ArrayList optionlist2 = new ArrayList<>();
+        Map ma3 = new HashMap();
+        ma1.put("text","选项1");
+        ma1.put("isSelected",0);
+        Map ma4 = new HashMap();
+        ma2.put("text","选项2");
+        ma2.put("isSelected",0);
+        optionlist.add(ma3);
+        optionlist.add(ma4);
+        itemmap2.put("optionList",optionlist2);
+        itemmap2.put("score",0);
+
+        ArrayList blankslist2 = new ArrayList<>();
+        Map mapblanks2 = new HashMap<>();
+        mapblanks2.put("keys","");
+        blankslist2.add(mapblanks2);
+        itemmap2.put("blanks",blankslist2);
+        itemmap2.put("num",1);
+        itemmap2.put("itemType",30);
+
+        itemList.add(itemmap1);
+        itemList.add(itemmap2);
+        mapcollectionInfo.put("itemList",itemList);
+        map.put("collectionInfo",mapcollectionInfo);
+
+        Map mapitemInfo = new HashMap<>();
+        mapitemInfo.put("itemOpen","0");
+        mapitemInfo.put("itemModel","1");
+        mapitemInfo.put("itemModelTxt","通用类型");
+        mapitemInfo.put("subjectName","");
+        mapitemInfo.put("isRequired","0");
+        map.put("itemInfo",mapitemInfo);
+
+
+        Map mapmoreInfo = new HashMap<>();
+        mapmoreInfo.put("payType","0");
+        mapmoreInfo.put("reservationLimit","1");
+        mapmoreInfo.put("isAudit","0");
+        mapmoreInfo.put("isCancel","0");
+        mapmoreInfo.put("periodRange",1);
+        mapmoreInfo.put("periodRangeLimit",3);
+        map.put("moreInfo",mapmoreInfo);
+        String uu ="https://open.openwhy.net/api/v1/weapp/manager/reservation";
+        JSONObject result = httpJzhPostAppid.JzhPost(map,uu,token,appid);
+        Assert.assertEquals(result.get("code"),"000000","成功");
+    }
+
+    @Test(priority = 50)
+    public void 获取预约idListPage() throws Exception{
+        map.put("","");
+        String uu ="https://open.openwhy.net/api/v1/weapp/manager/reservation/list?page=1";
+        JSONObject result = httpJzhPostAppid.JzhPost(map,uu,token,appid);
+        Assert.assertEquals(result.get("code"),"000000","成功");
+        yyid = (String)result.getJSONArray("datas").getJSONObject(0).get("id");
+    }
+
+    @Test(priority = 51)
+    public void 预约详情ManagerReservationReservationUserSearch() throws Exception{
+        map.put("id",yyid);
+        map.put("auditStatus","-1");
+        String uu ="https://open.openwhy.net/api/v1/weapp/manager/reservation/reservation-user/search";
+        JSONObject result = httpJzhPostAppid.JzhPost(map,uu,token,appid);
+        Assert.assertEquals(result.get("code"),"000000","成功");
+    }
+
+    @Test(priority = 52)
+    public void 预约详情导出ReservationUserExport() throws Exception{
+        String uu ="https://open.openwhy.net/api/v1/weapp/reservation/"+yyid+"/reservation-user/export";
+        Integer result = httpClientGetCode.GetClientGetCode(uu,token,appid);
+        Assert.assertEquals(result.toString(),"200","成功");
+    }
+
+    @Test(priority = 53)
+    public void 预约暂停ReservationSuspend() throws Exception{
+        map.put("id",yyid);
+        String uu ="https://open.openwhy.net/api/v1/weapp/manager/reservation/"+yyid+"/suspend";
+        JSONObject result = httpJzhPut.JzhPut(map,uu,token,appid);
+        Assert.assertEquals(result.get("code"),"000000","成功");
+    }
+
+
+    @Test(priority = 54)
+    public void 预约发布ReservationPublish() throws Exception{
+        map.put("id",yyid);
+        String uu ="https://open.openwhy.net/api/v1/weapp/manager/reservation/"+yyid+"/publish";
+        JSONObject result = httpJzhPut.JzhPut(map,uu,token,appid);
+        Assert.assertEquals(result.get("code"),"000000","成功");
+    }
+
+    @Test(priority = 55)
+    public void 删除预约ReservationId() throws Exception{
+        String uu ="https://open.openwhy.net/api/v1/weapp/manager/reservation?id="+yyid;
         JSONObject result = httpJzhDeleteAppid.JzhDelete(uu,token,appid);
         Assert.assertEquals(result.get("code"),"000000","成功");
     }
